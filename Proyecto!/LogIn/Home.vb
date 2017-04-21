@@ -274,6 +274,7 @@ Public Class Home
 
         panelAdminClass.Visible = False
         pnlAdminstrateUsers.Visible = False
+        panelReservations.Visible = False
 
     End Sub
 
@@ -1046,7 +1047,7 @@ Public Class Home
                     End If
                 End If
             Catch ex As Exception
-                mensaje = "Alguna de las horas fue ingresada con un formato incorrecto. Primer try catch"
+                mensaje = "Alguna de las horas fue ingresada con un formato incorrecto."
                 tbxHoraInicial.Text = ""
                 tbxHoraFinal.Text = ""
             End Try
@@ -1342,17 +1343,9 @@ Public Class Home
         End If
     End Sub
 
-    Private Sub cmbCreateClassEdificio_SelectedValueChanged(sender As Object, e As EventArgs) Handles cmbCreateClassEdificio.SelectedValueChanged
-
-    End Sub
 
     Private Sub tbxCreateClassName_TextChanged(sender As Object, e As EventArgs) Handles tbxCreateClassName.TextChanged
         auxiliar = True
-
-    End Sub
-
-    Private Sub panelAdminClass_Paint(sender As Object, e As PaintEventArgs) Handles panelAdminClass.Paint
-
     End Sub
 
     Private Sub btnHorarios_Click(sender As Object, e As EventArgs)
@@ -1375,13 +1368,46 @@ Public Class Home
     End Sub
 
     Private Sub btnAgregarHorario_Click_1(sender As Object, e As EventArgs) Handles btnAgregarHorario.Click
-        If pnlAgregarHorario.Visible = False Then
-            pnlAgregarHorario.Visible = True
-            pnlAgregarHorario.BringToFront()
-            pnlAgregarHorario.Location = New Point(6, 58)
-            pnlAgregarHorario.Size = New Point(632, 207)
+        ' If pnlAgregarHorario.Visible = False Then
+        'pnlAgregarHorario.Visible = True
+        'pnlAgregarHorario.BringToFront()
+        'pnlAgregarHorario.Location = New Point(6, 58)
+        'pnlAgregarHorario.Size = New Point(632, 207)
+        ' End If
+    End Sub
+
+    Private Sub btnAdministrateRequests_Click(sender As Object, e As EventArgs) Handles btnAdministrateRequests.Click
+        lblBienvenida.Visible = False
+        If pnlUser.Visible = True Then
+            pnlUser.Visible = False
+        End If
+        If pnlAdminstrateUsers.Visible = True Then
+            pnlAdminstrateUsers.Visible = False
+        End If
+        If panelAdminClass.Visible = True Then
+            panelAdminClass.Visible = False
+        End If
+        If panelReservations.Visible = False Then
+            lblBienvenida.Visible = True
+            panelReservations.Visible = True
+            panelReservations.Size = New Size(660, 630)
+            panelReservations.Location = New Point(138, 78)
+            panelReservations.Visible = True
+            Dim connection As SqlConnection
+
+            'aquí conectamos con la base de datos
+            connection = New SqlConnection(connectionString)
+
+            Dim classTable As New DataTable
+
+            Dim commandSelect As New SqlCommand("SELECT * FROM Horarios", connection)
+            Dim dataAdapter As New SqlDataAdapter(commandSelect)
+            dataAdapter.Fill(classTable)
+            dgvClassReservations.DataSource = classTable
         End If
     End Sub
+
+
 
     Public Sub DeleteQuery(id As Integer)
         Dim connection As New SqlConnection(connectionString)

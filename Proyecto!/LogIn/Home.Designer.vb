@@ -23,14 +23,59 @@ Partial Class Home
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Home))
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Home))
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.panelReservations = New System.Windows.Forms.Panel()
+        Me.dgvClassReservations = New System.Windows.Forms.DataGridView()
+        Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.Label58 = New System.Windows.Forms.Label()
+        Me.Label59 = New System.Windows.Forms.Label()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.Label60 = New System.Windows.Forms.Label()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.Label61 = New System.Windows.Forms.Label()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.Label62 = New System.Windows.Forms.Label()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.Label63 = New System.Windows.Forms.Label()
+        Me.Label64 = New System.Windows.Forms.Label()
+        Me.Label65 = New System.Windows.Forms.Label()
+        Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.Label66 = New System.Windows.Forms.Label()
+        Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.Label67 = New System.Windows.Forms.Label()
+        Me.lblTitleReservations = New System.Windows.Forms.Label()
         Me.panelAdminClass = New System.Windows.Forms.Panel()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.Label50 = New System.Windows.Forms.Label()
+        Me.Label51 = New System.Windows.Forms.Label()
+        Me.Label52 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label53 = New System.Windows.Forms.Label()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Label54 = New System.Windows.Forms.Label()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.Label55 = New System.Windows.Forms.Label()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Label56 = New System.Windows.Forms.Label()
+        Me.Label57 = New System.Windows.Forms.Label()
+        Me.lblAddSchedule = New System.Windows.Forms.Label()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Label43 = New System.Windows.Forms.Label()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Label44 = New System.Windows.Forms.Label()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Label49 = New System.Windows.Forms.Label()
         Me.pnlHorarios = New System.Windows.Forms.Panel()
         Me.pnlEliminarHorario = New System.Windows.Forms.Panel()
         Me.Label47 = New System.Windows.Forms.Label()
@@ -66,7 +111,6 @@ Partial Class Home
         Me.lblAgregarAulaHorario = New System.Windows.Forms.Label()
         Me.Label24 = New System.Windows.Forms.Label()
         Me.Label26 = New System.Windows.Forms.Label()
-        Me.Label23 = New System.Windows.Forms.Label()
         Me.pnlModifyClass = New System.Windows.Forms.Panel()
         Me.bntSaveModifyClass = New System.Windows.Forms.Button()
         Me.Label28 = New System.Windows.Forms.Label()
@@ -206,31 +250,17 @@ Partial Class Home
         Me.btnClose = New System.Windows.Forms.Button()
         Me.RolesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.RolesTableAdapter = New LogIn.laboratoriosDataSetTableAdapters.RolesTableAdapter()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Label43 = New System.Windows.Forms.Label()
-        Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Label44 = New System.Windows.Forms.Label()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Label49 = New System.Windows.Forms.Label()
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.lblAddSchedule = New System.Windows.Forms.Label()
-        Me.Label50 = New System.Windows.Forms.Label()
-        Me.Label51 = New System.Windows.Forms.Label()
-        Me.Label52 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label53 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Label54 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.Label55 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.Label56 = New System.Windows.Forms.Label()
-        Me.Label57 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
+        Me.panelReservations.SuspendLayout()
+        CType(Me.dgvClassReservations, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel7.SuspendLayout()
+        Me.Panel8.SuspendLayout()
+        Me.Panel9.SuspendLayout()
         Me.panelAdminClass.SuspendLayout()
+        Me.Panel2.SuspendLayout()
+        Me.Panel5.SuspendLayout()
+        Me.Panel3.SuspendLayout()
+        Me.Panel4.SuspendLayout()
         Me.pnlHorarios.SuspendLayout()
         Me.pnlEliminarHorario.SuspendLayout()
         Me.pnlModificarHorario.SuspendLayout()
@@ -249,16 +279,12 @@ Partial Class Home
         Me.pnlUser.SuspendLayout()
         CType(Me.صورة_دائرة1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RolesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel2.SuspendLayout()
-        Me.Panel3.SuspendLayout()
-        Me.Panel4.SuspendLayout()
-        Me.Panel5.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Transparent
-        Me.Panel1.Controls.Add(Me.Panel2)
+        Me.Panel1.Controls.Add(Me.panelReservations)
         Me.Panel1.Controls.Add(Me.panelAdminClass)
         Me.Panel1.Controls.Add(Me.pnlAdminstrateUsers)
         Me.Panel1.Controls.Add(Me.pnlUser)
@@ -278,12 +304,310 @@ Partial Class Home
         Me.Panel1.Size = New System.Drawing.Size(1067, 825)
         Me.Panel1.TabIndex = 0
         '
+        'panelReservations
+        '
+        Me.panelReservations.Controls.Add(Me.dgvClassReservations)
+        Me.panelReservations.Controls.Add(Me.Panel7)
+        Me.panelReservations.Controls.Add(Me.Panel8)
+        Me.panelReservations.Controls.Add(Me.Panel9)
+        Me.panelReservations.Controls.Add(Me.lblTitleReservations)
+        Me.panelReservations.Location = New System.Drawing.Point(193, 108)
+        Me.panelReservations.Margin = New System.Windows.Forms.Padding(4)
+        Me.panelReservations.Name = "panelReservations"
+        Me.panelReservations.Size = New System.Drawing.Size(870, 463)
+        Me.panelReservations.TabIndex = 39
+        Me.panelReservations.Visible = False
+        '
+        'dgvClassReservations
+        '
+        Me.dgvClassReservations.AllowUserToAddRows = False
+        Me.dgvClassReservations.AllowUserToDeleteRows = False
+        Me.dgvClassReservations.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgvClassReservations.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        Me.dgvClassReservations.BackgroundColor = System.Drawing.Color.MediumSeaGreen
+        Me.dgvClassReservations.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dgvClassReservations.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.MediumSeaGreen
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvClassReservations.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.dgvClassReservations.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.ButtonHighlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvClassReservations.DefaultCellStyle = DataGridViewCellStyle2
+        Me.dgvClassReservations.GridColor = System.Drawing.Color.White
+        Me.dgvClassReservations.Location = New System.Drawing.Point(4, 92)
+        Me.dgvClassReservations.Margin = New System.Windows.Forms.Padding(4)
+        Me.dgvClassReservations.Name = "dgvClassReservations"
+        Me.dgvClassReservations.ReadOnly = True
+        Me.dgvClassReservations.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.dgvClassReservations.RowHeadersVisible = False
+        Me.dgvClassReservations.RowTemplate.ReadOnly = True
+        Me.dgvClassReservations.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvClassReservations.Size = New System.Drawing.Size(849, 151)
+        Me.dgvClassReservations.TabIndex = 42
+        '
+        'Panel7
+        '
+        Me.Panel7.Controls.Add(Me.Label23)
+        Me.Panel7.Controls.Add(Me.Label58)
+        Me.Panel7.Controls.Add(Me.Label59)
+        Me.Panel7.Controls.Add(Me.TextBox4)
+        Me.Panel7.Controls.Add(Me.Label60)
+        Me.Panel7.Controls.Add(Me.TextBox5)
+        Me.Panel7.Controls.Add(Me.Label61)
+        Me.Panel7.Controls.Add(Me.TextBox6)
+        Me.Panel7.Controls.Add(Me.Label62)
+        Me.Panel7.Controls.Add(Me.ComboBox2)
+        Me.Panel7.Controls.Add(Me.Label63)
+        Me.Panel7.Controls.Add(Me.Label64)
+        Me.Panel7.Controls.Add(Me.Label65)
+        Me.Panel7.Location = New System.Drawing.Point(39, 365)
+        Me.Panel7.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel7.Name = "Panel7"
+        Me.Panel7.Size = New System.Drawing.Size(233, 71)
+        Me.Panel7.TabIndex = 41
+        Me.Panel7.Visible = False
+        '
+        'Label23
+        '
+        Me.Label23.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label23.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label23.Location = New System.Drawing.Point(-49, 256)
+        Me.Label23.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(836, 41)
+        Me.Label23.TabIndex = 65
+        Me.Label23.Text = "Para la admisión de horas de inicio y hora final, Ingrese los datos de la siguien" &
+    "te manera: HH:MMam ó HH:MMpm."
+        '
+        'Label58
+        '
+        Me.Label58.BackColor = System.Drawing.Color.MediumSeaGreen
+        Me.Label58.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label58.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label58.Location = New System.Drawing.Point(612, 207)
+        Me.Label58.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label58.Name = "Label58"
+        Me.Label58.Size = New System.Drawing.Size(128, 30)
+        Me.Label58.TabIndex = 64
+        Me.Label58.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label59
+        '
+        Me.Label59.AutoSize = True
+        Me.Label59.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label59.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label59.Location = New System.Drawing.Point(584, 178)
+        Me.Label59.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label59.Name = "Label59"
+        Me.Label59.Size = New System.Drawing.Size(128, 25)
+        Me.Label59.TabIndex = 63
+        Me.Label59.Text = "Horas Libres:"
+        Me.Label59.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'TextBox4
+        '
+        Me.TextBox4.BackColor = System.Drawing.Color.MediumSeaGreen
+        Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox4.ForeColor = System.Drawing.Color.White
+        Me.TextBox4.Location = New System.Drawing.Point(496, 207)
+        Me.TextBox4.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox4.Multiline = True
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(99, 30)
+        Me.TextBox4.TabIndex = 62
+        Me.TextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label60
+        '
+        Me.Label60.AutoSize = True
+        Me.Label60.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label60.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label60.Location = New System.Drawing.Point(460, 180)
+        Me.Label60.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label60.Name = "Label60"
+        Me.Label60.Size = New System.Drawing.Size(107, 25)
+        Me.Label60.TabIndex = 61
+        Me.Label60.Text = "Hora Final:"
+        Me.Label60.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'TextBox5
+        '
+        Me.TextBox5.BackColor = System.Drawing.Color.MediumSeaGreen
+        Me.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox5.ForeColor = System.Drawing.Color.White
+        Me.TextBox5.Location = New System.Drawing.Point(380, 207)
+        Me.TextBox5.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox5.Multiline = True
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(99, 30)
+        Me.TextBox5.TabIndex = 60
+        Me.TextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label61
+        '
+        Me.Label61.AutoSize = True
+        Me.Label61.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label61.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label61.Location = New System.Drawing.Point(343, 178)
+        Me.Label61.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label61.Name = "Label61"
+        Me.Label61.Size = New System.Drawing.Size(114, 25)
+        Me.Label61.TabIndex = 59
+        Me.Label61.Text = "Hora Inicial:"
+        Me.Label61.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'TextBox6
+        '
+        Me.TextBox6.BackColor = System.Drawing.Color.MediumSeaGreen
+        Me.TextBox6.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox6.ForeColor = System.Drawing.Color.White
+        Me.TextBox6.Location = New System.Drawing.Point(158, 207)
+        Me.TextBox6.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox6.Multiline = True
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.Size = New System.Drawing.Size(209, 30)
+        Me.TextBox6.TabIndex = 58
+        Me.TextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label62
+        '
+        Me.Label62.AutoSize = True
+        Me.Label62.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label62.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label62.Location = New System.Drawing.Point(127, 178)
+        Me.Label62.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label62.Name = "Label62"
+        Me.Label62.Size = New System.Drawing.Size(76, 25)
+        Me.Label62.TabIndex = 57
+        Me.Label62.Text = "Motivo:"
+        Me.Label62.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'ComboBox2
+        '
+        Me.ComboBox2.BackColor = System.Drawing.Color.MediumSeaGreen
+        Me.ComboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ComboBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox2.ForeColor = System.Drawing.SystemColors.Menu
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Location = New System.Drawing.Point(-34, 204)
+        Me.ComboBox2.Margin = New System.Windows.Forms.Padding(4)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(179, 32)
+        Me.ComboBox2.TabIndex = 56
+        '
+        'Label63
+        '
+        Me.Label63.AutoSize = True
+        Me.Label63.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label63.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label63.Location = New System.Drawing.Point(-52, 178)
+        Me.Label63.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label63.Name = "Label63"
+        Me.Label63.Size = New System.Drawing.Size(47, 25)
+        Me.Label63.TabIndex = 55
+        Me.Label63.Text = "Dia:"
+        Me.Label63.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label64
+        '
+        Me.Label64.AutoSize = True
+        Me.Label64.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label64.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label64.Location = New System.Drawing.Point(-60, 144)
+        Me.Label64.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label64.Name = "Label64"
+        Me.Label64.Size = New System.Drawing.Size(126, 25)
+        Me.Label64.TabIndex = 54
+        Me.Label64.Text = "Aula Horario:"
+        Me.Label64.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label65
+        '
+        Me.Label65.AutoSize = True
+        Me.Label65.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label65.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label65.Location = New System.Drawing.Point(15, 14)
+        Me.Label65.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label65.Name = "Label65"
+        Me.Label65.Size = New System.Drawing.Size(206, 31)
+        Me.Label65.TabIndex = 1
+        Me.Label65.Text = "Agregar Horario"
+        '
+        'Panel8
+        '
+        Me.Panel8.Controls.Add(Me.Label66)
+        Me.Panel8.Location = New System.Drawing.Point(534, 365)
+        Me.Panel8.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel8.Name = "Panel8"
+        Me.Panel8.Size = New System.Drawing.Size(141, 65)
+        Me.Panel8.TabIndex = 41
+        Me.Panel8.Visible = False
+        '
+        'Label66
+        '
+        Me.Label66.AutoSize = True
+        Me.Label66.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label66.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label66.Location = New System.Drawing.Point(15, 14)
+        Me.Label66.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label66.Name = "Label66"
+        Me.Label66.Size = New System.Drawing.Size(111, 31)
+        Me.Label66.TabIndex = 1
+        Me.Label66.Text = "Eliminar"
+        '
+        'Panel9
+        '
+        Me.Panel9.Controls.Add(Me.Label67)
+        Me.Panel9.Location = New System.Drawing.Point(331, 371)
+        Me.Panel9.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel9.Name = "Panel9"
+        Me.Panel9.Size = New System.Drawing.Size(163, 65)
+        Me.Panel9.TabIndex = 40
+        Me.Panel9.Visible = False
+        '
+        'Label67
+        '
+        Me.Label67.AutoSize = True
+        Me.Label67.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label67.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label67.Location = New System.Drawing.Point(15, 14)
+        Me.Label67.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label67.Name = "Label67"
+        Me.Label67.Size = New System.Drawing.Size(124, 31)
+        Me.Label67.TabIndex = 1
+        Me.Label67.Text = "Modificar"
+        '
+        'lblTitleReservations
+        '
+        Me.lblTitleReservations.AutoSize = True
+        Me.lblTitleReservations.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTitleReservations.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblTitleReservations.Location = New System.Drawing.Point(20, 16)
+        Me.lblTitleReservations.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblTitleReservations.Name = "lblTitleReservations"
+        Me.lblTitleReservations.Size = New System.Drawing.Size(195, 31)
+        Me.lblTitleReservations.TabIndex = 0
+        Me.lblTitleReservations.Text = "Reservaciones"
+        '
         'panelAdminClass
         '
-        Me.panelAdminClass.Controls.Add(Me.Button3)
+        Me.panelAdminClass.Controls.Add(Me.Panel2)
         Me.panelAdminClass.Controls.Add(Me.pnlHorarios)
         Me.panelAdminClass.Controls.Add(Me.pnlCreateClass)
-        Me.panelAdminClass.Controls.Add(Me.Label23)
         Me.panelAdminClass.Controls.Add(Me.pnlModifyClass)
         Me.panelAdminClass.Controls.Add(Me.pnlDeleteCLass)
         Me.panelAdminClass.Controls.Add(Me.lblAdminAulasBuscarAula)
@@ -297,29 +621,305 @@ Partial Class Home
         Me.panelAdminClass.Controls.Add(Me.btnEditClass)
         Me.panelAdminClass.Controls.Add(Me.btnAddClass)
         Me.panelAdminClass.Controls.Add(Me.lblAdminClass)
-        Me.panelAdminClass.Location = New System.Drawing.Point(580, 148)
+        Me.panelAdminClass.Location = New System.Drawing.Point(213, 286)
         Me.panelAdminClass.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.panelAdminClass.Name = "panelAdminClass"
-        Me.panelAdminClass.Size = New System.Drawing.Size(293, 56)
+        Me.panelAdminClass.Size = New System.Drawing.Size(293, 43)
         Me.panelAdminClass.TabIndex = 28
         Me.panelAdminClass.Visible = False
         '
-        'Button3
+        'Panel2
         '
-        Me.Button3.BackColor = System.Drawing.Color.Transparent
-        Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Thistle
-        Me.Button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Thistle
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Image = CType(resources.GetObject("Button3.Image"), System.Drawing.Image)
-        Me.Button3.Location = New System.Drawing.Point(617, 54)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(93, 72)
-        Me.Button3.TabIndex = 38
-        Me.Button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.Panel2.Controls.Add(Me.Panel5)
+        Me.Panel2.Controls.Add(Me.Panel3)
+        Me.Panel2.Controls.Add(Me.Panel4)
+        Me.Panel2.Controls.Add(Me.Button4)
+        Me.Panel2.Controls.Add(Me.Button6)
+        Me.Panel2.Controls.Add(Me.Button7)
+        Me.Panel2.Controls.Add(Me.Label49)
+        Me.Panel2.Location = New System.Drawing.Point(369, 387)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(152, 55)
+        Me.Panel2.TabIndex = 38
+        Me.Panel2.Visible = False
+        '
+        'Panel5
+        '
+        Me.Panel5.Controls.Add(Me.Label50)
+        Me.Panel5.Controls.Add(Me.Label51)
+        Me.Panel5.Controls.Add(Me.Label52)
+        Me.Panel5.Controls.Add(Me.TextBox1)
+        Me.Panel5.Controls.Add(Me.Label53)
+        Me.Panel5.Controls.Add(Me.TextBox2)
+        Me.Panel5.Controls.Add(Me.Label54)
+        Me.Panel5.Controls.Add(Me.TextBox3)
+        Me.Panel5.Controls.Add(Me.Label55)
+        Me.Panel5.Controls.Add(Me.ComboBox1)
+        Me.Panel5.Controls.Add(Me.Label56)
+        Me.Panel5.Controls.Add(Me.Label57)
+        Me.Panel5.Controls.Add(Me.lblAddSchedule)
+        Me.Panel5.Location = New System.Drawing.Point(333, 102)
+        Me.Panel5.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(233, 71)
+        Me.Panel5.TabIndex = 41
+        Me.Panel5.Visible = False
+        '
+        'Label50
+        '
+        Me.Label50.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label50.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label50.Location = New System.Drawing.Point(-49, 256)
+        Me.Label50.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label50.Name = "Label50"
+        Me.Label50.Size = New System.Drawing.Size(836, 41)
+        Me.Label50.TabIndex = 65
+        Me.Label50.Text = "Para la admisión de horas de inicio y hora final, Ingrese los datos de la siguien" &
+    "te manera: HH:MMam ó HH:MMpm."
+        '
+        'Label51
+        '
+        Me.Label51.BackColor = System.Drawing.Color.MediumSeaGreen
+        Me.Label51.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label51.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label51.Location = New System.Drawing.Point(612, 207)
+        Me.Label51.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label51.Name = "Label51"
+        Me.Label51.Size = New System.Drawing.Size(128, 30)
+        Me.Label51.TabIndex = 64
+        Me.Label51.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label52
+        '
+        Me.Label52.AutoSize = True
+        Me.Label52.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label52.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label52.Location = New System.Drawing.Point(584, 178)
+        Me.Label52.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label52.Name = "Label52"
+        Me.Label52.Size = New System.Drawing.Size(128, 25)
+        Me.Label52.TabIndex = 63
+        Me.Label52.Text = "Horas Libres:"
+        Me.Label52.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'TextBox1
+        '
+        Me.TextBox1.BackColor = System.Drawing.Color.MediumSeaGreen
+        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.ForeColor = System.Drawing.Color.White
+        Me.TextBox1.Location = New System.Drawing.Point(496, 207)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox1.Multiline = True
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(99, 30)
+        Me.TextBox1.TabIndex = 62
+        Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label53
+        '
+        Me.Label53.AutoSize = True
+        Me.Label53.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label53.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label53.Location = New System.Drawing.Point(460, 180)
+        Me.Label53.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label53.Name = "Label53"
+        Me.Label53.Size = New System.Drawing.Size(107, 25)
+        Me.Label53.TabIndex = 61
+        Me.Label53.Text = "Hora Final:"
+        Me.Label53.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'TextBox2
+        '
+        Me.TextBox2.BackColor = System.Drawing.Color.MediumSeaGreen
+        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox2.ForeColor = System.Drawing.Color.White
+        Me.TextBox2.Location = New System.Drawing.Point(380, 207)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox2.Multiline = True
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(99, 30)
+        Me.TextBox2.TabIndex = 60
+        Me.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label54
+        '
+        Me.Label54.AutoSize = True
+        Me.Label54.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label54.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label54.Location = New System.Drawing.Point(343, 178)
+        Me.Label54.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label54.Name = "Label54"
+        Me.Label54.Size = New System.Drawing.Size(114, 25)
+        Me.Label54.TabIndex = 59
+        Me.Label54.Text = "Hora Inicial:"
+        Me.Label54.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'TextBox3
+        '
+        Me.TextBox3.BackColor = System.Drawing.Color.MediumSeaGreen
+        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox3.ForeColor = System.Drawing.Color.White
+        Me.TextBox3.Location = New System.Drawing.Point(158, 207)
+        Me.TextBox3.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox3.Multiline = True
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(209, 30)
+        Me.TextBox3.TabIndex = 58
+        Me.TextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label55
+        '
+        Me.Label55.AutoSize = True
+        Me.Label55.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label55.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label55.Location = New System.Drawing.Point(127, 178)
+        Me.Label55.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label55.Name = "Label55"
+        Me.Label55.Size = New System.Drawing.Size(76, 25)
+        Me.Label55.TabIndex = 57
+        Me.Label55.Text = "Motivo:"
+        Me.Label55.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.BackColor = System.Drawing.Color.MediumSeaGreen
+        Me.ComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox1.ForeColor = System.Drawing.SystemColors.Menu
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(-34, 204)
+        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(179, 32)
+        Me.ComboBox1.TabIndex = 56
+        '
+        'Label56
+        '
+        Me.Label56.AutoSize = True
+        Me.Label56.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label56.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label56.Location = New System.Drawing.Point(-52, 178)
+        Me.Label56.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label56.Name = "Label56"
+        Me.Label56.Size = New System.Drawing.Size(47, 25)
+        Me.Label56.TabIndex = 55
+        Me.Label56.Text = "Dia:"
+        Me.Label56.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label57
+        '
+        Me.Label57.AutoSize = True
+        Me.Label57.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label57.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label57.Location = New System.Drawing.Point(-60, 144)
+        Me.Label57.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label57.Name = "Label57"
+        Me.Label57.Size = New System.Drawing.Size(126, 25)
+        Me.Label57.TabIndex = 54
+        Me.Label57.Text = "Aula Horario:"
+        Me.Label57.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'lblAddSchedule
+        '
+        Me.lblAddSchedule.AutoSize = True
+        Me.lblAddSchedule.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAddSchedule.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblAddSchedule.Location = New System.Drawing.Point(15, 14)
+        Me.lblAddSchedule.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblAddSchedule.Name = "lblAddSchedule"
+        Me.lblAddSchedule.Size = New System.Drawing.Size(206, 31)
+        Me.lblAddSchedule.TabIndex = 1
+        Me.lblAddSchedule.Text = "Agregar Horario"
+        '
+        'Panel3
+        '
+        Me.Panel3.Controls.Add(Me.Label43)
+        Me.Panel3.Location = New System.Drawing.Point(635, 188)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(141, 65)
+        Me.Panel3.TabIndex = 41
+        Me.Panel3.Visible = False
+        '
+        'Label43
+        '
+        Me.Label43.AutoSize = True
+        Me.Label43.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label43.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label43.Location = New System.Drawing.Point(15, 14)
+        Me.Label43.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label43.Name = "Label43"
+        Me.Label43.Size = New System.Drawing.Size(111, 31)
+        Me.Label43.TabIndex = 1
+        Me.Label43.Text = "Eliminar"
+        '
+        'Panel4
+        '
+        Me.Panel4.Controls.Add(Me.Label44)
+        Me.Panel4.Location = New System.Drawing.Point(624, 103)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(163, 65)
+        Me.Panel4.TabIndex = 40
+        Me.Panel4.Visible = False
+        '
+        'Label44
+        '
+        Me.Label44.AutoSize = True
+        Me.Label44.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label44.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label44.Location = New System.Drawing.Point(15, 14)
+        Me.Label44.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label44.Name = "Label44"
+        Me.Label44.Size = New System.Drawing.Size(124, 31)
+        Me.Label44.TabIndex = 1
+        Me.Label44.Text = "Modificar"
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(333, 26)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(139, 38)
+        Me.Button4.TabIndex = 3
+        Me.Button4.Text = "Modificar Horario"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(485, 26)
+        Me.Button6.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(139, 38)
+        Me.Button6.TabIndex = 2
+        Me.Button6.Text = "EliminarHorario"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
+        'Button7
+        '
+        Me.Button7.Location = New System.Drawing.Point(181, 26)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(139, 38)
+        Me.Button7.TabIndex = 1
+        Me.Button7.Text = "Agregar Horario"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'Label49
+        '
+        Me.Label49.AutoSize = True
+        Me.Label49.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label49.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label49.Location = New System.Drawing.Point(20, 16)
+        Me.Label49.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label49.Name = "Label49"
+        Me.Label49.Size = New System.Drawing.Size(117, 31)
+        Me.Label49.TabIndex = 0
+        Me.Label49.Text = "Horarios"
         '
         'pnlHorarios
         '
@@ -449,10 +1049,10 @@ Partial Class Home
         Me.pnlCreateClass.Controls.Add(Me.lblAgregarAulaHorario)
         Me.pnlCreateClass.Controls.Add(Me.Label24)
         Me.pnlCreateClass.Controls.Add(Me.Label26)
-        Me.pnlCreateClass.Location = New System.Drawing.Point(60, 380)
+        Me.pnlCreateClass.Location = New System.Drawing.Point(27, 372)
         Me.pnlCreateClass.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlCreateClass.Name = "pnlCreateClass"
-        Me.pnlCreateClass.Size = New System.Drawing.Size(259, 65)
+        Me.pnlCreateClass.Size = New System.Drawing.Size(281, 78)
         Me.pnlCreateClass.TabIndex = 22
         Me.pnlCreateClass.Visible = False
         '
@@ -780,18 +1380,6 @@ Partial Class Home
         Me.Label26.TabIndex = 9
         Me.Label26.Text = "Crear Aula"
         Me.Label26.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label23
-        '
-        Me.Label23.AutoSize = True
-        Me.Label23.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label23.ForeColor = System.Drawing.Color.White
-        Me.Label23.Location = New System.Drawing.Point(623, 139)
-        Me.Label23.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(85, 25)
-        Me.Label23.TabIndex = 36
-        Me.Label23.Text = "Horarios"
         '
         'pnlModifyClass
         '
@@ -1192,23 +1780,23 @@ Partial Class Home
         Me.dgvClasses.BackgroundColor = System.Drawing.Color.MediumSeaGreen
         Me.dgvClasses.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dgvClasses.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.MediumSeaGreen
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvClasses.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.MediumSeaGreen
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvClasses.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
         Me.dgvClasses.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.ButtonHighlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvClasses.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.ButtonHighlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvClasses.DefaultCellStyle = DataGridViewCellStyle4
         Me.dgvClasses.GridColor = System.Drawing.Color.White
         Me.dgvClasses.Location = New System.Drawing.Point(16, 203)
         Me.dgvClasses.Margin = New System.Windows.Forms.Padding(4)
@@ -1338,7 +1926,7 @@ Partial Class Home
         Me.pnlAdminstrateUsers.Controls.Add(Me.btnDeleteUser)
         Me.pnlAdminstrateUsers.Controls.Add(Me.btnModifyUser)
         Me.pnlAdminstrateUsers.Controls.Add(Me.btnCreateUser)
-        Me.pnlAdminstrateUsers.Location = New System.Drawing.Point(577, 72)
+        Me.pnlAdminstrateUsers.Location = New System.Drawing.Point(213, 214)
         Me.pnlAdminstrateUsers.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlAdminstrateUsers.Name = "pnlAdminstrateUsers"
         Me.pnlAdminstrateUsers.Size = New System.Drawing.Size(357, 53)
@@ -1354,23 +1942,23 @@ Partial Class Home
         Me.dgvUserAdmin.BackgroundColor = System.Drawing.Color.MediumSeaGreen
         Me.dgvUserAdmin.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dgvUserAdmin.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.MediumSeaGreen
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvUserAdmin.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.MediumSeaGreen
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvUserAdmin.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
         Me.dgvUserAdmin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.ButtonHighlight
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvUserAdmin.DefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.ButtonHighlight
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvUserAdmin.DefaultCellStyle = DataGridViewCellStyle6
         Me.dgvUserAdmin.GridColor = System.Drawing.Color.White
         Me.dgvUserAdmin.Location = New System.Drawing.Point(13, 190)
         Me.dgvUserAdmin.Margin = New System.Windows.Forms.Padding(4)
@@ -2462,7 +3050,7 @@ Partial Class Home
         Me.pnlUser.Controls.Add(Me.tbxUserNickName)
         Me.pnlUser.Controls.Add(Me.tbxUserName)
         Me.pnlUser.Controls.Add(Me.lblPerfil)
-        Me.pnlUser.Location = New System.Drawing.Point(580, 17)
+        Me.pnlUser.Location = New System.Drawing.Point(213, 146)
         Me.pnlUser.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlUser.Name = "pnlUser"
         Me.pnlUser.Size = New System.Drawing.Size(372, 47)
@@ -2774,299 +3362,6 @@ Partial Class Home
         '
         Me.RolesTableAdapter.ClearBeforeFill = True
         '
-        'Panel2
-        '
-        Me.Panel2.Controls.Add(Me.Panel5)
-        Me.Panel2.Controls.Add(Me.Panel3)
-        Me.Panel2.Controls.Add(Me.Panel4)
-        Me.Panel2.Controls.Add(Me.Button4)
-        Me.Panel2.Controls.Add(Me.Button6)
-        Me.Panel2.Controls.Add(Me.Button7)
-        Me.Panel2.Controls.Add(Me.Label49)
-        Me.Panel2.Location = New System.Drawing.Point(581, 226)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(165, 66)
-        Me.Panel2.TabIndex = 38
-        Me.Panel2.Visible = False
-        '
-        'Panel3
-        '
-        Me.Panel3.Controls.Add(Me.Label43)
-        Me.Panel3.Location = New System.Drawing.Point(635, 188)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(141, 65)
-        Me.Panel3.TabIndex = 41
-        Me.Panel3.Visible = False
-        '
-        'Label43
-        '
-        Me.Label43.AutoSize = True
-        Me.Label43.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label43.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label43.Location = New System.Drawing.Point(15, 14)
-        Me.Label43.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label43.Name = "Label43"
-        Me.Label43.Size = New System.Drawing.Size(111, 31)
-        Me.Label43.TabIndex = 1
-        Me.Label43.Text = "Eliminar"
-        '
-        'Panel4
-        '
-        Me.Panel4.Controls.Add(Me.Label44)
-        Me.Panel4.Location = New System.Drawing.Point(624, 103)
-        Me.Panel4.Margin = New System.Windows.Forms.Padding(4)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(163, 65)
-        Me.Panel4.TabIndex = 40
-        Me.Panel4.Visible = False
-        '
-        'Label44
-        '
-        Me.Label44.AutoSize = True
-        Me.Label44.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label44.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label44.Location = New System.Drawing.Point(15, 14)
-        Me.Label44.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label44.Name = "Label44"
-        Me.Label44.Size = New System.Drawing.Size(124, 31)
-        Me.Label44.TabIndex = 1
-        Me.Label44.Text = "Modificar"
-        '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(333, 26)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(139, 38)
-        Me.Button4.TabIndex = 3
-        Me.Button4.Text = "Modificar Horario"
-        Me.Button4.UseVisualStyleBackColor = True
-        '
-        'Button6
-        '
-        Me.Button6.Location = New System.Drawing.Point(485, 26)
-        Me.Button6.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(139, 38)
-        Me.Button6.TabIndex = 2
-        Me.Button6.Text = "EliminarHorario"
-        Me.Button6.UseVisualStyleBackColor = True
-        '
-        'Button7
-        '
-        Me.Button7.Location = New System.Drawing.Point(181, 26)
-        Me.Button7.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(139, 38)
-        Me.Button7.TabIndex = 1
-        Me.Button7.Text = "Agregar Horario"
-        Me.Button7.UseVisualStyleBackColor = True
-        '
-        'Label49
-        '
-        Me.Label49.AutoSize = True
-        Me.Label49.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label49.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label49.Location = New System.Drawing.Point(20, 16)
-        Me.Label49.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label49.Name = "Label49"
-        Me.Label49.Size = New System.Drawing.Size(117, 31)
-        Me.Label49.TabIndex = 0
-        Me.Label49.Text = "Horarios"
-        '
-        'Panel5
-        '
-        Me.Panel5.Controls.Add(Me.Label50)
-        Me.Panel5.Controls.Add(Me.Label51)
-        Me.Panel5.Controls.Add(Me.Label52)
-        Me.Panel5.Controls.Add(Me.TextBox1)
-        Me.Panel5.Controls.Add(Me.Label53)
-        Me.Panel5.Controls.Add(Me.TextBox2)
-        Me.Panel5.Controls.Add(Me.Label54)
-        Me.Panel5.Controls.Add(Me.TextBox3)
-        Me.Panel5.Controls.Add(Me.Label55)
-        Me.Panel5.Controls.Add(Me.ComboBox1)
-        Me.Panel5.Controls.Add(Me.Label56)
-        Me.Panel5.Controls.Add(Me.Label57)
-        Me.Panel5.Controls.Add(Me.lblAddSchedule)
-        Me.Panel5.Location = New System.Drawing.Point(333, 102)
-        Me.Panel5.Margin = New System.Windows.Forms.Padding(4)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(233, 71)
-        Me.Panel5.TabIndex = 41
-        Me.Panel5.Visible = False
-        '
-        'lblAddSchedule
-        '
-        Me.lblAddSchedule.AutoSize = True
-        Me.lblAddSchedule.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAddSchedule.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.lblAddSchedule.Location = New System.Drawing.Point(15, 14)
-        Me.lblAddSchedule.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblAddSchedule.Name = "lblAddSchedule"
-        Me.lblAddSchedule.Size = New System.Drawing.Size(206, 31)
-        Me.lblAddSchedule.TabIndex = 1
-        Me.lblAddSchedule.Text = "Agregar Horario"
-        '
-        'Label50
-        '
-        Me.Label50.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label50.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label50.Location = New System.Drawing.Point(-49, 256)
-        Me.Label50.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label50.Name = "Label50"
-        Me.Label50.Size = New System.Drawing.Size(836, 41)
-        Me.Label50.TabIndex = 65
-        Me.Label50.Text = "Para la admisión de horas de inicio y hora final, Ingrese los datos de la siguien" &
-    "te manera: HH:MMam ó HH:MMpm."
-        '
-        'Label51
-        '
-        Me.Label51.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.Label51.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label51.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label51.Location = New System.Drawing.Point(612, 207)
-        Me.Label51.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label51.Name = "Label51"
-        Me.Label51.Size = New System.Drawing.Size(128, 30)
-        Me.Label51.TabIndex = 64
-        Me.Label51.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label52
-        '
-        Me.Label52.AutoSize = True
-        Me.Label52.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label52.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label52.Location = New System.Drawing.Point(584, 178)
-        Me.Label52.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label52.Name = "Label52"
-        Me.Label52.Size = New System.Drawing.Size(128, 25)
-        Me.Label52.TabIndex = 63
-        Me.Label52.Text = "Horas Libres:"
-        Me.Label52.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'TextBox1
-        '
-        Me.TextBox1.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.ForeColor = System.Drawing.Color.White
-        Me.TextBox1.Location = New System.Drawing.Point(496, 207)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(99, 30)
-        Me.TextBox1.TabIndex = 62
-        Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Label53
-        '
-        Me.Label53.AutoSize = True
-        Me.Label53.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label53.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label53.Location = New System.Drawing.Point(460, 180)
-        Me.Label53.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label53.Name = "Label53"
-        Me.Label53.Size = New System.Drawing.Size(107, 25)
-        Me.Label53.TabIndex = 61
-        Me.Label53.Text = "Hora Final:"
-        Me.Label53.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'TextBox2
-        '
-        Me.TextBox2.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.ForeColor = System.Drawing.Color.White
-        Me.TextBox2.Location = New System.Drawing.Point(380, 207)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4)
-        Me.TextBox2.Multiline = True
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(99, 30)
-        Me.TextBox2.TabIndex = 60
-        Me.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Label54
-        '
-        Me.Label54.AutoSize = True
-        Me.Label54.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label54.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label54.Location = New System.Drawing.Point(343, 178)
-        Me.Label54.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label54.Name = "Label54"
-        Me.Label54.Size = New System.Drawing.Size(114, 25)
-        Me.Label54.TabIndex = 59
-        Me.Label54.Text = "Hora Inicial:"
-        Me.Label54.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'TextBox3
-        '
-        Me.TextBox3.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.ForeColor = System.Drawing.Color.White
-        Me.TextBox3.Location = New System.Drawing.Point(158, 207)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(4)
-        Me.TextBox3.Multiline = True
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(209, 30)
-        Me.TextBox3.TabIndex = 58
-        Me.TextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Label55
-        '
-        Me.Label55.AutoSize = True
-        Me.Label55.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label55.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label55.Location = New System.Drawing.Point(127, 178)
-        Me.Label55.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label55.Name = "Label55"
-        Me.Label55.Size = New System.Drawing.Size(76, 25)
-        Me.Label55.TabIndex = 57
-        Me.Label55.Text = "Motivo:"
-        Me.Label55.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.ComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox1.ForeColor = System.Drawing.SystemColors.Menu
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(-34, 204)
-        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(179, 32)
-        Me.ComboBox1.TabIndex = 56
-        '
-        'Label56
-        '
-        Me.Label56.AutoSize = True
-        Me.Label56.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label56.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label56.Location = New System.Drawing.Point(-52, 178)
-        Me.Label56.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label56.Name = "Label56"
-        Me.Label56.Size = New System.Drawing.Size(47, 25)
-        Me.Label56.TabIndex = 55
-        Me.Label56.Text = "Dia:"
-        Me.Label56.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label57
-        '
-        Me.Label57.AutoSize = True
-        Me.Label57.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label57.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label57.Location = New System.Drawing.Point(-60, 144)
-        Me.Label57.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label57.Name = "Label57"
-        Me.Label57.Size = New System.Drawing.Size(126, 25)
-        Me.Label57.TabIndex = 54
-        Me.Label57.Text = "Aula Horario:"
-        Me.Label57.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
         'Home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -3080,8 +3375,25 @@ Partial Class Home
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Home"
         Me.Panel1.ResumeLayout(False)
+        Me.panelReservations.ResumeLayout(False)
+        Me.panelReservations.PerformLayout()
+        CType(Me.dgvClassReservations, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel7.ResumeLayout(False)
+        Me.Panel7.PerformLayout()
+        Me.Panel8.ResumeLayout(False)
+        Me.Panel8.PerformLayout()
+        Me.Panel9.ResumeLayout(False)
+        Me.Panel9.PerformLayout()
         Me.panelAdminClass.ResumeLayout(False)
         Me.panelAdminClass.PerformLayout()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
+        Me.Panel5.ResumeLayout(False)
+        Me.Panel5.PerformLayout()
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel3.PerformLayout()
+        Me.Panel4.ResumeLayout(False)
+        Me.Panel4.PerformLayout()
         Me.pnlHorarios.ResumeLayout(False)
         Me.pnlHorarios.PerformLayout()
         Me.pnlEliminarHorario.ResumeLayout(False)
@@ -3112,14 +3424,6 @@ Partial Class Home
         Me.pnlUser.PerformLayout()
         CType(Me.صورة_دائرة1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RolesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
-        Me.Panel3.ResumeLayout(False)
-        Me.Panel3.PerformLayout()
-        Me.Panel4.ResumeLayout(False)
-        Me.Panel4.PerformLayout()
-        Me.Panel5.ResumeLayout(False)
-        Me.Panel5.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -3290,7 +3594,6 @@ Partial Class Home
     Friend WithEvents Label39 As Label
     Friend WithEvents Label42 As Label
     Friend WithEvents lblEstandarizacion As Label
-    Friend WithEvents Label23 As Label
     Friend WithEvents pnlHorarios As Panel
     Friend WithEvents pnlEliminarHorario As Panel
     Friend WithEvents Label47 As Label
@@ -3301,7 +3604,6 @@ Partial Class Home
     Friend WithEvents btnAgregarHorario As Button
     Friend WithEvents lblHorariosTituloPanel As Label
     Friend WithEvents dgvUserAdmin As DataGridView
-    Friend WithEvents Button3 As Button
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Panel5 As Panel
     Friend WithEvents Label50 As Label
@@ -3325,4 +3627,25 @@ Partial Class Home
     Friend WithEvents Button6 As Button
     Friend WithEvents Button7 As Button
     Friend WithEvents Label49 As Label
+    Friend WithEvents panelReservations As Panel
+    Friend WithEvents Panel7 As Panel
+    Friend WithEvents Label23 As Label
+    Friend WithEvents Label58 As Label
+    Friend WithEvents Label59 As Label
+    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents Label60 As Label
+    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents Label61 As Label
+    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents Label62 As Label
+    Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents Label63 As Label
+    Friend WithEvents Label64 As Label
+    Friend WithEvents Label65 As Label
+    Friend WithEvents Panel8 As Panel
+    Friend WithEvents Label66 As Label
+    Friend WithEvents Panel9 As Panel
+    Friend WithEvents Label67 As Label
+    Friend WithEvents lblTitleReservations As Label
+    Friend WithEvents dgvClassReservations As DataGridView
 End Class
