@@ -184,7 +184,7 @@ Partial Class HomeRegularUser
         Me.pnlClassReservation.Location = New System.Drawing.Point(204, 194)
         Me.pnlClassReservation.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlClassReservation.Name = "pnlClassReservation"
-        Me.pnlClassReservation.Size = New System.Drawing.Size(280, 74)
+        Me.pnlClassReservation.Size = New System.Drawing.Size(863, 618)
         Me.pnlClassReservation.TabIndex = 33
         Me.pnlClassReservation.Visible = False
         '
