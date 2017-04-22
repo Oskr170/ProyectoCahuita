@@ -23,34 +23,42 @@ Partial Class HomeRegularUser
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(HomeRegularUser))
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.btnMinimize = New System.Windows.Forms.Button()
         Me.btnClose = New System.Windows.Forms.Button()
         Me.pnlPrincipal = New System.Windows.Forms.Panel()
-        Me.btnSearchReservations = New System.Windows.Forms.Button()
-        Me.btnCancelReservation = New System.Windows.Forms.Button()
         Me.pnlClassReservation = New System.Windows.Forms.Panel()
         Me.lblClassroom = New System.Windows.Forms.Label()
-        Me.txbClassroom = New System.Windows.Forms.TextBox()
+        Me.txbClassroomName = New System.Windows.Forms.TextBox()
         Me.dgvClasses = New System.Windows.Forms.DataGridView()
         Me.btnSaveReservation = New System.Windows.Forms.Button()
         Me.pnlHorarioReservacion = New System.Windows.Forms.Panel()
-        Me.Label49 = New System.Windows.Forms.Label()
-        Me.Label51 = New System.Windows.Forms.Label()
-        Me.Label52 = New System.Windows.Forms.Label()
+        Me.Label72 = New System.Windows.Forms.Label()
         Me.tbxHoraFinal = New System.Windows.Forms.TextBox()
-        Me.Label53 = New System.Windows.Forms.Label()
+        Me.Label75 = New System.Windows.Forms.Label()
         Me.tbxHoraInicial = New System.Windows.Forms.TextBox()
-        Me.Label54 = New System.Windows.Forms.Label()
+        Me.Label76 = New System.Windows.Forms.Label()
         Me.tbxMotivo = New System.Windows.Forms.TextBox()
-        Me.Label55 = New System.Windows.Forms.Label()
+        Me.Label77 = New System.Windows.Forms.Label()
         Me.cbxDia = New System.Windows.Forms.ComboBox()
-        Me.Label56 = New System.Windows.Forms.Label()
+        Me.Label78 = New System.Windows.Forms.Label()
         Me.lblHorario = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label79 = New System.Windows.Forms.Label()
+        Me.Label80 = New System.Windows.Forms.Label()
         Me.lblClassReservation = New System.Windows.Forms.Label()
+        Me.pnlDeleteReservation = New System.Windows.Forms.Panel()
+        Me.dgvClassReservations = New System.Windows.Forms.DataGridView()
+        Me.btnDelReservation = New System.Windows.Forms.Button()
+        Me.lblClassNameDelete = New System.Windows.Forms.Label()
+        Me.txbClassDelete = New System.Windows.Forms.TextBox()
+        Me.Label99 = New System.Windows.Forms.Label()
+        Me.Label100 = New System.Windows.Forms.Label()
+        Me.btnCancelReservation = New System.Windows.Forms.Button()
         Me.lblDescripcionBoton = New System.Windows.Forms.Label()
         Me.lblBienvenida = New System.Windows.Forms.Label()
         Me.pnlUser = New System.Windows.Forms.Panel()
@@ -68,12 +76,20 @@ Partial Class HomeRegularUser
         Me.btnAdministrateRequests = New System.Windows.Forms.Button()
         Me.btnUserLately = New System.Windows.Forms.Button()
         Me.lblColumn = New System.Windows.Forms.Label()
+        Me.pnlViewReservations = New System.Windows.Forms.Panel()
+        Me.dgvViewReservations = New System.Windows.Forms.DataGridView()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.btnViewReservations = New System.Windows.Forms.Button()
         Me.pnlPrincipal.SuspendLayout()
         Me.pnlClassReservation.SuspendLayout()
         CType(Me.dgvClasses, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlHorarioReservacion.SuspendLayout()
+        Me.pnlDeleteReservation.SuspendLayout()
+        CType(Me.dgvClassReservations, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlUser.SuspendLayout()
         CType(Me.صورة_دائرة1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnlViewReservations.SuspendLayout()
+        CType(Me.dgvViewReservations, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnMinimize
@@ -114,9 +130,11 @@ Partial Class HomeRegularUser
         '
         'pnlPrincipal
         '
-        Me.pnlPrincipal.Controls.Add(Me.btnSearchReservations)
-        Me.pnlPrincipal.Controls.Add(Me.btnCancelReservation)
+        Me.pnlPrincipal.Controls.Add(Me.btnViewReservations)
+        Me.pnlPrincipal.Controls.Add(Me.pnlViewReservations)
         Me.pnlPrincipal.Controls.Add(Me.pnlClassReservation)
+        Me.pnlPrincipal.Controls.Add(Me.pnlDeleteReservation)
+        Me.pnlPrincipal.Controls.Add(Me.btnCancelReservation)
         Me.pnlPrincipal.Controls.Add(Me.lblDescripcionBoton)
         Me.pnlPrincipal.Controls.Add(Me.lblBienvenida)
         Me.pnlPrincipal.Controls.Add(Me.pnlUser)
@@ -132,60 +150,22 @@ Partial Class HomeRegularUser
         Me.pnlPrincipal.Size = New System.Drawing.Size(1067, 825)
         Me.pnlPrincipal.TabIndex = 5
         '
-        'btnSearchReservations
-        '
-        Me.btnSearchReservations.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.btnSearchReservations.FlatAppearance.BorderSize = 0
-        Me.btnSearchReservations.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Thistle
-        Me.btnSearchReservations.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Thistle
-        Me.btnSearchReservations.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSearchReservations.Image = CType(resources.GetObject("btnSearchReservations.Image"), System.Drawing.Image)
-        Me.btnSearchReservations.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnSearchReservations.Location = New System.Drawing.Point(0, 358)
-        Me.btnSearchReservations.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnSearchReservations.Name = "btnSearchReservations"
-        Me.btnSearchReservations.Size = New System.Drawing.Size(180, 85)
-        Me.btnSearchReservations.TabIndex = 35
-        Me.btnSearchReservations.Text = "Buscar Reservación"
-        Me.btnSearchReservations.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btnSearchReservations.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.btnSearchReservations.UseVisualStyleBackColor = False
-        '
-        'btnCancelReservation
-        '
-        Me.btnCancelReservation.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.btnCancelReservation.FlatAppearance.BorderSize = 0
-        Me.btnCancelReservation.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Thistle
-        Me.btnCancelReservation.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Thistle
-        Me.btnCancelReservation.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCancelReservation.Image = CType(resources.GetObject("btnCancelReservation.Image"), System.Drawing.Image)
-        Me.btnCancelReservation.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnCancelReservation.Location = New System.Drawing.Point(-1, 265)
-        Me.btnCancelReservation.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnCancelReservation.Name = "btnCancelReservation"
-        Me.btnCancelReservation.Size = New System.Drawing.Size(180, 85)
-        Me.btnCancelReservation.TabIndex = 34
-        Me.btnCancelReservation.Text = "Cancelar Reservación"
-        Me.btnCancelReservation.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btnCancelReservation.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.btnCancelReservation.UseVisualStyleBackColor = False
-        '
         'pnlClassReservation
         '
         Me.pnlClassReservation.BackColor = System.Drawing.Color.Transparent
         Me.pnlClassReservation.Controls.Add(Me.lblClassroom)
-        Me.pnlClassReservation.Controls.Add(Me.txbClassroom)
+        Me.pnlClassReservation.Controls.Add(Me.txbClassroomName)
         Me.pnlClassReservation.Controls.Add(Me.dgvClasses)
         Me.pnlClassReservation.Controls.Add(Me.btnSaveReservation)
         Me.pnlClassReservation.Controls.Add(Me.pnlHorarioReservacion)
-        Me.pnlClassReservation.Controls.Add(Me.Label2)
-        Me.pnlClassReservation.Controls.Add(Me.Label1)
+        Me.pnlClassReservation.Controls.Add(Me.Label79)
+        Me.pnlClassReservation.Controls.Add(Me.Label80)
         Me.pnlClassReservation.Controls.Add(Me.lblClassReservation)
-        Me.pnlClassReservation.Location = New System.Drawing.Point(204, 194)
+        Me.pnlClassReservation.Location = New System.Drawing.Point(188, 105)
         Me.pnlClassReservation.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlClassReservation.Name = "pnlClassReservation"
-        Me.pnlClassReservation.Size = New System.Drawing.Size(863, 618)
-        Me.pnlClassReservation.TabIndex = 33
+        Me.pnlClassReservation.Size = New System.Drawing.Size(291, 73)
+        Me.pnlClassReservation.TabIndex = 40
         Me.pnlClassReservation.Visible = False
         '
         'lblClassroom
@@ -201,19 +181,19 @@ Partial Class HomeRegularUser
         Me.lblClassroom.Text = "Aula: "
         Me.lblClassroom.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'txbClassroom
+        'txbClassroomName
         '
-        Me.txbClassroom.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.txbClassroom.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txbClassroom.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbClassroom.ForeColor = System.Drawing.Color.White
-        Me.txbClassroom.Location = New System.Drawing.Point(91, 272)
-        Me.txbClassroom.Margin = New System.Windows.Forms.Padding(4)
-        Me.txbClassroom.Multiline = True
-        Me.txbClassroom.Name = "txbClassroom"
-        Me.txbClassroom.Size = New System.Drawing.Size(209, 30)
-        Me.txbClassroom.TabIndex = 50
-        Me.txbClassroom.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.txbClassroomName.BackColor = System.Drawing.Color.MediumSeaGreen
+        Me.txbClassroomName.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txbClassroomName.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbClassroomName.ForeColor = System.Drawing.Color.White
+        Me.txbClassroomName.Location = New System.Drawing.Point(91, 272)
+        Me.txbClassroomName.Margin = New System.Windows.Forms.Padding(4)
+        Me.txbClassroomName.Multiline = True
+        Me.txbClassroomName.Name = "txbClassroomName"
+        Me.txbClassroomName.Size = New System.Drawing.Size(209, 30)
+        Me.txbClassroomName.TabIndex = 50
+        Me.txbClassroomName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'dgvClasses
         '
@@ -224,23 +204,23 @@ Partial Class HomeRegularUser
         Me.dgvClasses.BackgroundColor = System.Drawing.Color.MediumSeaGreen
         Me.dgvClasses.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dgvClasses.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.MediumSeaGreen
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvClasses.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.MediumSeaGreen
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvClasses.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
         Me.dgvClasses.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.ButtonHighlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvClasses.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.ButtonHighlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvClasses.DefaultCellStyle = DataGridViewCellStyle4
         Me.dgvClasses.GridColor = System.Drawing.Color.White
         Me.dgvClasses.Location = New System.Drawing.Point(4, 111)
         Me.dgvClasses.Margin = New System.Windows.Forms.Padding(4)
@@ -261,7 +241,7 @@ Partial Class HomeRegularUser
         Me.btnSaveReservation.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Thistle
         Me.btnSaveReservation.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSaveReservation.Image = CType(resources.GetObject("btnSaveReservation.Image"), System.Drawing.Image)
-        Me.btnSaveReservation.Location = New System.Drawing.Point(370, 523)
+        Me.btnSaveReservation.Location = New System.Drawing.Point(372, 459)
         Me.btnSaveReservation.Margin = New System.Windows.Forms.Padding(4)
         Me.btnSaveReservation.Name = "btnSaveReservation"
         Me.btnSaveReservation.Size = New System.Drawing.Size(108, 95)
@@ -272,61 +252,34 @@ Partial Class HomeRegularUser
         '
         'pnlHorarioReservacion
         '
-        Me.pnlHorarioReservacion.Controls.Add(Me.Label49)
-        Me.pnlHorarioReservacion.Controls.Add(Me.Label51)
-        Me.pnlHorarioReservacion.Controls.Add(Me.Label52)
+        Me.pnlHorarioReservacion.Controls.Add(Me.Label72)
         Me.pnlHorarioReservacion.Controls.Add(Me.tbxHoraFinal)
-        Me.pnlHorarioReservacion.Controls.Add(Me.Label53)
+        Me.pnlHorarioReservacion.Controls.Add(Me.Label75)
         Me.pnlHorarioReservacion.Controls.Add(Me.tbxHoraInicial)
-        Me.pnlHorarioReservacion.Controls.Add(Me.Label54)
+        Me.pnlHorarioReservacion.Controls.Add(Me.Label76)
         Me.pnlHorarioReservacion.Controls.Add(Me.tbxMotivo)
-        Me.pnlHorarioReservacion.Controls.Add(Me.Label55)
+        Me.pnlHorarioReservacion.Controls.Add(Me.Label77)
         Me.pnlHorarioReservacion.Controls.Add(Me.cbxDia)
-        Me.pnlHorarioReservacion.Controls.Add(Me.Label56)
+        Me.pnlHorarioReservacion.Controls.Add(Me.Label78)
         Me.pnlHorarioReservacion.Controls.Add(Me.lblHorario)
-        Me.pnlHorarioReservacion.Location = New System.Drawing.Point(10, 314)
+        Me.pnlHorarioReservacion.Location = New System.Drawing.Point(4, 308)
         Me.pnlHorarioReservacion.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlHorarioReservacion.Name = "pnlHorarioReservacion"
-        Me.pnlHorarioReservacion.Size = New System.Drawing.Size(843, 201)
+        Me.pnlHorarioReservacion.Size = New System.Drawing.Size(843, 164)
         Me.pnlHorarioReservacion.TabIndex = 52
         Me.pnlHorarioReservacion.Visible = False
         '
-        'Label49
+        'Label72
         '
-        Me.Label49.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label49.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label49.Location = New System.Drawing.Point(10, 128)
-        Me.Label49.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label49.Name = "Label49"
-        Me.Label49.Size = New System.Drawing.Size(836, 57)
-        Me.Label49.TabIndex = 49
-        Me.Label49.Text = "Para la admision de horas de inicio y hora final: Ingrese los datos de la sieguie" &
+        Me.Label72.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label72.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label72.Location = New System.Drawing.Point(10, 115)
+        Me.Label72.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label72.Name = "Label72"
+        Me.Label72.Size = New System.Drawing.Size(836, 49)
+        Me.Label72.TabIndex = 49
+        Me.Label72.Text = "Para la admision de horas de inicio y hora final: Ingrese los datos de la sieguie" &
     "nte manera HH:MMam ó HH:MMpm."
-        '
-        'Label51
-        '
-        Me.Label51.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.Label51.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label51.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label51.Location = New System.Drawing.Point(706, 83)
-        Me.Label51.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label51.Name = "Label51"
-        Me.Label51.Size = New System.Drawing.Size(128, 30)
-        Me.Label51.TabIndex = 47
-        Me.Label51.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label52
-        '
-        Me.Label52.AutoSize = True
-        Me.Label52.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label52.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label52.Location = New System.Drawing.Point(691, 54)
-        Me.Label52.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label52.Name = "Label52"
-        Me.Label52.Size = New System.Drawing.Size(128, 25)
-        Me.Label52.TabIndex = 46
-        Me.Label52.Text = "Horas Libres:"
-        Me.Label52.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'tbxHoraFinal
         '
@@ -334,7 +287,7 @@ Partial Class HomeRegularUser
         Me.tbxHoraFinal.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.tbxHoraFinal.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbxHoraFinal.ForeColor = System.Drawing.Color.White
-        Me.tbxHoraFinal.Location = New System.Drawing.Point(586, 83)
+        Me.tbxHoraFinal.Location = New System.Drawing.Point(586, 70)
         Me.tbxHoraFinal.Margin = New System.Windows.Forms.Padding(4)
         Me.tbxHoraFinal.Multiline = True
         Me.tbxHoraFinal.Name = "tbxHoraFinal"
@@ -342,18 +295,18 @@ Partial Class HomeRegularUser
         Me.tbxHoraFinal.TabIndex = 45
         Me.tbxHoraFinal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'Label53
+        'Label75
         '
-        Me.Label53.AutoSize = True
-        Me.Label53.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label53.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label53.Location = New System.Drawing.Point(570, 53)
-        Me.Label53.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label53.Name = "Label53"
-        Me.Label53.Size = New System.Drawing.Size(107, 25)
-        Me.Label53.TabIndex = 44
-        Me.Label53.Text = "Hora Final:"
-        Me.Label53.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Label75.AutoSize = True
+        Me.Label75.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label75.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label75.Location = New System.Drawing.Point(570, 40)
+        Me.Label75.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label75.Name = "Label75"
+        Me.Label75.Size = New System.Drawing.Size(107, 25)
+        Me.Label75.TabIndex = 44
+        Me.Label75.Text = "Hora Final:"
+        Me.Label75.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'tbxHoraInicial
         '
@@ -361,7 +314,7 @@ Partial Class HomeRegularUser
         Me.tbxHoraInicial.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.tbxHoraInicial.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbxHoraInicial.ForeColor = System.Drawing.Color.White
-        Me.tbxHoraInicial.Location = New System.Drawing.Point(462, 83)
+        Me.tbxHoraInicial.Location = New System.Drawing.Point(462, 70)
         Me.tbxHoraInicial.Margin = New System.Windows.Forms.Padding(4)
         Me.tbxHoraInicial.Multiline = True
         Me.tbxHoraInicial.Name = "tbxHoraInicial"
@@ -369,18 +322,18 @@ Partial Class HomeRegularUser
         Me.tbxHoraInicial.TabIndex = 43
         Me.tbxHoraInicial.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'Label54
+        'Label76
         '
-        Me.Label54.AutoSize = True
-        Me.Label54.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label54.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label54.Location = New System.Drawing.Point(439, 53)
-        Me.Label54.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label54.Name = "Label54"
-        Me.Label54.Size = New System.Drawing.Size(114, 25)
-        Me.Label54.TabIndex = 42
-        Me.Label54.Text = "Hora Inicial:"
-        Me.Label54.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Label76.AutoSize = True
+        Me.Label76.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label76.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label76.Location = New System.Drawing.Point(439, 40)
+        Me.Label76.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label76.Name = "Label76"
+        Me.Label76.Size = New System.Drawing.Size(114, 25)
+        Me.Label76.TabIndex = 42
+        Me.Label76.Text = "Hora Inicial:"
+        Me.Label76.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'tbxMotivo
         '
@@ -388,7 +341,7 @@ Partial Class HomeRegularUser
         Me.tbxMotivo.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.tbxMotivo.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbxMotivo.ForeColor = System.Drawing.Color.White
-        Me.tbxMotivo.Location = New System.Drawing.Point(227, 83)
+        Me.tbxMotivo.Location = New System.Drawing.Point(227, 70)
         Me.tbxMotivo.Margin = New System.Windows.Forms.Padding(4)
         Me.tbxMotivo.Multiline = True
         Me.tbxMotivo.Name = "tbxMotivo"
@@ -396,18 +349,18 @@ Partial Class HomeRegularUser
         Me.tbxMotivo.TabIndex = 41
         Me.tbxMotivo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'Label55
+        'Label77
         '
-        Me.Label55.AutoSize = True
-        Me.Label55.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label55.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label55.Location = New System.Drawing.Point(214, 49)
-        Me.Label55.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label55.Name = "Label55"
-        Me.Label55.Size = New System.Drawing.Size(76, 25)
-        Me.Label55.TabIndex = 40
-        Me.Label55.Text = "Motivo:"
-        Me.Label55.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Label77.AutoSize = True
+        Me.Label77.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label77.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label77.Location = New System.Drawing.Point(214, 36)
+        Me.Label77.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label77.Name = "Label77"
+        Me.Label77.Size = New System.Drawing.Size(76, 25)
+        Me.Label77.TabIndex = 40
+        Me.Label77.Text = "Motivo:"
+        Me.Label77.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'cbxDia
         '
@@ -416,24 +369,24 @@ Partial Class HomeRegularUser
         Me.cbxDia.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbxDia.ForeColor = System.Drawing.SystemColors.Menu
         Me.cbxDia.FormattingEnabled = True
-        Me.cbxDia.Location = New System.Drawing.Point(28, 81)
+        Me.cbxDia.Location = New System.Drawing.Point(28, 68)
         Me.cbxDia.Margin = New System.Windows.Forms.Padding(4)
         Me.cbxDia.Name = "cbxDia"
         Me.cbxDia.Size = New System.Drawing.Size(179, 32)
         Me.cbxDia.TabIndex = 39
         '
-        'Label56
+        'Label78
         '
-        Me.Label56.AutoSize = True
-        Me.Label56.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label56.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label56.Location = New System.Drawing.Point(15, 53)
-        Me.Label56.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label56.Name = "Label56"
-        Me.Label56.Size = New System.Drawing.Size(47, 25)
-        Me.Label56.TabIndex = 38
-        Me.Label56.Text = "Dia:"
-        Me.Label56.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Label78.AutoSize = True
+        Me.Label78.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label78.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label78.Location = New System.Drawing.Point(15, 40)
+        Me.Label78.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label78.Name = "Label78"
+        Me.Label78.Size = New System.Drawing.Size(47, 25)
+        Me.Label78.TabIndex = 38
+        Me.Label78.Text = "Dia:"
+        Me.Label78.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'lblHorario
         '
@@ -447,29 +400,29 @@ Partial Class HomeRegularUser
         Me.lblHorario.TabIndex = 1
         Me.lblHorario.Text = "Horario"
         '
-        'Label2
+        'Label79
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label2.Location = New System.Drawing.Point(26, 78)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(229, 29)
-        Me.Label2.TabIndex = 34
-        Me.Label2.Text = "Seleccione un aula: "
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Label79.AutoSize = True
+        Me.Label79.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.Label79.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label79.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label79.Location = New System.Drawing.Point(26, 78)
+        Me.Label79.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label79.Name = "Label79"
+        Me.Label79.Size = New System.Drawing.Size(229, 29)
+        Me.Label79.TabIndex = 34
+        Me.Label79.Text = "Seleccione un aula: "
+        Me.Label79.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'Label1
+        'Label80
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!)
-        Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label1.Location = New System.Drawing.Point(69, 125)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(0, 29)
-        Me.Label1.TabIndex = 8
+        Me.Label80.AutoSize = True
+        Me.Label80.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!)
+        Me.Label80.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label80.Location = New System.Drawing.Point(69, 125)
+        Me.Label80.Name = "Label80"
+        Me.Label80.Size = New System.Drawing.Size(0, 29)
+        Me.Label80.TabIndex = 8
         '
         'lblClassReservation
         '
@@ -483,6 +436,146 @@ Partial Class HomeRegularUser
         Me.lblClassReservation.TabIndex = 7
         Me.lblClassReservation.Text = "Reservar Aula"
         Me.lblClassReservation.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'pnlDeleteReservation
+        '
+        Me.pnlDeleteReservation.Controls.Add(Me.dgvClassReservations)
+        Me.pnlDeleteReservation.Controls.Add(Me.btnDelReservation)
+        Me.pnlDeleteReservation.Controls.Add(Me.lblClassNameDelete)
+        Me.pnlDeleteReservation.Controls.Add(Me.txbClassDelete)
+        Me.pnlDeleteReservation.Controls.Add(Me.Label99)
+        Me.pnlDeleteReservation.Controls.Add(Me.Label100)
+        Me.pnlDeleteReservation.Location = New System.Drawing.Point(206, 203)
+        Me.pnlDeleteReservation.Margin = New System.Windows.Forms.Padding(4)
+        Me.pnlDeleteReservation.Name = "pnlDeleteReservation"
+        Me.pnlDeleteReservation.Size = New System.Drawing.Size(422, 62)
+        Me.pnlDeleteReservation.TabIndex = 41
+        Me.pnlDeleteReservation.Visible = False
+        '
+        'dgvClassReservations
+        '
+        Me.dgvClassReservations.AllowUserToAddRows = False
+        Me.dgvClassReservations.AllowUserToDeleteRows = False
+        Me.dgvClassReservations.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgvClassReservations.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        Me.dgvClassReservations.BackgroundColor = System.Drawing.Color.MediumSeaGreen
+        Me.dgvClassReservations.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dgvClassReservations.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.MediumSeaGreen
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvClassReservations.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        Me.dgvClassReservations.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.ButtonHighlight
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvClassReservations.DefaultCellStyle = DataGridViewCellStyle6
+        Me.dgvClassReservations.GridColor = System.Drawing.Color.White
+        Me.dgvClassReservations.Location = New System.Drawing.Point(4, 83)
+        Me.dgvClassReservations.Margin = New System.Windows.Forms.Padding(4)
+        Me.dgvClassReservations.Name = "dgvClassReservations"
+        Me.dgvClassReservations.ReadOnly = True
+        Me.dgvClassReservations.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.dgvClassReservations.RowHeadersVisible = False
+        Me.dgvClassReservations.RowTemplate.ReadOnly = True
+        Me.dgvClassReservations.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvClassReservations.Size = New System.Drawing.Size(849, 151)
+        Me.dgvClassReservations.TabIndex = 57
+        '
+        'btnDelReservation
+        '
+        Me.btnDelReservation.BackColor = System.Drawing.Color.Transparent
+        Me.btnDelReservation.FlatAppearance.BorderSize = 0
+        Me.btnDelReservation.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Thistle
+        Me.btnDelReservation.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Thistle
+        Me.btnDelReservation.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDelReservation.Image = CType(resources.GetObject("btnDelReservation.Image"), System.Drawing.Image)
+        Me.btnDelReservation.Location = New System.Drawing.Point(383, 399)
+        Me.btnDelReservation.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnDelReservation.Name = "btnDelReservation"
+        Me.btnDelReservation.Size = New System.Drawing.Size(93, 68)
+        Me.btnDelReservation.TabIndex = 56
+        Me.btnDelReservation.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnDelReservation.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btnDelReservation.UseVisualStyleBackColor = False
+        '
+        'lblClassNameDelete
+        '
+        Me.lblClassNameDelete.AutoSize = True
+        Me.lblClassNameDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblClassNameDelete.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblClassNameDelete.Location = New System.Drawing.Point(34, 258)
+        Me.lblClassNameDelete.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblClassNameDelete.Name = "lblClassNameDelete"
+        Me.lblClassNameDelete.Size = New System.Drawing.Size(132, 25)
+        Me.lblClassNameDelete.TabIndex = 26
+        Me.lblClassNameDelete.Text = "Aula Nombre:"
+        Me.lblClassNameDelete.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'txbClassDelete
+        '
+        Me.txbClassDelete.BackColor = System.Drawing.Color.MediumSeaGreen
+        Me.txbClassDelete.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txbClassDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbClassDelete.ForeColor = System.Drawing.Color.White
+        Me.txbClassDelete.Location = New System.Drawing.Point(39, 303)
+        Me.txbClassDelete.Margin = New System.Windows.Forms.Padding(4)
+        Me.txbClassDelete.Name = "txbClassDelete"
+        Me.txbClassDelete.Size = New System.Drawing.Size(212, 30)
+        Me.txbClassDelete.TabIndex = 23
+        Me.txbClassDelete.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label99
+        '
+        Me.Label99.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label99.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label99.Image = CType(resources.GetObject("Label99.Image"), System.Drawing.Image)
+        Me.Label99.Location = New System.Drawing.Point(8, 7)
+        Me.Label99.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label99.Name = "Label99"
+        Me.Label99.Size = New System.Drawing.Size(53, 50)
+        Me.Label99.TabIndex = 10
+        Me.Label99.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label100
+        '
+        Me.Label100.AutoSize = True
+        Me.Label100.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label100.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label100.Location = New System.Drawing.Point(64, 20)
+        Me.Label100.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label100.Name = "Label100"
+        Me.Label100.Size = New System.Drawing.Size(340, 39)
+        Me.Label100.TabIndex = 9
+        Me.Label100.Text = "Eliminar Reservacion"
+        Me.Label100.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'btnCancelReservation
+        '
+        Me.btnCancelReservation.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.btnCancelReservation.FlatAppearance.BorderSize = 0
+        Me.btnCancelReservation.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Thistle
+        Me.btnCancelReservation.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Thistle
+        Me.btnCancelReservation.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCancelReservation.Image = CType(resources.GetObject("btnCancelReservation.Image"), System.Drawing.Image)
+        Me.btnCancelReservation.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnCancelReservation.Location = New System.Drawing.Point(-1, 265)
+        Me.btnCancelReservation.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnCancelReservation.Name = "btnCancelReservation"
+        Me.btnCancelReservation.Size = New System.Drawing.Size(180, 85)
+        Me.btnCancelReservation.TabIndex = 34
+        Me.btnCancelReservation.Text = "Eliminar Reservación"
+        Me.btnCancelReservation.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnCancelReservation.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btnCancelReservation.UseVisualStyleBackColor = False
         '
         'lblDescripcionBoton
         '
@@ -522,7 +615,7 @@ Partial Class HomeRegularUser
         Me.pnlUser.Controls.Add(Me.tbxUserNickName)
         Me.pnlUser.Controls.Add(Me.tbxUserName)
         Me.pnlUser.Controls.Add(Me.lblPerfil)
-        Me.pnlUser.Location = New System.Drawing.Point(188, 119)
+        Me.pnlUser.Location = New System.Drawing.Point(208, 130)
         Me.pnlUser.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlUser.Name = "pnlUser"
         Me.pnlUser.Size = New System.Drawing.Size(241, 48)
@@ -727,6 +820,87 @@ Partial Class HomeRegularUser
         Me.lblColumn.Size = New System.Drawing.Size(184, 825)
         Me.lblColumn.TabIndex = 8
         '
+        'pnlViewReservations
+        '
+        Me.pnlViewReservations.Controls.Add(Me.dgvViewReservations)
+        Me.pnlViewReservations.Controls.Add(Me.Label3)
+        Me.pnlViewReservations.Location = New System.Drawing.Point(206, 286)
+        Me.pnlViewReservations.Margin = New System.Windows.Forms.Padding(4)
+        Me.pnlViewReservations.Name = "pnlViewReservations"
+        Me.pnlViewReservations.Size = New System.Drawing.Size(404, 76)
+        Me.pnlViewReservations.TabIndex = 58
+        Me.pnlViewReservations.Visible = False
+        '
+        'dgvViewReservations
+        '
+        Me.dgvViewReservations.AllowUserToAddRows = False
+        Me.dgvViewReservations.AllowUserToDeleteRows = False
+        Me.dgvViewReservations.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgvViewReservations.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        Me.dgvViewReservations.BackgroundColor = System.Drawing.Color.MediumSeaGreen
+        Me.dgvViewReservations.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dgvViewReservations.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.MediumSeaGreen
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvViewReservations.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.dgvViewReservations.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.ButtonHighlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvViewReservations.DefaultCellStyle = DataGridViewCellStyle2
+        Me.dgvViewReservations.GridColor = System.Drawing.Color.White
+        Me.dgvViewReservations.Location = New System.Drawing.Point(4, 83)
+        Me.dgvViewReservations.Margin = New System.Windows.Forms.Padding(4)
+        Me.dgvViewReservations.Name = "dgvViewReservations"
+        Me.dgvViewReservations.ReadOnly = True
+        Me.dgvViewReservations.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.dgvViewReservations.RowHeadersVisible = False
+        Me.dgvViewReservations.RowTemplate.ReadOnly = True
+        Me.dgvViewReservations.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvViewReservations.Size = New System.Drawing.Size(849, 410)
+        Me.dgvViewReservations.TabIndex = 57
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label3.Location = New System.Drawing.Point(64, 20)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(305, 39)
+        Me.Label3.TabIndex = 9
+        Me.Label3.Text = "Ver Reservaciones"
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'btnViewReservations
+        '
+        Me.btnViewReservations.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.btnViewReservations.FlatAppearance.BorderSize = 0
+        Me.btnViewReservations.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Thistle
+        Me.btnViewReservations.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Thistle
+        Me.btnViewReservations.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnViewReservations.Image = CType(resources.GetObject("btnViewReservations.Image"), System.Drawing.Image)
+        Me.btnViewReservations.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnViewReservations.Location = New System.Drawing.Point(-1, 358)
+        Me.btnViewReservations.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnViewReservations.Name = "btnViewReservations"
+        Me.btnViewReservations.Size = New System.Drawing.Size(180, 85)
+        Me.btnViewReservations.TabIndex = 59
+        Me.btnViewReservations.Text = "Ver Reservaciones"
+        Me.btnViewReservations.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnViewReservations.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btnViewReservations.UseVisualStyleBackColor = False
+        '
         'HomeRegularUser
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -745,9 +919,15 @@ Partial Class HomeRegularUser
         CType(Me.dgvClasses, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlHorarioReservacion.ResumeLayout(False)
         Me.pnlHorarioReservacion.PerformLayout()
+        Me.pnlDeleteReservation.ResumeLayout(False)
+        Me.pnlDeleteReservation.PerformLayout()
+        CType(Me.dgvClassReservations, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlUser.ResumeLayout(False)
         Me.pnlUser.PerformLayout()
         CType(Me.صورة_دائرة1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnlViewReservations.ResumeLayout(False)
+        Me.pnlViewReservations.PerformLayout()
+        CType(Me.dgvViewReservations, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -772,27 +952,35 @@ Partial Class HomeRegularUser
     Friend WithEvents lblPerfil As Label
     Friend WithEvents lblDescripcionBoton As Label
     Friend WithEvents lblBienvenida As Label
-    Friend WithEvents pnlClassReservation As Panel
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label1 As Label
-    Friend WithEvents lblClassReservation As Label
-    Friend WithEvents pnlHorarioReservacion As Panel
-    Friend WithEvents Label49 As Label
-    Friend WithEvents Label51 As Label
-    Friend WithEvents Label52 As Label
-    Friend WithEvents tbxHoraFinal As TextBox
-    Friend WithEvents Label53 As Label
-    Friend WithEvents tbxHoraInicial As TextBox
-    Friend WithEvents Label54 As Label
-    Friend WithEvents tbxMotivo As TextBox
-    Friend WithEvents Label55 As Label
-    Friend WithEvents cbxDia As ComboBox
-    Friend WithEvents Label56 As Label
-    Friend WithEvents lblHorario As Label
-    Friend WithEvents btnSaveReservation As Button
-    Friend WithEvents dgvClasses As DataGridView
-    Friend WithEvents btnSearchReservations As Button
     Friend WithEvents btnCancelReservation As Button
+    Friend WithEvents pnlClassReservation As Panel
     Friend WithEvents lblClassroom As Label
-    Friend WithEvents txbClassroom As TextBox
+    Friend WithEvents txbClassroomName As TextBox
+    Friend WithEvents dgvClasses As DataGridView
+    Friend WithEvents btnSaveReservation As Button
+    Friend WithEvents pnlHorarioReservacion As Panel
+    Friend WithEvents Label72 As Label
+    Friend WithEvents tbxHoraFinal As TextBox
+    Friend WithEvents Label75 As Label
+    Friend WithEvents tbxHoraInicial As TextBox
+    Friend WithEvents Label76 As Label
+    Friend WithEvents tbxMotivo As TextBox
+    Friend WithEvents Label77 As Label
+    Friend WithEvents cbxDia As ComboBox
+    Friend WithEvents Label78 As Label
+    Friend WithEvents lblHorario As Label
+    Friend WithEvents Label79 As Label
+    Friend WithEvents Label80 As Label
+    Friend WithEvents lblClassReservation As Label
+    Friend WithEvents pnlDeleteReservation As Panel
+    Friend WithEvents btnDelReservation As Button
+    Friend WithEvents lblClassNameDelete As Label
+    Friend WithEvents txbClassDelete As TextBox
+    Friend WithEvents Label99 As Label
+    Friend WithEvents Label100 As Label
+    Friend WithEvents dgvClassReservations As DataGridView
+    Friend WithEvents btnViewReservations As Button
+    Friend WithEvents pnlViewReservations As Panel
+    Friend WithEvents dgvViewReservations As DataGridView
+    Friend WithEvents Label3 As Label
 End Class

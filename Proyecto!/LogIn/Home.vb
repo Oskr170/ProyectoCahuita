@@ -45,10 +45,12 @@ Public Class Home
             pnlModifyUser.Visible = False
             pnlSearchUser.Visible = False
             pnlDeleteUser.Visible = False
+            pnlClassReservation.Visible = False
         End If
         If panelAdminClass.Visible = True Then
             panelAdminClass.Visible = False
             pnlCreateClass.Visible = False
+            pnlClassReservation.Visible = False
         End If
         pnlUser.Size = New Size(1500, 1000)
         pnlUser.Location = New Point(135, 102)
@@ -527,7 +529,7 @@ Public Class Home
                 tbxUserIDDeleteUser.Clear()
                 tbxUserNickNameDeleteUser.Clear()
                 tbxUserNameDeleteUser.Clear()
-                tbxUserRoleDeleteUser.Clear()
+
             End Try
 
         End If
@@ -538,7 +540,7 @@ Public Class Home
         tbxUserIDDeleteUser.Clear()
         tbxUserNickNameDeleteUser.Clear()
         tbxUserNameDeleteUser.Clear()
-        tbxUserRoleDeleteUser.Clear()
+
     End Sub
 
     Private Sub btnCancelUserSearchUser_Click(sender As Object, e As EventArgs) Handles btnCancelUserSearchUser.Click
@@ -604,7 +606,6 @@ Public Class Home
             name = reader.GetString(0)
             roleName = reader.GetString(3)
             tbxUserNameDeleteUser.Text = name
-            tbxUserRoleDeleteUser.Text = roleName
             tbxUserNickNameDeleteUser.Text = reader.GetString(1)
             tbxUserEmailDeleteUser.Text = reader.GetString(2)
             lblDeleteDeleteUser.Enabled = True
@@ -725,7 +726,6 @@ Public Class Home
         user.NameUser = dgvUserAdmin.Item(1, rowOfGridview).Value.ToString
         user.UsernameUser = dgvUserAdmin.Item(2, rowOfGridview).Value.ToString
         user.EmailUser = dgvUserAdmin.Item(3, rowOfGridview).Value.ToString
-        'user.PasswordUser = dgvUserAdmin.Item(4, rowOfGridview).Value.ToString
 
         Return user
 
@@ -736,7 +736,6 @@ Public Class Home
         tbxUserNameModifyUser.Text = user.NameUser
         tbxUserNickNameModifyUser.Text = user.UsernameUser
         tbxUserEmailModifyUser.Text = user.EmailUser
-        tbxUserPasswordModifyUser.Text = user.PasswordUser
     End Sub
 
     Public Sub FillTextsComponentsOfDeleteUserPanel(user As User)
@@ -744,7 +743,6 @@ Public Class Home
         tbxUserNameDeleteUser.Text = user.NameUser
         tbxUserNickNameDeleteUser.Text = user.UsernameUser
         tbxUserEmailDeleteUser.Text = user.EmailUser
-        tbxUserNickNameDeleteUser.Text = user.PasswordUser
     End Sub
     Private Sub btnAdministrateObjects_Click(sender As Object, e As EventArgs) Handles btnAdministrateObjects.Click
         lblBienvenida.Visible = False
@@ -1115,7 +1113,6 @@ Public Class Home
         classroom.IdClassroom = dgvClasses.Item(0, rowOfGridview).Value
         classroom.NameClassroom = dgvClasses.Item(1, rowOfGridview).Value.ToString
         classroom.DescriptionClassroom = dgvClasses.Item(4, rowOfGridview).Value.ToString
-
         classroom.TypeClassroom = dgvClasses.Item(2, rowOfGridview).Value.ToString
         classroom.BuildingClassroom = dgvClasses.Item(3, rowOfGridview).Value.ToString
 
@@ -1260,13 +1257,7 @@ Public Class Home
         End If
 
     End Sub
-    Public Sub FillTextsComponentsOfDeletePanel(classroom As Classroom)
-        tbxAulaNombreDelete.Text = classroom.NameClassroom
-        tbxCaracteristicasDelete.Text = classroom.DescriptionClassroom
-        cbxTypeDelete.Text = classroom.TypeClassroom
-        cbxEdificioDelete.Text = classroom.BuildingClassroom
 
-    End Sub
 
     Private Sub btnDeletePanelClass_Click(sender As Object, e As EventArgs) Handles btnDeletePanelClass.Click
         If pnlHorarios.Visible = True Then
@@ -1286,8 +1277,6 @@ Public Class Home
 
 
         End If
-
-        FillTextsComponentsOfDeletePanel(GetClassroomDataFromGridView)
     End Sub
 
     Private Sub btnDeleteClass_Click(sender As Object, e As EventArgs) Handles btnDeleteClass.Click
@@ -1300,38 +1289,9 @@ Public Class Home
         dgvClasses.DataSource = tab
     End Sub
 
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        If tbxAdminAulasBuscarAula.Text <> "" Then
-            Dim caracteristica As String = tbxAdminAulasBuscarAula.Text
 
-        End If
 
-    End Sub
 
-    Private Sub tbxAdminAulasBuscarAula_TextChanged(sender As Object, e As EventArgs) Handles tbxAdminAulasBuscarAula.TextChanged
-
-        If tbxAdminAulasBuscarAula.Text.Equals("") Then
-
-            Dim caracteristica As String = tbxAdminAulasBuscarAula.Text
-            Dim connection As New SqlConnection(connectionString)
-            Dim classTable As New DataTable
-
-            Dim commandSelect As New SqlCommand("SELECT * FROM Classroom", connection)
-            Dim dataAdapter As New SqlDataAdapter(commandSelect)
-            dataAdapter.Fill(classTable)
-            dgvClasses.DataSource = classTable
-        Else
-            Dim caracteristica As String = tbxAdminAulasBuscarAula.Text
-            Dim connection As New SqlConnection(connectionString)
-            Dim classTable As New DataTable
-
-            Dim commandSelect As New SqlCommand("SELECT * FROM Classroom WHERE Name='" & caracteristica & "' OR Building='" & caracteristica & "' OR Type='" & caracteristica & "' OR Description='" & caracteristica & "'", connection)
-            Dim dataAdapter As New SqlDataAdapter(commandSelect)
-            dataAdapter.Fill(classTable)
-            dgvClasses.DataSource = classTable
-        End If
-
-    End Sub
 
     Private Sub tbxHoraInicial_Enter(sender As Object, e As EventArgs) Handles tbxHoraInicial.Enter
         'Horas.Show()
@@ -1638,7 +1598,7 @@ Public Class Home
         Return bool
     End Function
 
-    Private Sub btnModifyReservation_Click(sender As Object, e As EventArgs) Handles btnModifyReservation.Click
+    Private Sub btnModifyReservation_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -1691,7 +1651,7 @@ Public Class Home
 
     Public Function GetClassReservationDataReservationsFromGridView()
 
-        'creamos la instancia de la clase Classroom
+        'creamos la instancia de la clase Horarios
 
         Dim horarios As New Horarios
         horarios.Id1 = dgvClassReservations.Item(0, rowOfGridview).Value
@@ -1706,20 +1666,9 @@ Public Class Home
     End Function
 
     Public Sub getClassReservation(horarios As Horarios)
-        txbClassDelete.Text = horarios.Clase1
+        txbClassDelete.Text = horarios.Id1
     End Sub
 
-    Private Sub btnDelReservation_Click(sender As Object, e As EventArgs)
-        Dim className As String
-        className = txbClassroom.Text
-        Dim connection As New SqlConnection(connectionString)
-        Dim commandDelete As New SqlCommand("DELETE FROM Horarios WHERE Clase = '" & className & "'", connection)
-
-        connection.Open()
-        commandDelete.ExecuteNonQuery()
-        connection.Close()
-        MsgBox("La reservacion ha sido eliminada")
-    End Sub
 
     Public Sub DeleteQuery(id As Integer)
         Dim connection As New SqlConnection(connectionString)
@@ -1730,29 +1679,30 @@ Public Class Home
         connection.Close()
         MsgBox("El aula ha sido eliminada")
 
-        tbxAulaNombreDelete.Text = ""
-        tbxCaracteristicasDelete.Text = ""
-        cbxTypeDelete.Text = ""
-        cbxEdificioDelete.Text = ""
+    End Sub
+
+    Private Sub Label10_Click(sender As Object, e As EventArgs) Handles Label10.Click
+
     End Sub
 
     Private Sub btnDelReservation_Click_1(sender As Object, e As EventArgs) Handles btnDelReservation.Click
-        Dim className As String
-        className = txbClassDelete.Text
+        Dim id As Integer
+        id = txbClassDelete.Text
         Dim connection As New SqlConnection(connectionString)
-        Dim commandDelete As New SqlCommand("DELETE FROM Horarios WHERE Clase = '" & className & "'", connection)
+        Dim commandDelete As New SqlCommand("DELETE FROM Horarios WHERE Id = '" & id & "'", connection)
 
         connection.Open()
         commandDelete.ExecuteNonQuery()
         connection.Close()
         MsgBox("La reservacion ha sido eliminada")
+        txbClassDelete.Text = ""
 
         Dim classTable As New DataTable
 
-        Dim commandSelect As New SqlCommand("SELECT * FROM Classroom", connection)
+        Dim commandSelect As New SqlCommand("SELECT * FROM Horarios", connection)
         Dim dataAdapter As New SqlDataAdapter(commandSelect)
         dataAdapter.Fill(classTable)
-        dgvClassroomReservation.DataSource = classTable
+        dgvClassReservations.DataSource = classTable
     End Sub
 
 

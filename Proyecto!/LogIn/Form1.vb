@@ -119,6 +119,10 @@ Public Class Form1
         Login()
     End Sub
 
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+
+    End Sub
+
     Private Sub Panel1_MouseDown(sender As Object, e As MouseEventArgs) Handles Panel1.MouseDown
         X = Control.MousePosition.X - Me.Location.X
         Y = Control.MousePosition.Y - Me.Location.Y

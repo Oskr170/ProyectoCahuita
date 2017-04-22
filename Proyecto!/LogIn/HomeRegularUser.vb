@@ -45,6 +45,12 @@ Public Class HomeRegularUser
         If pnlUser.Visible = True Then
             pnlUser.Visible = False
         End If
+        If pnlDeleteReservation.Visible = True Then
+            pnlDeleteReservation.Visible = False
+        End If
+        If pnlViewReservations.Visible = True Then
+            pnlViewReservations.Visible = False
+        End If
 
         pnlClassReservation.Size = New Size(665, 592)
         pnlClassReservation.Location = New Point(135, 102)
@@ -91,37 +97,10 @@ Public Class HomeRegularUser
     End Function
 
     Public Sub getClassroomName(classroom As Classroom)
-        txbClassroom.Text = classroom.NameClassroom
+        txbClassroomName.Text = classroom.NameClassroom
     End Sub
 
-    Private Sub btnSaveReservation_Click(sender As Object, e As EventArgs) Handles btnSaveReservation.Click
-        ' insertar la reservacion
-        Dim nombreClase As String = ""
-        Dim horaInicio As String = ""
-        Dim horaFinal As String = ""
-        Dim dia As String = ""
-
-        If (txbClassroom.Text <> "") Then
-            nombreClase = txbClassroom.Text
-
-            If (cbxDia.SelectedIndex <> -1 And tbxMotivo.Text <> "" And tbxHoraInicial.Text <> "" And tbxHoraFinal.Text <> "") Then
-                horaInicio = tbxHoraInicial.Text
-                horaFinal = tbxHoraFinal.Text
-                dia = cbxDia.Text
-                mensaje = agregarHorario(clase, horaInicio, horaFinal, dia)
-                MsgBox("El aula fue agregada; " & mensaje)
-            Else
-                MsgBox("El aula fue agregada, sin embargo no se adjuntaron horarios para el aula.")
-            End If
-            auxiliar = False
-        ElseIf auxiliar = False And (cbxDia.SelectedIndex <> -1 And tbxMotivo.Text <> "" And tbxHoraInicial.Text <> "" And tbxHoraFinal.Text <> "") Then
-            mensaje = agregarHorario(clase, tbxHoraInicial.Text, tbxHoraFinal.Text, cbxDia.Text)
-            If mensaje <> "" Then
-                MsgBox(mensaje)
-            End If
-        End If
-
-
+    Private Sub btnSaveReservation_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -170,7 +149,7 @@ Public Class HomeRegularUser
                             'esto es una instancia de la clase User
                             'convierte la clase en un objeto
                             Dim horario = New Horarios
-                            horario.Clase1 = txbClassroom.Text
+                            horario.Clase1 = txbClassroomName.Text
                             horario.Dia1 = cbxDia.Text
                             horario.Motivo1 = tbxMotivo.Text
                             horario.HoraInicio1 = tbxHoraInicial.Text
@@ -187,7 +166,7 @@ Public Class HomeRegularUser
                             connection.Open()
                             'ejecutamos consulta
                             If auxiliar = False Then
-                                If horarioOcupado(txbClassroom.Text, tbxHoraInicial.Text, tbxHoraFinal.Text, cbxDia.Text) = True Then
+                                If horarioOcupado(txbClassroomName.Text, tbxHoraInicial.Text, tbxHoraFinal.Text, cbxDia.Text) = True Then
                                     mensaje = "El aula ya cuenta con una reservación en el periodo de " & horaI & " a " & horaF & " el día " & dia
 
                                 Else
@@ -251,7 +230,140 @@ Public Class HomeRegularUser
         Return bool
     End Function
 
+    Private Sub dgvClassReservations_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvClassReservations.CellClick
+        rowOfGridview = dgvClassReservations.CurrentRow.Index
+        getClassReservation(GetClassReservationDataReservationsFromGridView)
+    End Sub
 
+    Public Function GetClassReservationDataReservationsFromGridView()
+
+        'creamos la instancia de la clase Horarios
+
+        Dim horarios As New Horarios
+        horarios.Id1 = dgvClassReservations.Item(0, rowOfGridview).Value
+        horarios.Clase1 = dgvClassReservations.Item(1, rowOfGridview).Value
+        horarios.Motivo1 = dgvClassReservations.Item(2, rowOfGridview).Value
+        horarios.HoraInicio1 = dgvClassReservations.Item(3, rowOfGridview).Value
+        horarios.HoraFinal1 = dgvClassReservations.Item(4, rowOfGridview).Value
+        horarios.Dia1 = dgvClassReservations.Item(5, rowOfGridview).Value
+
+        Return horarios
+
+    End Function
+
+    Public Sub getClassReservation(horarios As Horarios)
+        txbClassDelete.Text = horarios.Id1
+    End Sub
+
+    Private Sub btnCancelReservation_Click(sender As Object, e As EventArgs) Handles btnCancelReservation.Click
+        If pnlUser.Visible = True Then
+            pnlUser.Visible = False
+        End If
+        If pnlClassReservation.Visible = True Then
+            pnlClassReservation.Visible = False
+        End If
+        If pnlViewReservations.Visible = True Then
+            pnlViewReservations.Visible = False
+        End If
+
+
+        pnlDeleteReservation.Size = New Size(665, 592)
+        pnlDeleteReservation.Location = New Point(135, 102)
+        pnlDeleteReservation.Visible = True
+
+
+        'aquí conectamos con la base de datos para llenar el DGV de clases
+        Dim connection As SqlConnection
+        connection = New SqlConnection(connectionString)
+
+        Dim classTable As New DataTable
+
+        Dim commandSelect As New SqlCommand("SELECT * FROM Horarios", connection)
+        Dim dataAdapter As New SqlDataAdapter(commandSelect)
+        dataAdapter.Fill(classTable)
+        dgvClassReservations.DataSource = classTable
+
+
+    End Sub
+
+    Private Sub btnSaveReservation_Click_1(sender As Object, e As EventArgs) Handles btnSaveReservation.Click
+        ' insertar la reservacion
+        Dim nombreClase As String = ""
+        Dim horaInicio As String = ""
+        Dim horaFinal As String = ""
+        Dim dia As String = ""
+
+        If (txbClassroomName.Text <> "") Then
+            nombreClase = txbClassroomName.Text
+
+            If (cbxDia.SelectedIndex <> -1 And tbxMotivo.Text <> "" And tbxHoraInicial.Text <> "" And tbxHoraFinal.Text <> "") Then
+                horaInicio = tbxHoraInicial.Text
+                horaFinal = tbxHoraFinal.Text
+                dia = cbxDia.Text
+                mensaje = agregarHorario(clase, horaInicio, horaFinal, dia)
+                MsgBox("La reservacion fue agregada " & mensaje)
+            Else
+                MsgBox("sin embargo no se adjuntaron horarios para el aula.")
+            End If
+            auxiliar = False
+        ElseIf auxiliar = False And (cbxDia.SelectedIndex <> -1 And tbxMotivo.Text <> "" And tbxHoraInicial.Text <> "" And tbxHoraFinal.Text <> "") Then
+            mensaje = agregarHorario(clase, tbxHoraInicial.Text, tbxHoraFinal.Text, cbxDia.Text)
+            If mensaje <> "" Then
+                MsgBox(mensaje)
+            End If
+        End If
+    End Sub
+
+    Private Sub btnDelReservation_Click(sender As Object, e As EventArgs) Handles btnDelReservation.Click
+        Dim id As Integer
+        id = txbClassDelete.Text
+        Dim connection As New SqlConnection(connectionString)
+        Dim commandDelete As New SqlCommand("DELETE FROM Horarios WHERE Id = '" & id & "'", connection)
+
+        connection.Open()
+        commandDelete.ExecuteNonQuery()
+        connection.Close()
+        MsgBox("La reservacion ha sido eliminada")
+        txbClassDelete.Text = ""
+
+        Dim classTable As New DataTable
+
+        Dim commandSelect As New SqlCommand("SELECT * FROM Horarios", connection)
+        Dim dataAdapter As New SqlDataAdapter(commandSelect)
+        dataAdapter.Fill(classTable)
+        dgvClassReservations.DataSource = classTable
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnViewReservations.Click
+        If pnlUser.Visible = True Then
+            pnlUser.Visible = False
+        End If
+        If pnlClassReservation.Visible = True Then
+            pnlClassReservation.Visible = False
+        End If
+        If pnlDeleteReservation.Visible = True Then
+            pnlDeleteReservation.Visible = False
+        End If
+
+
+
+        pnlViewReservations.Size = New Size(665, 592)
+        pnlViewReservations.Location = New Point(135, 102)
+        pnlViewReservations.Visible = True
+
+
+        'aquí conectamos con la base de datos para llenar el DGV de clases
+        Dim connection As SqlConnection
+        connection = New SqlConnection(connectionString)
+
+        Dim classTable As New DataTable
+
+        Dim commandSelect As New SqlCommand("SELECT * FROM Horarios", connection)
+        Dim dataAdapter As New SqlDataAdapter(commandSelect)
+        dataAdapter.Fill(classTable)
+        dgvViewReservations.DataSource = classTable
+
+    End Sub
 
     Private Sub HomeRegularUservb_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         pnlUser.Size = New Size(665, 495)

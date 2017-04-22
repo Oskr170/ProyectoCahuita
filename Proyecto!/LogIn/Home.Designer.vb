@@ -23,18 +23,96 @@ Partial Class Home
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Home))
+        Dim DataGridViewCellStyle25 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle26 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle27 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle28 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle29 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle30 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle31 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle32 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.pnlAdminstrateUsers = New System.Windows.Forms.Panel()
+        Me.pnlDeleteUser = New System.Windows.Forms.Panel()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.tbxUserNickNameDeleteUser = New System.Windows.Forms.TextBox()
+        Me.btnSearchUserDeleteUser = New System.Windows.Forms.Button()
+        Me.tbxUserIDDeleteUser = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.tbxUserEmailDeleteUser = New System.Windows.Forms.TextBox()
+        Me.tbxUserNameDeleteUser = New System.Windows.Forms.TextBox()
+        Me.lblCancelDeleteUser = New System.Windows.Forms.Label()
+        Me.lblDeleteDeleteUser = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.lblDeleteUserDelete = New System.Windows.Forms.Label()
+        Me.pnlModifyUser = New System.Windows.Forms.Panel()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnSaveModifyUser = New System.Windows.Forms.Button()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.tbxUserPasswordModifyUser = New System.Windows.Forms.TextBox()
+        Me.btnSearchUserModifyUser = New System.Windows.Forms.Button()
+        Me.tbxUserIDModifyUser = New System.Windows.Forms.TextBox()
+        Me.lblUserID = New System.Windows.Forms.Label()
+        Me.tbxUserEmailModifyUser = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.cmbxUserRoleModifyUser = New System.Windows.Forms.ComboBox()
+        Me.RolesBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.LaboratoriosDataSet = New LogIn.laboratoriosDataSet()
+        Me.tbxUserNickNameModifyUser = New System.Windows.Forms.TextBox()
+        Me.tbxUserNameModifyUser = New System.Windows.Forms.TextBox()
+        Me.lblCancelModifyUser = New System.Windows.Forms.Label()
+        Me.lblModifyUserModify = New System.Windows.Forms.Label()
+        Me.btnSearchUser = New System.Windows.Forms.Button()
+        Me.dgvUserAdmin = New System.Windows.Forms.DataGridView()
+        Me.pnlCreateUser = New System.Windows.Forms.Panel()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.tbxUserPasswordCreateUser = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.tbxUserSystemNameCreateUser = New System.Windows.Forms.TextBox()
+        Me.lblUserEmail = New System.Windows.Forms.Label()
+        Me.lblUserName = New System.Windows.Forms.Label()
+        Me.lblUserRole = New System.Windows.Forms.Label()
+        Me.cbxUserRoleCreateUser = New System.Windows.Forms.ComboBox()
+        Me.tbxUserEmailCreateUser = New System.Windows.Forms.TextBox()
+        Me.tbxUserNameCreateUser = New System.Windows.Forms.TextBox()
+        Me.lblCancelCreateUser = New System.Windows.Forms.Label()
+        Me.lblAddCreateUser = New System.Windows.Forms.Label()
+        Me.lblAddUserImage = New System.Windows.Forms.Label()
+        Me.lblAddUser = New System.Windows.Forms.Label()
+        Me.pnlSearchUser = New System.Windows.Forms.Panel()
+        Me.tbxUserRoleSearchUser = New System.Windows.Forms.TextBox()
+        Me.btnSearchUserSearchUser = New System.Windows.Forms.Button()
+        Me.Label25 = New System.Windows.Forms.Label()
+        Me.tbxUserIDSearchUser = New System.Windows.Forms.TextBox()
+        Me.Label27 = New System.Windows.Forms.Label()
+        Me.Label29 = New System.Windows.Forms.Label()
+        Me.Label31 = New System.Windows.Forms.Label()
+        Me.Label33 = New System.Windows.Forms.Label()
+        Me.Label34 = New System.Windows.Forms.Label()
+        Me.tbxUserEmailSearchUser = New System.Windows.Forms.TextBox()
+        Me.tbxUserNickNameSearchUser = New System.Windows.Forms.TextBox()
+        Me.tbxUserNameSearchUser = New System.Windows.Forms.TextBox()
+        Me.btnCancelUserSearchUser = New System.Windows.Forms.Label()
+        Me.lblViewUserProfileSearchUser = New System.Windows.Forms.Label()
+        Me.Label37 = New System.Windows.Forms.Label()
+        Me.lblAdministrateUsers = New System.Windows.Forms.Label()
+        Me.lblSearchUser = New System.Windows.Forms.Label()
+        Me.lblDeleteUser = New System.Windows.Forms.Label()
+        Me.lblModifyUser = New System.Windows.Forms.Label()
+        Me.lblCreateUser = New System.Windows.Forms.Label()
+        Me.btnViewUsers = New System.Windows.Forms.Button()
+        Me.btnDeleteUser = New System.Windows.Forms.Button()
+        Me.btnModifyUser = New System.Windows.Forms.Button()
+        Me.btnCreateUser = New System.Windows.Forms.Button()
         Me.panelReservations = New System.Windows.Forms.Panel()
         Me.pnlDeleteReservation = New System.Windows.Forms.Panel()
+        Me.btnDelReservation = New System.Windows.Forms.Button()
         Me.lblClassNameDelete = New System.Windows.Forms.Label()
         Me.txbClassDelete = New System.Windows.Forms.TextBox()
         Me.Label99 = New System.Windows.Forms.Label()
@@ -104,15 +182,10 @@ Partial Class Home
         Me.ComboBox7 = New System.Windows.Forms.ComboBox()
         Me.Button14 = New System.Windows.Forms.Button()
         Me.Label93 = New System.Windows.Forms.Label()
-        Me.lblSearchReservation = New System.Windows.Forms.Label()
-        Me.Button16 = New System.Windows.Forms.Button()
-        Me.TextBox16 = New System.Windows.Forms.TextBox()
         Me.dgvClassReservations = New System.Windows.Forms.DataGridView()
         Me.lblDeleteReservation = New System.Windows.Forms.Label()
-        Me.lblModifyReservation = New System.Windows.Forms.Label()
         Me.lblCreateReservation = New System.Windows.Forms.Label()
         Me.btnDeleteReservation = New System.Windows.Forms.Button()
-        Me.btnModifyReservation = New System.Windows.Forms.Button()
         Me.btnCreateReservation = New System.Windows.Forms.Button()
         Me.lblAdminReservations = New System.Windows.Forms.Label()
         Me.panelAdminClass = New System.Windows.Forms.Panel()
@@ -151,8 +224,6 @@ Partial Class Home
         Me.pnlCreateClass = New System.Windows.Forms.Panel()
         Me.lblEstandarizacion = New System.Windows.Forms.Label()
         Me.Label42 = New System.Windows.Forms.Label()
-        Me.lblTiempoLibre = New System.Windows.Forms.Label()
-        Me.Label41 = New System.Windows.Forms.Label()
         Me.tbxHoraFinal = New System.Windows.Forms.TextBox()
         Me.Label40 = New System.Windows.Forms.Label()
         Me.tbxHoraInicial = New System.Windows.Forms.TextBox()
@@ -187,21 +258,11 @@ Partial Class Home
         Me.Button2 = New System.Windows.Forms.Button()
         Me.lblModifyClassTitle = New System.Windows.Forms.Label()
         Me.pnlDeleteCLass = New System.Windows.Forms.Panel()
-        Me.Label18 = New System.Windows.Forms.Label()
-        Me.tbxCaracteristicasDelete = New System.Windows.Forms.TextBox()
-        Me.cbxEdificioDelete = New System.Windows.Forms.ComboBox()
-        Me.Label19 = New System.Windows.Forms.Label()
-        Me.Label20 = New System.Windows.Forms.Label()
         Me.Label32 = New System.Windows.Forms.Label()
-        Me.cbxTypeDelete = New System.Windows.Forms.ComboBox()
-        Me.tbxAulaNombreDelete = New System.Windows.Forms.TextBox()
         Me.btnDeleteClass = New System.Windows.Forms.Button()
         Me.Label46 = New System.Windows.Forms.Label()
         Me.Label48 = New System.Windows.Forms.Label()
         Me.lblDeleteClassTitle = New System.Windows.Forms.Label()
-        Me.lblAdminAulasBuscarAula = New System.Windows.Forms.Label()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.tbxAdminAulasBuscarAula = New System.Windows.Forms.TextBox()
         Me.dgvClasses = New System.Windows.Forms.DataGridView()
         Me.lblDeleteClass = New System.Windows.Forms.Label()
         Me.btnModifyClass = New System.Windows.Forms.Label()
@@ -210,86 +271,6 @@ Partial Class Home
         Me.btnEditClass = New System.Windows.Forms.Button()
         Me.btnAddClass = New System.Windows.Forms.Button()
         Me.lblAdminClass = New System.Windows.Forms.Label()
-        Me.pnlAdminstrateUsers = New System.Windows.Forms.Panel()
-        Me.dgvUserAdmin = New System.Windows.Forms.DataGridView()
-        Me.btnSearchUser = New System.Windows.Forms.Button()
-        Me.pnlCreateUser = New System.Windows.Forms.Panel()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.tbxUserPasswordCreateUser = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.tbxUserSystemNameCreateUser = New System.Windows.Forms.TextBox()
-        Me.lblUserEmail = New System.Windows.Forms.Label()
-        Me.lblUserName = New System.Windows.Forms.Label()
-        Me.lblUserRole = New System.Windows.Forms.Label()
-        Me.cbxUserRoleCreateUser = New System.Windows.Forms.ComboBox()
-        Me.tbxUserEmailCreateUser = New System.Windows.Forms.TextBox()
-        Me.tbxUserNameCreateUser = New System.Windows.Forms.TextBox()
-        Me.lblCancelCreateUser = New System.Windows.Forms.Label()
-        Me.lblAddCreateUser = New System.Windows.Forms.Label()
-        Me.lblAddUserImage = New System.Windows.Forms.Label()
-        Me.lblAddUser = New System.Windows.Forms.Label()
-        Me.pnlDeleteUser = New System.Windows.Forms.Panel()
-        Me.lblGoBackDeleteUser = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.tbxUserNickNameDeleteUser = New System.Windows.Forms.TextBox()
-        Me.tbxUserRoleDeleteUser = New System.Windows.Forms.TextBox()
-        Me.btnSearchUserDeleteUser = New System.Windows.Forms.Button()
-        Me.tbxUserIDDeleteUser = New System.Windows.Forms.TextBox()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.tbxUserEmailDeleteUser = New System.Windows.Forms.TextBox()
-        Me.tbxUserNameDeleteUser = New System.Windows.Forms.TextBox()
-        Me.lblCancelDeleteUser = New System.Windows.Forms.Label()
-        Me.lblDeleteDeleteUser = New System.Windows.Forms.Label()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.lblDeleteUserDelete = New System.Windows.Forms.Label()
-        Me.pnlModifyUser = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.btnSaveModifyUser = New System.Windows.Forms.Button()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.tbxUserPasswordModifyUser = New System.Windows.Forms.TextBox()
-        Me.btnSearchUserModifyUser = New System.Windows.Forms.Button()
-        Me.tbxUserIDModifyUser = New System.Windows.Forms.TextBox()
-        Me.lblUserID = New System.Windows.Forms.Label()
-        Me.tbxUserEmailModifyUser = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.cmbxUserRoleModifyUser = New System.Windows.Forms.ComboBox()
-        Me.RolesBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.LaboratoriosDataSet = New LogIn.laboratoriosDataSet()
-        Me.tbxUserNickNameModifyUser = New System.Windows.Forms.TextBox()
-        Me.tbxUserNameModifyUser = New System.Windows.Forms.TextBox()
-        Me.lblCancelModifyUser = New System.Windows.Forms.Label()
-        Me.lblModifyUserModify = New System.Windows.Forms.Label()
-        Me.pnlSearchUser = New System.Windows.Forms.Panel()
-        Me.tbxUserRoleSearchUser = New System.Windows.Forms.TextBox()
-        Me.btnSearchUserSearchUser = New System.Windows.Forms.Button()
-        Me.Label25 = New System.Windows.Forms.Label()
-        Me.tbxUserIDSearchUser = New System.Windows.Forms.TextBox()
-        Me.Label27 = New System.Windows.Forms.Label()
-        Me.Label29 = New System.Windows.Forms.Label()
-        Me.Label31 = New System.Windows.Forms.Label()
-        Me.Label33 = New System.Windows.Forms.Label()
-        Me.Label34 = New System.Windows.Forms.Label()
-        Me.tbxUserEmailSearchUser = New System.Windows.Forms.TextBox()
-        Me.tbxUserNickNameSearchUser = New System.Windows.Forms.TextBox()
-        Me.tbxUserNameSearchUser = New System.Windows.Forms.TextBox()
-        Me.btnCancelUserSearchUser = New System.Windows.Forms.Label()
-        Me.lblViewUserProfileSearchUser = New System.Windows.Forms.Label()
-        Me.Label37 = New System.Windows.Forms.Label()
-        Me.lblAdministrateUsers = New System.Windows.Forms.Label()
-        Me.lblSearchUser = New System.Windows.Forms.Label()
-        Me.lblDeleteUser = New System.Windows.Forms.Label()
-        Me.lblModifyUser = New System.Windows.Forms.Label()
-        Me.lblCreateUser = New System.Windows.Forms.Label()
-        Me.btnViewUsers = New System.Windows.Forms.Button()
-        Me.btnDeleteUser = New System.Windows.Forms.Button()
-        Me.btnModifyUser = New System.Windows.Forms.Button()
-        Me.btnCreateUser = New System.Windows.Forms.Button()
         Me.pnlUser = New System.Windows.Forms.Panel()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -313,8 +294,15 @@ Partial Class Home
         Me.btnClose = New System.Windows.Forms.Button()
         Me.RolesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.RolesTableAdapter = New LogIn.laboratoriosDataSetTableAdapters.RolesTableAdapter()
-        Me.btnDelReservation = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
+        Me.pnlAdminstrateUsers.SuspendLayout()
+        Me.pnlDeleteUser.SuspendLayout()
+        Me.pnlModifyUser.SuspendLayout()
+        CType(Me.RolesBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LaboratoriosDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvUserAdmin, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnlCreateUser.SuspendLayout()
+        Me.pnlSearchUser.SuspendLayout()
         Me.panelReservations.SuspendLayout()
         Me.pnlDeleteReservation.SuspendLayout()
         Me.pnlClassReservation.SuspendLayout()
@@ -341,14 +329,6 @@ Partial Class Home
         Me.pnlModifyClass.SuspendLayout()
         Me.pnlDeleteCLass.SuspendLayout()
         CType(Me.dgvClasses, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.pnlAdminstrateUsers.SuspendLayout()
-        CType(Me.dgvUserAdmin, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.pnlCreateUser.SuspendLayout()
-        Me.pnlDeleteUser.SuspendLayout()
-        Me.pnlModifyUser.SuspendLayout()
-        CType(Me.RolesBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LaboratoriosDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.pnlSearchUser.SuspendLayout()
         Me.pnlUser.SuspendLayout()
         CType(Me.صورة_دائرة1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RolesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -357,9 +337,9 @@ Partial Class Home
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Transparent
+        Me.Panel1.Controls.Add(Me.pnlAdminstrateUsers)
         Me.Panel1.Controls.Add(Me.panelReservations)
         Me.Panel1.Controls.Add(Me.panelAdminClass)
-        Me.Panel1.Controls.Add(Me.pnlAdminstrateUsers)
         Me.Panel1.Controls.Add(Me.pnlUser)
         Me.Panel1.Controls.Add(Me.btnAdministrateRequests)
         Me.Panel1.Controls.Add(Me.btnAdministrateObjects)
@@ -377,6 +357,1091 @@ Partial Class Home
         Me.Panel1.Size = New System.Drawing.Size(1067, 825)
         Me.Panel1.TabIndex = 0
         '
+        'pnlAdminstrateUsers
+        '
+        Me.pnlAdminstrateUsers.Controls.Add(Me.pnlDeleteUser)
+        Me.pnlAdminstrateUsers.Controls.Add(Me.pnlModifyUser)
+        Me.pnlAdminstrateUsers.Controls.Add(Me.btnSearchUser)
+        Me.pnlAdminstrateUsers.Controls.Add(Me.dgvUserAdmin)
+        Me.pnlAdminstrateUsers.Controls.Add(Me.pnlCreateUser)
+        Me.pnlAdminstrateUsers.Controls.Add(Me.pnlSearchUser)
+        Me.pnlAdminstrateUsers.Controls.Add(Me.lblAdministrateUsers)
+        Me.pnlAdminstrateUsers.Controls.Add(Me.lblSearchUser)
+        Me.pnlAdminstrateUsers.Controls.Add(Me.lblDeleteUser)
+        Me.pnlAdminstrateUsers.Controls.Add(Me.lblModifyUser)
+        Me.pnlAdminstrateUsers.Controls.Add(Me.lblCreateUser)
+        Me.pnlAdminstrateUsers.Controls.Add(Me.btnViewUsers)
+        Me.pnlAdminstrateUsers.Controls.Add(Me.btnDeleteUser)
+        Me.pnlAdminstrateUsers.Controls.Add(Me.btnModifyUser)
+        Me.pnlAdminstrateUsers.Controls.Add(Me.btnCreateUser)
+        Me.pnlAdminstrateUsers.Location = New System.Drawing.Point(181, 60)
+        Me.pnlAdminstrateUsers.Margin = New System.Windows.Forms.Padding(4)
+        Me.pnlAdminstrateUsers.Name = "pnlAdminstrateUsers"
+        Me.pnlAdminstrateUsers.Size = New System.Drawing.Size(855, 552)
+        Me.pnlAdminstrateUsers.TabIndex = 16
+        Me.pnlAdminstrateUsers.Visible = False
+        '
+        'pnlDeleteUser
+        '
+        Me.pnlDeleteUser.Controls.Add(Me.Label11)
+        Me.pnlDeleteUser.Controls.Add(Me.tbxUserNickNameDeleteUser)
+        Me.pnlDeleteUser.Controls.Add(Me.btnSearchUserDeleteUser)
+        Me.pnlDeleteUser.Controls.Add(Me.tbxUserIDDeleteUser)
+        Me.pnlDeleteUser.Controls.Add(Me.Label8)
+        Me.pnlDeleteUser.Controls.Add(Me.Label10)
+        Me.pnlDeleteUser.Controls.Add(Me.Label12)
+        Me.pnlDeleteUser.Controls.Add(Me.tbxUserEmailDeleteUser)
+        Me.pnlDeleteUser.Controls.Add(Me.tbxUserNameDeleteUser)
+        Me.pnlDeleteUser.Controls.Add(Me.lblCancelDeleteUser)
+        Me.pnlDeleteUser.Controls.Add(Me.lblDeleteDeleteUser)
+        Me.pnlDeleteUser.Controls.Add(Me.Label16)
+        Me.pnlDeleteUser.Controls.Add(Me.lblDeleteUserDelete)
+        Me.pnlDeleteUser.Location = New System.Drawing.Point(42, 461)
+        Me.pnlDeleteUser.Margin = New System.Windows.Forms.Padding(4)
+        Me.pnlDeleteUser.Name = "pnlDeleteUser"
+        Me.pnlDeleteUser.Size = New System.Drawing.Size(393, 83)
+        Me.pnlDeleteUser.TabIndex = 23
+        Me.pnlDeleteUser.Visible = False
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label11.Location = New System.Drawing.Point(424, 65)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(177, 25)
+        Me.Label11.TabIndex = 33
+        Me.Label11.Text = "Usuario Nickname:"
+        Me.Label11.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'tbxUserNickNameDeleteUser
+        '
+        Me.tbxUserNickNameDeleteUser.BackColor = System.Drawing.Color.MediumSeaGreen
+        Me.tbxUserNickNameDeleteUser.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.tbxUserNickNameDeleteUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxUserNickNameDeleteUser.ForeColor = System.Drawing.Color.White
+        Me.tbxUserNickNameDeleteUser.Location = New System.Drawing.Point(464, 92)
+        Me.tbxUserNickNameDeleteUser.Margin = New System.Windows.Forms.Padding(4)
+        Me.tbxUserNickNameDeleteUser.Name = "tbxUserNickNameDeleteUser"
+        Me.tbxUserNickNameDeleteUser.Size = New System.Drawing.Size(319, 30)
+        Me.tbxUserNickNameDeleteUser.TabIndex = 32
+        Me.tbxUserNickNameDeleteUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'btnSearchUserDeleteUser
+        '
+        Me.btnSearchUserDeleteUser.BackColor = System.Drawing.Color.MediumSeaGreen
+        Me.btnSearchUserDeleteUser.FlatAppearance.BorderSize = 0
+        Me.btnSearchUserDeleteUser.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
+        Me.btnSearchUserDeleteUser.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSeaGreen
+        Me.btnSearchUserDeleteUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSearchUserDeleteUser.Image = CType(resources.GetObject("btnSearchUserDeleteUser.Image"), System.Drawing.Image)
+        Me.btnSearchUserDeleteUser.Location = New System.Drawing.Point(795, 21)
+        Me.btnSearchUserDeleteUser.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnSearchUserDeleteUser.Name = "btnSearchUserDeleteUser"
+        Me.btnSearchUserDeleteUser.Size = New System.Drawing.Size(37, 30)
+        Me.btnSearchUserDeleteUser.TabIndex = 30
+        Me.btnSearchUserDeleteUser.UseVisualStyleBackColor = False
+        '
+        'tbxUserIDDeleteUser
+        '
+        Me.tbxUserIDDeleteUser.BackColor = System.Drawing.Color.MediumSeaGreen
+        Me.tbxUserIDDeleteUser.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.tbxUserIDDeleteUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxUserIDDeleteUser.ForeColor = System.Drawing.Color.White
+        Me.tbxUserIDDeleteUser.Location = New System.Drawing.Point(581, 21)
+        Me.tbxUserIDDeleteUser.Margin = New System.Windows.Forms.Padding(4)
+        Me.tbxUserIDDeleteUser.Name = "tbxUserIDDeleteUser"
+        Me.tbxUserIDDeleteUser.Size = New System.Drawing.Size(212, 30)
+        Me.tbxUserIDDeleteUser.TabIndex = 24
+        Me.tbxUserIDDeleteUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label8.Location = New System.Drawing.Point(465, 26)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(114, 25)
+        Me.Label8.TabIndex = 23
+        Me.Label8.Text = "Usuario ID :"
+        Me.Label8.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label10.Location = New System.Drawing.Point(204, 144)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(118, 25)
+        Me.Label10.TabIndex = 20
+        Me.Label10.Text = "Usuario Rol:"
+        Me.Label10.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label12.Location = New System.Drawing.Point(37, 65)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(159, 25)
+        Me.Label12.TabIndex = 18
+        Me.Label12.Text = "Usuario Nombre:"
+        Me.Label12.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'tbxUserEmailDeleteUser
+        '
+        Me.tbxUserEmailDeleteUser.BackColor = System.Drawing.Color.MediumSeaGreen
+        Me.tbxUserEmailDeleteUser.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.tbxUserEmailDeleteUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxUserEmailDeleteUser.ForeColor = System.Drawing.Color.White
+        Me.tbxUserEmailDeleteUser.Location = New System.Drawing.Point(234, 179)
+        Me.tbxUserEmailDeleteUser.Margin = New System.Windows.Forms.Padding(4)
+        Me.tbxUserEmailDeleteUser.Name = "tbxUserEmailDeleteUser"
+        Me.tbxUserEmailDeleteUser.Size = New System.Drawing.Size(335, 30)
+        Me.tbxUserEmailDeleteUser.TabIndex = 15
+        Me.tbxUserEmailDeleteUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'tbxUserNameDeleteUser
+        '
+        Me.tbxUserNameDeleteUser.BackColor = System.Drawing.Color.MediumSeaGreen
+        Me.tbxUserNameDeleteUser.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.tbxUserNameDeleteUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxUserNameDeleteUser.ForeColor = System.Drawing.Color.White
+        Me.tbxUserNameDeleteUser.Location = New System.Drawing.Point(80, 94)
+        Me.tbxUserNameDeleteUser.Margin = New System.Windows.Forms.Padding(4)
+        Me.tbxUserNameDeleteUser.Name = "tbxUserNameDeleteUser"
+        Me.tbxUserNameDeleteUser.Size = New System.Drawing.Size(324, 30)
+        Me.tbxUserNameDeleteUser.TabIndex = 13
+        Me.tbxUserNameDeleteUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'lblCancelDeleteUser
+        '
+        Me.lblCancelDeleteUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCancelDeleteUser.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblCancelDeleteUser.Image = CType(resources.GetObject("lblCancelDeleteUser.Image"), System.Drawing.Image)
+        Me.lblCancelDeleteUser.Location = New System.Drawing.Point(434, 239)
+        Me.lblCancelDeleteUser.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblCancelDeleteUser.Name = "lblCancelDeleteUser"
+        Me.lblCancelDeleteUser.Size = New System.Drawing.Size(69, 58)
+        Me.lblCancelDeleteUser.TabIndex = 12
+        Me.lblCancelDeleteUser.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'lblDeleteDeleteUser
+        '
+        Me.lblDeleteDeleteUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDeleteDeleteUser.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblDeleteDeleteUser.Image = CType(resources.GetObject("lblDeleteDeleteUser.Image"), System.Drawing.Image)
+        Me.lblDeleteDeleteUser.Location = New System.Drawing.Point(335, 242)
+        Me.lblDeleteDeleteUser.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblDeleteDeleteUser.Name = "lblDeleteDeleteUser"
+        Me.lblDeleteDeleteUser.Size = New System.Drawing.Size(69, 58)
+        Me.lblDeleteDeleteUser.TabIndex = 11
+        Me.lblDeleteDeleteUser.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label16
+        '
+        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label16.Image = CType(resources.GetObject("Label16.Image"), System.Drawing.Image)
+        Me.Label16.Location = New System.Drawing.Point(35, -2)
+        Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(69, 75)
+        Me.Label16.TabIndex = 10
+        Me.Label16.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'lblDeleteUserDelete
+        '
+        Me.lblDeleteUserDelete.AutoSize = True
+        Me.lblDeleteUserDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDeleteUserDelete.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblDeleteUserDelete.Location = New System.Drawing.Point(107, 20)
+        Me.lblDeleteUserDelete.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblDeleteUserDelete.Name = "lblDeleteUserDelete"
+        Me.lblDeleteUserDelete.Size = New System.Drawing.Size(268, 39)
+        Me.lblDeleteUserDelete.TabIndex = 9
+        Me.lblDeleteUserDelete.Text = "Eliminar Usuario"
+        Me.lblDeleteUserDelete.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'pnlModifyUser
+        '
+        Me.pnlModifyUser.Controls.Add(Me.Button1)
+        Me.pnlModifyUser.Controls.Add(Me.btnSaveModifyUser)
+        Me.pnlModifyUser.Controls.Add(Me.Label17)
+        Me.pnlModifyUser.Controls.Add(Me.tbxUserPasswordModifyUser)
+        Me.pnlModifyUser.Controls.Add(Me.btnSearchUserModifyUser)
+        Me.pnlModifyUser.Controls.Add(Me.tbxUserIDModifyUser)
+        Me.pnlModifyUser.Controls.Add(Me.lblUserID)
+        Me.pnlModifyUser.Controls.Add(Me.tbxUserEmailModifyUser)
+        Me.pnlModifyUser.Controls.Add(Me.Label3)
+        Me.pnlModifyUser.Controls.Add(Me.Label4)
+        Me.pnlModifyUser.Controls.Add(Me.Label5)
+        Me.pnlModifyUser.Controls.Add(Me.Label6)
+        Me.pnlModifyUser.Controls.Add(Me.cmbxUserRoleModifyUser)
+        Me.pnlModifyUser.Controls.Add(Me.tbxUserNickNameModifyUser)
+        Me.pnlModifyUser.Controls.Add(Me.tbxUserNameModifyUser)
+        Me.pnlModifyUser.Controls.Add(Me.lblCancelModifyUser)
+        Me.pnlModifyUser.Controls.Add(Me.lblModifyUserModify)
+        Me.pnlModifyUser.Location = New System.Drawing.Point(35, 350)
+        Me.pnlModifyUser.Margin = New System.Windows.Forms.Padding(4)
+        Me.pnlModifyUser.Name = "pnlModifyUser"
+        Me.pnlModifyUser.Size = New System.Drawing.Size(408, 91)
+        Me.pnlModifyUser.TabIndex = 28
+        Me.pnlModifyUser.Visible = False
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.Transparent
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Thistle
+        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Thistle
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
+        Me.Button1.Location = New System.Drawing.Point(19, 4)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(93, 80)
+        Me.Button1.TabIndex = 31
+        Me.Button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'btnSaveModifyUser
+        '
+        Me.btnSaveModifyUser.BackColor = System.Drawing.Color.SeaGreen
+        Me.btnSaveModifyUser.FlatAppearance.BorderSize = 0
+        Me.btnSaveModifyUser.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
+        Me.btnSaveModifyUser.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSeaGreen
+        Me.btnSaveModifyUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSaveModifyUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSaveModifyUser.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.btnSaveModifyUser.Image = CType(resources.GetObject("btnSaveModifyUser.Image"), System.Drawing.Image)
+        Me.btnSaveModifyUser.Location = New System.Drawing.Point(357, 276)
+        Me.btnSaveModifyUser.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnSaveModifyUser.Name = "btnSaveModifyUser"
+        Me.btnSaveModifyUser.Size = New System.Drawing.Size(85, 83)
+        Me.btnSaveModifyUser.TabIndex = 36
+        Me.btnSaveModifyUser.UseVisualStyleBackColor = False
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label17.Location = New System.Drawing.Point(47, 169)
+        Me.Label17.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(176, 25)
+        Me.Label17.TabIndex = 35
+        Me.Label17.Text = "Usuario Password:"
+        Me.Label17.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'tbxUserPasswordModifyUser
+        '
+        Me.tbxUserPasswordModifyUser.BackColor = System.Drawing.Color.MediumSeaGreen
+        Me.tbxUserPasswordModifyUser.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.tbxUserPasswordModifyUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxUserPasswordModifyUser.ForeColor = System.Drawing.Color.White
+        Me.tbxUserPasswordModifyUser.Location = New System.Drawing.Point(69, 208)
+        Me.tbxUserPasswordModifyUser.Margin = New System.Windows.Forms.Padding(4)
+        Me.tbxUserPasswordModifyUser.Name = "tbxUserPasswordModifyUser"
+        Me.tbxUserPasswordModifyUser.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.tbxUserPasswordModifyUser.Size = New System.Drawing.Size(212, 30)
+        Me.tbxUserPasswordModifyUser.TabIndex = 34
+        Me.tbxUserPasswordModifyUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.tbxUserPasswordModifyUser.UseSystemPasswordChar = True
+        '
+        'btnSearchUserModifyUser
+        '
+        Me.btnSearchUserModifyUser.BackColor = System.Drawing.Color.MediumSeaGreen
+        Me.btnSearchUserModifyUser.FlatAppearance.BorderSize = 0
+        Me.btnSearchUserModifyUser.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
+        Me.btnSearchUserModifyUser.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSeaGreen
+        Me.btnSearchUserModifyUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSearchUserModifyUser.Image = CType(resources.GetObject("btnSearchUserModifyUser.Image"), System.Drawing.Image)
+        Me.btnSearchUserModifyUser.Location = New System.Drawing.Point(725, 39)
+        Me.btnSearchUserModifyUser.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnSearchUserModifyUser.Name = "btnSearchUserModifyUser"
+        Me.btnSearchUserModifyUser.Size = New System.Drawing.Size(37, 30)
+        Me.btnSearchUserModifyUser.TabIndex = 31
+        Me.btnSearchUserModifyUser.UseVisualStyleBackColor = False
+        '
+        'tbxUserIDModifyUser
+        '
+        Me.tbxUserIDModifyUser.BackColor = System.Drawing.Color.MediumSeaGreen
+        Me.tbxUserIDModifyUser.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.tbxUserIDModifyUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxUserIDModifyUser.ForeColor = System.Drawing.Color.White
+        Me.tbxUserIDModifyUser.Location = New System.Drawing.Point(553, 39)
+        Me.tbxUserIDModifyUser.Margin = New System.Windows.Forms.Padding(4)
+        Me.tbxUserIDModifyUser.Name = "tbxUserIDModifyUser"
+        Me.tbxUserIDModifyUser.Size = New System.Drawing.Size(173, 30)
+        Me.tbxUserIDModifyUser.TabIndex = 24
+        Me.tbxUserIDModifyUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'lblUserID
+        '
+        Me.lblUserID.AutoSize = True
+        Me.lblUserID.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblUserID.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblUserID.Location = New System.Drawing.Point(427, 46)
+        Me.lblUserID.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblUserID.Name = "lblUserID"
+        Me.lblUserID.Size = New System.Drawing.Size(114, 25)
+        Me.lblUserID.TabIndex = 23
+        Me.lblUserID.Text = "Usuario ID :"
+        Me.lblUserID.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'tbxUserEmailModifyUser
+        '
+        Me.tbxUserEmailModifyUser.BackColor = System.Drawing.Color.MediumSeaGreen
+        Me.tbxUserEmailModifyUser.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.tbxUserEmailModifyUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxUserEmailModifyUser.ForeColor = System.Drawing.Color.White
+        Me.tbxUserEmailModifyUser.Location = New System.Drawing.Point(451, 126)
+        Me.tbxUserEmailModifyUser.Margin = New System.Windows.Forms.Padding(4)
+        Me.tbxUserEmailModifyUser.Name = "tbxUserEmailModifyUser"
+        Me.tbxUserEmailModifyUser.Size = New System.Drawing.Size(355, 30)
+        Me.tbxUserEmailModifyUser.TabIndex = 22
+        Me.tbxUserEmailModifyUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label3.Location = New System.Drawing.Point(425, 94)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(138, 25)
+        Me.Label3.TabIndex = 20
+        Me.Label3.Text = "Usuario Email:"
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label4.Location = New System.Drawing.Point(279, 174)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(177, 25)
+        Me.Label4.TabIndex = 19
+        Me.Label4.Text = "Usuario Nickname:"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label5.Location = New System.Drawing.Point(47, 94)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(159, 25)
+        Me.Label5.TabIndex = 18
+        Me.Label5.Text = "Usuario Nombre:"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label6.Location = New System.Drawing.Point(579, 174)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(118, 25)
+        Me.Label6.TabIndex = 17
+        Me.Label6.Text = "Usuario Rol:"
+        Me.Label6.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'cmbxUserRoleModifyUser
+        '
+        Me.cmbxUserRoleModifyUser.BackColor = System.Drawing.Color.MediumSeaGreen
+        Me.cmbxUserRoleModifyUser.DataSource = Me.RolesBindingSource1
+        Me.cmbxUserRoleModifyUser.DisplayMember = "Name"
+        Me.cmbxUserRoleModifyUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmbxUserRoleModifyUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbxUserRoleModifyUser.FormattingEnabled = True
+        Me.cmbxUserRoleModifyUser.Location = New System.Drawing.Point(595, 206)
+        Me.cmbxUserRoleModifyUser.Margin = New System.Windows.Forms.Padding(4)
+        Me.cmbxUserRoleModifyUser.Name = "cmbxUserRoleModifyUser"
+        Me.cmbxUserRoleModifyUser.Size = New System.Drawing.Size(211, 32)
+        Me.cmbxUserRoleModifyUser.TabIndex = 16
+        '
+        'RolesBindingSource1
+        '
+        Me.RolesBindingSource1.DataMember = "Roles"
+        Me.RolesBindingSource1.DataSource = Me.LaboratoriosDataSet
+        '
+        'LaboratoriosDataSet
+        '
+        Me.LaboratoriosDataSet.DataSetName = "laboratoriosDataSet"
+        Me.LaboratoriosDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'tbxUserNickNameModifyUser
+        '
+        Me.tbxUserNickNameModifyUser.BackColor = System.Drawing.Color.MediumSeaGreen
+        Me.tbxUserNickNameModifyUser.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.tbxUserNickNameModifyUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxUserNickNameModifyUser.ForeColor = System.Drawing.Color.White
+        Me.tbxUserNickNameModifyUser.Location = New System.Drawing.Point(301, 208)
+        Me.tbxUserNickNameModifyUser.Margin = New System.Windows.Forms.Padding(4)
+        Me.tbxUserNickNameModifyUser.Name = "tbxUserNickNameModifyUser"
+        Me.tbxUserNickNameModifyUser.Size = New System.Drawing.Size(261, 30)
+        Me.tbxUserNickNameModifyUser.TabIndex = 14
+        Me.tbxUserNickNameModifyUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'tbxUserNameModifyUser
+        '
+        Me.tbxUserNameModifyUser.BackColor = System.Drawing.Color.MediumSeaGreen
+        Me.tbxUserNameModifyUser.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.tbxUserNameModifyUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxUserNameModifyUser.ForeColor = System.Drawing.Color.White
+        Me.tbxUserNameModifyUser.Location = New System.Drawing.Point(71, 126)
+        Me.tbxUserNameModifyUser.Margin = New System.Windows.Forms.Padding(4)
+        Me.tbxUserNameModifyUser.Name = "tbxUserNameModifyUser"
+        Me.tbxUserNameModifyUser.Size = New System.Drawing.Size(356, 30)
+        Me.tbxUserNameModifyUser.TabIndex = 13
+        Me.tbxUserNameModifyUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'lblCancelModifyUser
+        '
+        Me.lblCancelModifyUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCancelModifyUser.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblCancelModifyUser.Location = New System.Drawing.Point(453, 352)
+        Me.lblCancelModifyUser.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblCancelModifyUser.Name = "lblCancelModifyUser"
+        Me.lblCancelModifyUser.Size = New System.Drawing.Size(69, 58)
+        Me.lblCancelModifyUser.TabIndex = 12
+        Me.lblCancelModifyUser.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'lblModifyUserModify
+        '
+        Me.lblModifyUserModify.AutoSize = True
+        Me.lblModifyUserModify.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblModifyUserModify.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblModifyUserModify.Location = New System.Drawing.Point(105, 36)
+        Me.lblModifyUserModify.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblModifyUserModify.Name = "lblModifyUserModify"
+        Me.lblModifyUserModify.Size = New System.Drawing.Size(282, 39)
+        Me.lblModifyUserModify.TabIndex = 9
+        Me.lblModifyUserModify.Text = "Modificar Usuario"
+        Me.lblModifyUserModify.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'btnSearchUser
+        '
+        Me.btnSearchUser.BackColor = System.Drawing.Color.Transparent
+        Me.btnSearchUser.FlatAppearance.BorderSize = 0
+        Me.btnSearchUser.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Thistle
+        Me.btnSearchUser.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Thistle
+        Me.btnSearchUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSearchUser.Image = CType(resources.GetObject("btnSearchUser.Image"), System.Drawing.Image)
+        Me.btnSearchUser.Location = New System.Drawing.Point(660, 37)
+        Me.btnSearchUser.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnSearchUser.Name = "btnSearchUser"
+        Me.btnSearchUser.Size = New System.Drawing.Size(107, 98)
+        Me.btnSearchUser.TabIndex = 14
+        Me.btnSearchUser.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnSearchUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btnSearchUser.UseVisualStyleBackColor = False
+        '
+        'dgvUserAdmin
+        '
+        Me.dgvUserAdmin.AllowUserToAddRows = False
+        Me.dgvUserAdmin.AllowUserToDeleteRows = False
+        Me.dgvUserAdmin.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgvUserAdmin.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        Me.dgvUserAdmin.BackgroundColor = System.Drawing.Color.MediumSeaGreen
+        Me.dgvUserAdmin.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dgvUserAdmin.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle25.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle25.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle25.SelectionBackColor = System.Drawing.Color.MediumSeaGreen
+        DataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvUserAdmin.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle25
+        Me.dgvUserAdmin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle26.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle26.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle26.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        DataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.ButtonHighlight
+        DataGridViewCellStyle26.SelectionForeColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvUserAdmin.DefaultCellStyle = DataGridViewCellStyle26
+        Me.dgvUserAdmin.GridColor = System.Drawing.Color.White
+        Me.dgvUserAdmin.Location = New System.Drawing.Point(13, 190)
+        Me.dgvUserAdmin.Margin = New System.Windows.Forms.Padding(4)
+        Me.dgvUserAdmin.Name = "dgvUserAdmin"
+        Me.dgvUserAdmin.ReadOnly = True
+        Me.dgvUserAdmin.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.dgvUserAdmin.RowHeadersVisible = False
+        Me.dgvUserAdmin.RowTemplate.ReadOnly = True
+        Me.dgvUserAdmin.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvUserAdmin.Size = New System.Drawing.Size(849, 151)
+        Me.dgvUserAdmin.TabIndex = 33
+        '
+        'pnlCreateUser
+        '
+        Me.pnlCreateUser.Controls.Add(Me.Label2)
+        Me.pnlCreateUser.Controls.Add(Me.tbxUserPasswordCreateUser)
+        Me.pnlCreateUser.Controls.Add(Me.Label1)
+        Me.pnlCreateUser.Controls.Add(Me.tbxUserSystemNameCreateUser)
+        Me.pnlCreateUser.Controls.Add(Me.lblUserEmail)
+        Me.pnlCreateUser.Controls.Add(Me.lblUserName)
+        Me.pnlCreateUser.Controls.Add(Me.lblUserRole)
+        Me.pnlCreateUser.Controls.Add(Me.cbxUserRoleCreateUser)
+        Me.pnlCreateUser.Controls.Add(Me.tbxUserEmailCreateUser)
+        Me.pnlCreateUser.Controls.Add(Me.tbxUserNameCreateUser)
+        Me.pnlCreateUser.Controls.Add(Me.lblCancelCreateUser)
+        Me.pnlCreateUser.Controls.Add(Me.lblAddCreateUser)
+        Me.pnlCreateUser.Controls.Add(Me.lblAddUserImage)
+        Me.pnlCreateUser.Controls.Add(Me.lblAddUser)
+        Me.pnlCreateUser.Location = New System.Drawing.Point(79, 568)
+        Me.pnlCreateUser.Margin = New System.Windows.Forms.Padding(4)
+        Me.pnlCreateUser.Name = "pnlCreateUser"
+        Me.pnlCreateUser.Size = New System.Drawing.Size(325, 77)
+        Me.pnlCreateUser.TabIndex = 21
+        Me.pnlCreateUser.Visible = False
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label2.Location = New System.Drawing.Point(279, 165)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(176, 25)
+        Me.Label2.TabIndex = 24
+        Me.Label2.Text = "Usuario Password:"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'tbxUserPasswordCreateUser
+        '
+        Me.tbxUserPasswordCreateUser.BackColor = System.Drawing.Color.MediumSeaGreen
+        Me.tbxUserPasswordCreateUser.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.tbxUserPasswordCreateUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxUserPasswordCreateUser.ForeColor = System.Drawing.Color.White
+        Me.tbxUserPasswordCreateUser.Location = New System.Drawing.Point(301, 199)
+        Me.tbxUserPasswordCreateUser.Margin = New System.Windows.Forms.Padding(4)
+        Me.tbxUserPasswordCreateUser.Name = "tbxUserPasswordCreateUser"
+        Me.tbxUserPasswordCreateUser.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.tbxUserPasswordCreateUser.Size = New System.Drawing.Size(212, 30)
+        Me.tbxUserPasswordCreateUser.TabIndex = 23
+        Me.tbxUserPasswordCreateUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.tbxUserPasswordCreateUser.UseSystemPasswordChar = True
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label1.Location = New System.Drawing.Point(12, 164)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(177, 25)
+        Me.Label1.TabIndex = 22
+        Me.Label1.Text = "Usuario Nickname:"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'tbxUserSystemNameCreateUser
+        '
+        Me.tbxUserSystemNameCreateUser.BackColor = System.Drawing.Color.MediumSeaGreen
+        Me.tbxUserSystemNameCreateUser.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.tbxUserSystemNameCreateUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxUserSystemNameCreateUser.ForeColor = System.Drawing.Color.White
+        Me.tbxUserSystemNameCreateUser.Location = New System.Drawing.Point(31, 199)
+        Me.tbxUserSystemNameCreateUser.Margin = New System.Windows.Forms.Padding(4)
+        Me.tbxUserSystemNameCreateUser.Name = "tbxUserSystemNameCreateUser"
+        Me.tbxUserSystemNameCreateUser.Size = New System.Drawing.Size(212, 30)
+        Me.tbxUserSystemNameCreateUser.TabIndex = 21
+        Me.tbxUserSystemNameCreateUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'lblUserEmail
+        '
+        Me.lblUserEmail.AutoSize = True
+        Me.lblUserEmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblUserEmail.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblUserEmail.Location = New System.Drawing.Point(468, 81)
+        Me.lblUserEmail.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblUserEmail.Name = "lblUserEmail"
+        Me.lblUserEmail.Size = New System.Drawing.Size(138, 25)
+        Me.lblUserEmail.TabIndex = 20
+        Me.lblUserEmail.Text = "Usuario Email:"
+        Me.lblUserEmail.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'lblUserName
+        '
+        Me.lblUserName.AutoSize = True
+        Me.lblUserName.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblUserName.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblUserName.Location = New System.Drawing.Point(12, 79)
+        Me.lblUserName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblUserName.Name = "lblUserName"
+        Me.lblUserName.Size = New System.Drawing.Size(159, 25)
+        Me.lblUserName.TabIndex = 18
+        Me.lblUserName.Text = "Usuario Nombre:"
+        Me.lblUserName.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'lblUserRole
+        '
+        Me.lblUserRole.AutoSize = True
+        Me.lblUserRole.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblUserRole.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblUserRole.Location = New System.Drawing.Point(548, 162)
+        Me.lblUserRole.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblUserRole.Name = "lblUserRole"
+        Me.lblUserRole.Size = New System.Drawing.Size(118, 25)
+        Me.lblUserRole.TabIndex = 17
+        Me.lblUserRole.Text = "Usuario Rol:"
+        Me.lblUserRole.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'cbxUserRoleCreateUser
+        '
+        Me.cbxUserRoleCreateUser.BackColor = System.Drawing.Color.MediumSeaGreen
+        Me.cbxUserRoleCreateUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cbxUserRoleCreateUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbxUserRoleCreateUser.FormattingEnabled = True
+        Me.cbxUserRoleCreateUser.Location = New System.Drawing.Point(576, 199)
+        Me.cbxUserRoleCreateUser.Margin = New System.Windows.Forms.Padding(4)
+        Me.cbxUserRoleCreateUser.Name = "cbxUserRoleCreateUser"
+        Me.cbxUserRoleCreateUser.Size = New System.Drawing.Size(211, 32)
+        Me.cbxUserRoleCreateUser.TabIndex = 16
+        '
+        'tbxUserEmailCreateUser
+        '
+        Me.tbxUserEmailCreateUser.BackColor = System.Drawing.Color.MediumSeaGreen
+        Me.tbxUserEmailCreateUser.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.tbxUserEmailCreateUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxUserEmailCreateUser.ForeColor = System.Drawing.Color.White
+        Me.tbxUserEmailCreateUser.Location = New System.Drawing.Point(485, 117)
+        Me.tbxUserEmailCreateUser.Margin = New System.Windows.Forms.Padding(4)
+        Me.tbxUserEmailCreateUser.Name = "tbxUserEmailCreateUser"
+        Me.tbxUserEmailCreateUser.Size = New System.Drawing.Size(307, 30)
+        Me.tbxUserEmailCreateUser.TabIndex = 15
+        Me.tbxUserEmailCreateUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'tbxUserNameCreateUser
+        '
+        Me.tbxUserNameCreateUser.BackColor = System.Drawing.Color.MediumSeaGreen
+        Me.tbxUserNameCreateUser.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.tbxUserNameCreateUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxUserNameCreateUser.ForeColor = System.Drawing.Color.White
+        Me.tbxUserNameCreateUser.Location = New System.Drawing.Point(31, 117)
+        Me.tbxUserNameCreateUser.Margin = New System.Windows.Forms.Padding(4)
+        Me.tbxUserNameCreateUser.Name = "tbxUserNameCreateUser"
+        Me.tbxUserNameCreateUser.Size = New System.Drawing.Size(371, 30)
+        Me.tbxUserNameCreateUser.TabIndex = 13
+        Me.tbxUserNameCreateUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'lblCancelCreateUser
+        '
+        Me.lblCancelCreateUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCancelCreateUser.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblCancelCreateUser.Image = CType(resources.GetObject("lblCancelCreateUser.Image"), System.Drawing.Image)
+        Me.lblCancelCreateUser.Location = New System.Drawing.Point(433, 294)
+        Me.lblCancelCreateUser.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblCancelCreateUser.Name = "lblCancelCreateUser"
+        Me.lblCancelCreateUser.Size = New System.Drawing.Size(69, 58)
+        Me.lblCancelCreateUser.TabIndex = 12
+        Me.lblCancelCreateUser.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'lblAddCreateUser
+        '
+        Me.lblAddCreateUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAddCreateUser.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblAddCreateUser.Image = CType(resources.GetObject("lblAddCreateUser.Image"), System.Drawing.Image)
+        Me.lblAddCreateUser.Location = New System.Drawing.Point(356, 294)
+        Me.lblAddCreateUser.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblAddCreateUser.Name = "lblAddCreateUser"
+        Me.lblAddCreateUser.Size = New System.Drawing.Size(69, 58)
+        Me.lblAddCreateUser.TabIndex = 11
+        Me.lblAddCreateUser.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'lblAddUserImage
+        '
+        Me.lblAddUserImage.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAddUserImage.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblAddUserImage.Image = CType(resources.GetObject("lblAddUserImage.Image"), System.Drawing.Image)
+        Me.lblAddUserImage.Location = New System.Drawing.Point(12, 0)
+        Me.lblAddUserImage.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblAddUserImage.Name = "lblAddUserImage"
+        Me.lblAddUserImage.Size = New System.Drawing.Size(69, 75)
+        Me.lblAddUserImage.TabIndex = 10
+        Me.lblAddUserImage.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'lblAddUser
+        '
+        Me.lblAddUser.AutoSize = True
+        Me.lblAddUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAddUser.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblAddUser.Location = New System.Drawing.Point(77, 25)
+        Me.lblAddUser.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblAddUser.Name = "lblAddUser"
+        Me.lblAddUser.Size = New System.Drawing.Size(229, 39)
+        Me.lblAddUser.TabIndex = 9
+        Me.lblAddUser.Text = "Crear Usuario"
+        Me.lblAddUser.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'pnlSearchUser
+        '
+        Me.pnlSearchUser.Controls.Add(Me.tbxUserRoleSearchUser)
+        Me.pnlSearchUser.Controls.Add(Me.btnSearchUserSearchUser)
+        Me.pnlSearchUser.Controls.Add(Me.Label25)
+        Me.pnlSearchUser.Controls.Add(Me.tbxUserIDSearchUser)
+        Me.pnlSearchUser.Controls.Add(Me.Label27)
+        Me.pnlSearchUser.Controls.Add(Me.Label29)
+        Me.pnlSearchUser.Controls.Add(Me.Label31)
+        Me.pnlSearchUser.Controls.Add(Me.Label33)
+        Me.pnlSearchUser.Controls.Add(Me.Label34)
+        Me.pnlSearchUser.Controls.Add(Me.tbxUserEmailSearchUser)
+        Me.pnlSearchUser.Controls.Add(Me.tbxUserNickNameSearchUser)
+        Me.pnlSearchUser.Controls.Add(Me.tbxUserNameSearchUser)
+        Me.pnlSearchUser.Controls.Add(Me.btnCancelUserSearchUser)
+        Me.pnlSearchUser.Controls.Add(Me.lblViewUserProfileSearchUser)
+        Me.pnlSearchUser.Controls.Add(Me.Label37)
+        Me.pnlSearchUser.Location = New System.Drawing.Point(477, 370)
+        Me.pnlSearchUser.Margin = New System.Windows.Forms.Padding(4)
+        Me.pnlSearchUser.Name = "pnlSearchUser"
+        Me.pnlSearchUser.Size = New System.Drawing.Size(393, 85)
+        Me.pnlSearchUser.TabIndex = 29
+        Me.pnlSearchUser.Visible = False
+        '
+        'tbxUserRoleSearchUser
+        '
+        Me.tbxUserRoleSearchUser.BackColor = System.Drawing.Color.MediumSeaGreen
+        Me.tbxUserRoleSearchUser.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.tbxUserRoleSearchUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxUserRoleSearchUser.ForeColor = System.Drawing.Color.White
+        Me.tbxUserRoleSearchUser.Location = New System.Drawing.Point(467, 224)
+        Me.tbxUserRoleSearchUser.Margin = New System.Windows.Forms.Padding(4)
+        Me.tbxUserRoleSearchUser.Name = "tbxUserRoleSearchUser"
+        Me.tbxUserRoleSearchUser.Size = New System.Drawing.Size(212, 30)
+        Me.tbxUserRoleSearchUser.TabIndex = 29
+        Me.tbxUserRoleSearchUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'btnSearchUserSearchUser
+        '
+        Me.btnSearchUserSearchUser.BackColor = System.Drawing.Color.MediumSeaGreen
+        Me.btnSearchUserSearchUser.FlatAppearance.BorderSize = 0
+        Me.btnSearchUserSearchUser.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
+        Me.btnSearchUserSearchUser.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSeaGreen
+        Me.btnSearchUserSearchUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSearchUserSearchUser.Location = New System.Drawing.Point(739, 43)
+        Me.btnSearchUserSearchUser.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnSearchUserSearchUser.Name = "btnSearchUserSearchUser"
+        Me.btnSearchUserSearchUser.Size = New System.Drawing.Size(37, 30)
+        Me.btnSearchUserSearchUser.TabIndex = 28
+        Me.btnSearchUserSearchUser.UseVisualStyleBackColor = False
+        '
+        'Label25
+        '
+        Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label25.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label25.Image = CType(resources.GetObject("Label25.Image"), System.Drawing.Image)
+        Me.Label25.Location = New System.Drawing.Point(33, 14)
+        Me.Label25.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(69, 75)
+        Me.Label25.TabIndex = 10
+        Me.Label25.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'tbxUserIDSearchUser
+        '
+        Me.tbxUserIDSearchUser.BackColor = System.Drawing.Color.MediumSeaGreen
+        Me.tbxUserIDSearchUser.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.tbxUserIDSearchUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxUserIDSearchUser.ForeColor = System.Drawing.Color.White
+        Me.tbxUserIDSearchUser.Location = New System.Drawing.Point(523, 43)
+        Me.tbxUserIDSearchUser.Margin = New System.Windows.Forms.Padding(4)
+        Me.tbxUserIDSearchUser.Name = "tbxUserIDSearchUser"
+        Me.tbxUserIDSearchUser.Size = New System.Drawing.Size(215, 30)
+        Me.tbxUserIDSearchUser.TabIndex = 24
+        Me.tbxUserIDSearchUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label27
+        '
+        Me.Label27.AutoSize = True
+        Me.Label27.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label27.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label27.Location = New System.Drawing.Point(391, 43)
+        Me.Label27.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label27.Name = "Label27"
+        Me.Label27.Size = New System.Drawing.Size(114, 25)
+        Me.Label27.TabIndex = 23
+        Me.Label27.Text = "Usuario ID :"
+        Me.Label27.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label29
+        '
+        Me.Label29.AutoSize = True
+        Me.Label29.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label29.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label29.Location = New System.Drawing.Point(429, 103)
+        Me.Label29.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label29.Name = "Label29"
+        Me.Label29.Size = New System.Drawing.Size(138, 25)
+        Me.Label29.TabIndex = 20
+        Me.Label29.Text = "Usuario Email:"
+        Me.Label29.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label31
+        '
+        Me.Label31.AutoSize = True
+        Me.Label31.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label31.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label31.Location = New System.Drawing.Point(56, 188)
+        Me.Label31.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label31.Name = "Label31"
+        Me.Label31.Size = New System.Drawing.Size(177, 25)
+        Me.Label31.TabIndex = 19
+        Me.Label31.Text = "Usuario Nickname:"
+        Me.Label31.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label33
+        '
+        Me.Label33.AutoSize = True
+        Me.Label33.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label33.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label33.Location = New System.Drawing.Point(56, 101)
+        Me.Label33.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label33.Name = "Label33"
+        Me.Label33.Size = New System.Drawing.Size(159, 25)
+        Me.Label33.TabIndex = 18
+        Me.Label33.Text = "Usuario Nombre:"
+        Me.Label33.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label34
+        '
+        Me.Label34.AutoSize = True
+        Me.Label34.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label34.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label34.Location = New System.Drawing.Point(445, 196)
+        Me.Label34.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label34.Name = "Label34"
+        Me.Label34.Size = New System.Drawing.Size(118, 25)
+        Me.Label34.TabIndex = 17
+        Me.Label34.Text = "Usuario Rol:"
+        Me.Label34.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'tbxUserEmailSearchUser
+        '
+        Me.tbxUserEmailSearchUser.BackColor = System.Drawing.Color.MediumSeaGreen
+        Me.tbxUserEmailSearchUser.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.tbxUserEmailSearchUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxUserEmailSearchUser.ForeColor = System.Drawing.Color.White
+        Me.tbxUserEmailSearchUser.Location = New System.Drawing.Point(451, 137)
+        Me.tbxUserEmailSearchUser.Margin = New System.Windows.Forms.Padding(4)
+        Me.tbxUserEmailSearchUser.Name = "tbxUserEmailSearchUser"
+        Me.tbxUserEmailSearchUser.Size = New System.Drawing.Size(345, 30)
+        Me.tbxUserEmailSearchUser.TabIndex = 15
+        Me.tbxUserEmailSearchUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'tbxUserNickNameSearchUser
+        '
+        Me.tbxUserNickNameSearchUser.BackColor = System.Drawing.Color.MediumSeaGreen
+        Me.tbxUserNickNameSearchUser.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.tbxUserNickNameSearchUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxUserNickNameSearchUser.ForeColor = System.Drawing.Color.White
+        Me.tbxUserNickNameSearchUser.Location = New System.Drawing.Point(77, 222)
+        Me.tbxUserNickNameSearchUser.Margin = New System.Windows.Forms.Padding(4)
+        Me.tbxUserNickNameSearchUser.Name = "tbxUserNickNameSearchUser"
+        Me.tbxUserNickNameSearchUser.Size = New System.Drawing.Size(212, 30)
+        Me.tbxUserNickNameSearchUser.TabIndex = 14
+        Me.tbxUserNickNameSearchUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'tbxUserNameSearchUser
+        '
+        Me.tbxUserNameSearchUser.BackColor = System.Drawing.Color.MediumSeaGreen
+        Me.tbxUserNameSearchUser.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.tbxUserNameSearchUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxUserNameSearchUser.ForeColor = System.Drawing.Color.White
+        Me.tbxUserNameSearchUser.Location = New System.Drawing.Point(80, 135)
+        Me.tbxUserNameSearchUser.Margin = New System.Windows.Forms.Padding(4)
+        Me.tbxUserNameSearchUser.Name = "tbxUserNameSearchUser"
+        Me.tbxUserNameSearchUser.Size = New System.Drawing.Size(349, 30)
+        Me.tbxUserNameSearchUser.TabIndex = 13
+        Me.tbxUserNameSearchUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'btnCancelUserSearchUser
+        '
+        Me.btnCancelUserSearchUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancelUserSearchUser.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnCancelUserSearchUser.Image = CType(resources.GetObject("btnCancelUserSearchUser.Image"), System.Drawing.Image)
+        Me.btnCancelUserSearchUser.Location = New System.Drawing.Point(409, 281)
+        Me.btnCancelUserSearchUser.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.btnCancelUserSearchUser.Name = "btnCancelUserSearchUser"
+        Me.btnCancelUserSearchUser.Size = New System.Drawing.Size(69, 58)
+        Me.btnCancelUserSearchUser.TabIndex = 12
+        Me.btnCancelUserSearchUser.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'lblViewUserProfileSearchUser
+        '
+        Me.lblViewUserProfileSearchUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblViewUserProfileSearchUser.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblViewUserProfileSearchUser.Image = CType(resources.GetObject("lblViewUserProfileSearchUser.Image"), System.Drawing.Image)
+        Me.lblViewUserProfileSearchUser.Location = New System.Drawing.Point(332, 281)
+        Me.lblViewUserProfileSearchUser.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblViewUserProfileSearchUser.Name = "lblViewUserProfileSearchUser"
+        Me.lblViewUserProfileSearchUser.Size = New System.Drawing.Size(69, 58)
+        Me.lblViewUserProfileSearchUser.TabIndex = 11
+        Me.lblViewUserProfileSearchUser.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label37
+        '
+        Me.Label37.AutoSize = True
+        Me.Label37.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label37.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label37.Location = New System.Drawing.Point(105, 36)
+        Me.Label37.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label37.Name = "Label37"
+        Me.Label37.Size = New System.Drawing.Size(250, 39)
+        Me.Label37.TabIndex = 9
+        Me.Label37.Text = "Buscar Usuario"
+        Me.Label37.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'lblAdministrateUsers
+        '
+        Me.lblAdministrateUsers.AutoSize = True
+        Me.lblAdministrateUsers.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAdministrateUsers.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblAdministrateUsers.Location = New System.Drawing.Point(4, 9)
+        Me.lblAdministrateUsers.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblAdministrateUsers.Name = "lblAdministrateUsers"
+        Me.lblAdministrateUsers.Size = New System.Drawing.Size(333, 39)
+        Me.lblAdministrateUsers.TabIndex = 8
+        Me.lblAdministrateUsers.Text = "Administrar Usuarios"
+        Me.lblAdministrateUsers.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'lblSearchUser
+        '
+        Me.lblSearchUser.AutoSize = True
+        Me.lblSearchUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSearchUser.ForeColor = System.Drawing.Color.White
+        Me.lblSearchUser.Location = New System.Drawing.Point(637, 138)
+        Me.lblSearchUser.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblSearchUser.Name = "lblSearchUser"
+        Me.lblSearchUser.Size = New System.Drawing.Size(145, 25)
+        Me.lblSearchUser.TabIndex = 19
+        Me.lblSearchUser.Text = "Buscar Usuario"
+        '
+        'lblDeleteUser
+        '
+        Me.lblDeleteUser.AutoSize = True
+        Me.lblDeleteUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDeleteUser.ForeColor = System.Drawing.Color.White
+        Me.lblDeleteUser.Location = New System.Drawing.Point(463, 138)
+        Me.lblDeleteUser.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblDeleteUser.Name = "lblDeleteUser"
+        Me.lblDeleteUser.Size = New System.Drawing.Size(153, 25)
+        Me.lblDeleteUser.TabIndex = 18
+        Me.lblDeleteUser.Text = "Eliminar Usuario"
+        '
+        'lblModifyUser
+        '
+        Me.lblModifyUser.AutoSize = True
+        Me.lblModifyUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblModifyUser.ForeColor = System.Drawing.Color.White
+        Me.lblModifyUser.Location = New System.Drawing.Point(273, 138)
+        Me.lblModifyUser.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblModifyUser.Name = "lblModifyUser"
+        Me.lblModifyUser.Size = New System.Drawing.Size(163, 25)
+        Me.lblModifyUser.TabIndex = 17
+        Me.lblModifyUser.Text = "Modificar Usuario"
+        '
+        'lblCreateUser
+        '
+        Me.lblCreateUser.AutoSize = True
+        Me.lblCreateUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCreateUser.ForeColor = System.Drawing.Color.White
+        Me.lblCreateUser.Location = New System.Drawing.Point(113, 137)
+        Me.lblCreateUser.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblCreateUser.Name = "lblCreateUser"
+        Me.lblCreateUser.Size = New System.Drawing.Size(133, 25)
+        Me.lblCreateUser.TabIndex = 16
+        Me.lblCreateUser.Text = "Crear Usuario"
+        '
+        'btnViewUsers
+        '
+        Me.btnViewUsers.BackColor = System.Drawing.Color.Transparent
+        Me.btnViewUsers.FlatAppearance.BorderSize = 0
+        Me.btnViewUsers.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Thistle
+        Me.btnViewUsers.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Thistle
+        Me.btnViewUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnViewUsers.Location = New System.Drawing.Point(711, 447)
+        Me.btnViewUsers.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnViewUsers.Name = "btnViewUsers"
+        Me.btnViewUsers.Size = New System.Drawing.Size(120, 111)
+        Me.btnViewUsers.TabIndex = 15
+        Me.btnViewUsers.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnViewUsers.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btnViewUsers.UseVisualStyleBackColor = False
+        '
+        'btnDeleteUser
+        '
+        Me.btnDeleteUser.BackColor = System.Drawing.Color.Transparent
+        Me.btnDeleteUser.FlatAppearance.BorderSize = 0
+        Me.btnDeleteUser.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Thistle
+        Me.btnDeleteUser.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Thistle
+        Me.btnDeleteUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDeleteUser.Image = CType(resources.GetObject("btnDeleteUser.Image"), System.Drawing.Image)
+        Me.btnDeleteUser.Location = New System.Drawing.Point(487, 37)
+        Me.btnDeleteUser.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnDeleteUser.Name = "btnDeleteUser"
+        Me.btnDeleteUser.Size = New System.Drawing.Size(107, 98)
+        Me.btnDeleteUser.TabIndex = 13
+        Me.btnDeleteUser.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnDeleteUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btnDeleteUser.UseVisualStyleBackColor = False
+        '
+        'btnModifyUser
+        '
+        Me.btnModifyUser.BackColor = System.Drawing.Color.Transparent
+        Me.btnModifyUser.FlatAppearance.BorderSize = 0
+        Me.btnModifyUser.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Thistle
+        Me.btnModifyUser.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Thistle
+        Me.btnModifyUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnModifyUser.Image = CType(resources.GetObject("btnModifyUser.Image"), System.Drawing.Image)
+        Me.btnModifyUser.Location = New System.Drawing.Point(311, 37)
+        Me.btnModifyUser.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnModifyUser.Name = "btnModifyUser"
+        Me.btnModifyUser.Size = New System.Drawing.Size(107, 98)
+        Me.btnModifyUser.TabIndex = 12
+        Me.btnModifyUser.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnModifyUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btnModifyUser.UseVisualStyleBackColor = False
+        '
+        'btnCreateUser
+        '
+        Me.btnCreateUser.BackColor = System.Drawing.Color.Transparent
+        Me.btnCreateUser.FlatAppearance.BorderSize = 0
+        Me.btnCreateUser.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Thistle
+        Me.btnCreateUser.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Thistle
+        Me.btnCreateUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCreateUser.Image = CType(resources.GetObject("btnCreateUser.Image"), System.Drawing.Image)
+        Me.btnCreateUser.Location = New System.Drawing.Point(139, 37)
+        Me.btnCreateUser.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnCreateUser.Name = "btnCreateUser"
+        Me.btnCreateUser.Size = New System.Drawing.Size(107, 98)
+        Me.btnCreateUser.TabIndex = 11
+        Me.btnCreateUser.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnCreateUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btnCreateUser.UseVisualStyleBackColor = False
+        '
         'panelReservations
         '
         Me.panelReservations.Controls.Add(Me.pnlDeleteReservation)
@@ -384,21 +1449,16 @@ Partial Class Home
         Me.panelReservations.Controls.Add(Me.Panel7)
         Me.panelReservations.Controls.Add(Me.Panel11)
         Me.panelReservations.Controls.Add(Me.pnlModifyReservation)
-        Me.panelReservations.Controls.Add(Me.lblSearchReservation)
-        Me.panelReservations.Controls.Add(Me.Button16)
-        Me.panelReservations.Controls.Add(Me.TextBox16)
         Me.panelReservations.Controls.Add(Me.dgvClassReservations)
         Me.panelReservations.Controls.Add(Me.lblDeleteReservation)
-        Me.panelReservations.Controls.Add(Me.lblModifyReservation)
         Me.panelReservations.Controls.Add(Me.lblCreateReservation)
         Me.panelReservations.Controls.Add(Me.btnDeleteReservation)
-        Me.panelReservations.Controls.Add(Me.btnModifyReservation)
         Me.panelReservations.Controls.Add(Me.btnCreateReservation)
         Me.panelReservations.Controls.Add(Me.lblAdminReservations)
-        Me.panelReservations.Location = New System.Drawing.Point(193, 55)
+        Me.panelReservations.Location = New System.Drawing.Point(216, 351)
         Me.panelReservations.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.panelReservations.Name = "panelReservations"
-        Me.panelReservations.Size = New System.Drawing.Size(793, 518)
+        Me.panelReservations.Size = New System.Drawing.Size(450, 53)
         Me.panelReservations.TabIndex = 39
         Me.panelReservations.Visible = False
         '
@@ -409,12 +1469,29 @@ Partial Class Home
         Me.pnlDeleteReservation.Controls.Add(Me.txbClassDelete)
         Me.pnlDeleteReservation.Controls.Add(Me.Label99)
         Me.pnlDeleteReservation.Controls.Add(Me.Label100)
-        Me.pnlDeleteReservation.Location = New System.Drawing.Point(80, 91)
+        Me.pnlDeleteReservation.Location = New System.Drawing.Point(376, 450)
         Me.pnlDeleteReservation.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlDeleteReservation.Name = "pnlDeleteReservation"
-        Me.pnlDeleteReservation.Size = New System.Drawing.Size(688, 265)
+        Me.pnlDeleteReservation.Size = New System.Drawing.Size(441, 81)
         Me.pnlDeleteReservation.TabIndex = 30
         Me.pnlDeleteReservation.Visible = False
+        '
+        'btnDelReservation
+        '
+        Me.btnDelReservation.BackColor = System.Drawing.Color.Transparent
+        Me.btnDelReservation.FlatAppearance.BorderSize = 0
+        Me.btnDelReservation.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Thistle
+        Me.btnDelReservation.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Thistle
+        Me.btnDelReservation.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDelReservation.Image = CType(resources.GetObject("btnDelReservation.Image"), System.Drawing.Image)
+        Me.btnDelReservation.Location = New System.Drawing.Point(315, 167)
+        Me.btnDelReservation.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnDelReservation.Name = "btnDelReservation"
+        Me.btnDelReservation.Size = New System.Drawing.Size(93, 68)
+        Me.btnDelReservation.TabIndex = 56
+        Me.btnDelReservation.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnDelReservation.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btnDelReservation.UseVisualStyleBackColor = False
         '
         'lblClassNameDelete
         '
@@ -478,10 +1555,10 @@ Partial Class Home
         Me.pnlClassReservation.Controls.Add(Me.Label79)
         Me.pnlClassReservation.Controls.Add(Me.Label80)
         Me.pnlClassReservation.Controls.Add(Me.lblClassReservation)
-        Me.pnlClassReservation.Location = New System.Drawing.Point(35, 357)
+        Me.pnlClassReservation.Location = New System.Drawing.Point(37, 378)
         Me.pnlClassReservation.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlClassReservation.Name = "pnlClassReservation"
-        Me.pnlClassReservation.Size = New System.Drawing.Size(353, 84)
+        Me.pnlClassReservation.Size = New System.Drawing.Size(293, 72)
         Me.pnlClassReservation.TabIndex = 39
         Me.pnlClassReservation.Visible = False
         '
@@ -521,23 +1598,23 @@ Partial Class Home
         Me.dgvClassroomReservation.BackgroundColor = System.Drawing.Color.MediumSeaGreen
         Me.dgvClassroomReservation.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dgvClassroomReservation.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.MediumSeaGreen
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvClassroomReservation.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle27.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle27.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle27.ForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle27.SelectionBackColor = System.Drawing.Color.MediumSeaGreen
+        DataGridViewCellStyle27.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvClassroomReservation.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle27
         Me.dgvClassroomReservation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.ButtonHighlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvClassroomReservation.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle28.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle28.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle28.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        DataGridViewCellStyle28.SelectionBackColor = System.Drawing.SystemColors.ButtonHighlight
+        DataGridViewCellStyle28.SelectionForeColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvClassroomReservation.DefaultCellStyle = DataGridViewCellStyle28
         Me.dgvClassroomReservation.GridColor = System.Drawing.Color.White
         Me.dgvClassroomReservation.Location = New System.Drawing.Point(4, 111)
         Me.dgvClassroomReservation.Margin = New System.Windows.Forms.Padding(4)
@@ -1346,47 +2423,6 @@ Partial Class Home
         Me.Label93.TextAlign = System.Drawing.ContentAlignment.TopCenter
         Me.Label93.UseMnemonic = False
         '
-        'lblSearchReservation
-        '
-        Me.lblSearchReservation.AutoSize = True
-        Me.lblSearchReservation.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSearchReservation.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.lblSearchReservation.Location = New System.Drawing.Point(133, 166)
-        Me.lblSearchReservation.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblSearchReservation.Name = "lblSearchReservation"
-        Me.lblSearchReservation.Size = New System.Drawing.Size(197, 25)
-        Me.lblSearchReservation.TabIndex = 34
-        Me.lblSearchReservation.Text = "Buscar Reservacion: "
-        Me.lblSearchReservation.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Button16
-        '
-        Me.Button16.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.Button16.FlatAppearance.BorderSize = 0
-        Me.Button16.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
-        Me.Button16.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSeaGreen
-        Me.Button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button16.Image = CType(resources.GetObject("Button16.Image"), System.Drawing.Image)
-        Me.Button16.Location = New System.Drawing.Point(362, 166)
-        Me.Button16.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button16.Name = "Button16"
-        Me.Button16.Size = New System.Drawing.Size(37, 30)
-        Me.Button16.TabIndex = 30
-        Me.Button16.UseVisualStyleBackColor = False
-        '
-        'TextBox16
-        '
-        Me.TextBox16.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.TextBox16.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox16.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox16.ForeColor = System.Drawing.Color.White
-        Me.TextBox16.Location = New System.Drawing.Point(397, 166)
-        Me.TextBox16.Margin = New System.Windows.Forms.Padding(4)
-        Me.TextBox16.Name = "TextBox16"
-        Me.TextBox16.Size = New System.Drawing.Size(212, 30)
-        Me.TextBox16.TabIndex = 33
-        Me.TextBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
         'dgvClassReservations
         '
         Me.dgvClassReservations.AllowUserToAddRows = False
@@ -1396,23 +2432,23 @@ Partial Class Home
         Me.dgvClassReservations.BackgroundColor = System.Drawing.Color.MediumSeaGreen
         Me.dgvClassReservations.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dgvClassReservations.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.MediumSeaGreen
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvClassReservations.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle29.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle29.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle29.ForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle29.SelectionBackColor = System.Drawing.Color.MediumSeaGreen
+        DataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvClassReservations.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle29
         Me.dgvClassReservations.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.ButtonHighlight
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvClassReservations.DefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle30.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle30.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle30.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        DataGridViewCellStyle30.SelectionBackColor = System.Drawing.SystemColors.ButtonHighlight
+        DataGridViewCellStyle30.SelectionForeColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvClassReservations.DefaultCellStyle = DataGridViewCellStyle30
         Me.dgvClassReservations.GridColor = System.Drawing.Color.White
         Me.dgvClassReservations.Location = New System.Drawing.Point(16, 203)
         Me.dgvClassReservations.Margin = New System.Windows.Forms.Padding(4)
@@ -1430,31 +2466,19 @@ Partial Class Home
         Me.lblDeleteReservation.AutoSize = True
         Me.lblDeleteReservation.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDeleteReservation.ForeColor = System.Drawing.Color.White
-        Me.lblDeleteReservation.Location = New System.Drawing.Point(613, 137)
+        Me.lblDeleteReservation.Location = New System.Drawing.Point(438, 145)
         Me.lblDeleteReservation.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblDeleteReservation.Name = "lblDeleteReservation"
         Me.lblDeleteReservation.Size = New System.Drawing.Size(194, 25)
         Me.lblDeleteReservation.TabIndex = 19
         Me.lblDeleteReservation.Text = "Eliminar Reservación"
         '
-        'lblModifyReservation
-        '
-        Me.lblModifyReservation.AutoSize = True
-        Me.lblModifyReservation.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblModifyReservation.ForeColor = System.Drawing.Color.White
-        Me.lblModifyReservation.Location = New System.Drawing.Point(383, 135)
-        Me.lblModifyReservation.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblModifyReservation.Name = "lblModifyReservation"
-        Me.lblModifyReservation.Size = New System.Drawing.Size(204, 25)
-        Me.lblModifyReservation.TabIndex = 18
-        Me.lblModifyReservation.Text = "Modificar Reservación"
-        '
         'lblCreateReservation
         '
         Me.lblCreateReservation.AutoSize = True
         Me.lblCreateReservation.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCreateReservation.ForeColor = System.Drawing.Color.White
-        Me.lblCreateReservation.Location = New System.Drawing.Point(92, 135)
+        Me.lblCreateReservation.Location = New System.Drawing.Point(218, 142)
         Me.lblCreateReservation.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblCreateReservation.Name = "lblCreateReservation"
         Me.lblCreateReservation.Size = New System.Drawing.Size(174, 25)
@@ -1469,7 +2493,7 @@ Partial Class Home
         Me.btnDeleteReservation.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Thistle
         Me.btnDeleteReservation.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnDeleteReservation.Image = CType(resources.GetObject("btnDeleteReservation.Image"), System.Drawing.Image)
-        Me.btnDeleteReservation.Location = New System.Drawing.Point(647, 62)
+        Me.btnDeleteReservation.Location = New System.Drawing.Point(469, 70)
         Me.btnDeleteReservation.Margin = New System.Windows.Forms.Padding(4)
         Me.btnDeleteReservation.Name = "btnDeleteReservation"
         Me.btnDeleteReservation.Size = New System.Drawing.Size(93, 68)
@@ -1477,23 +2501,6 @@ Partial Class Home
         Me.btnDeleteReservation.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnDeleteReservation.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.btnDeleteReservation.UseVisualStyleBackColor = False
-        '
-        'btnModifyReservation
-        '
-        Me.btnModifyReservation.BackColor = System.Drawing.Color.Transparent
-        Me.btnModifyReservation.FlatAppearance.BorderSize = 0
-        Me.btnModifyReservation.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Thistle
-        Me.btnModifyReservation.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Thistle
-        Me.btnModifyReservation.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnModifyReservation.Image = CType(resources.GetObject("btnModifyReservation.Image"), System.Drawing.Image)
-        Me.btnModifyReservation.Location = New System.Drawing.Point(402, 57)
-        Me.btnModifyReservation.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnModifyReservation.Name = "btnModifyReservation"
-        Me.btnModifyReservation.Size = New System.Drawing.Size(93, 68)
-        Me.btnModifyReservation.TabIndex = 13
-        Me.btnModifyReservation.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btnModifyReservation.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.btnModifyReservation.UseVisualStyleBackColor = False
         '
         'btnCreateReservation
         '
@@ -1503,7 +2510,7 @@ Partial Class Home
         Me.btnCreateReservation.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Thistle
         Me.btnCreateReservation.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCreateReservation.Image = CType(resources.GetObject("btnCreateReservation.Image"), System.Drawing.Image)
-        Me.btnCreateReservation.Location = New System.Drawing.Point(140, 63)
+        Me.btnCreateReservation.Location = New System.Drawing.Point(266, 70)
         Me.btnCreateReservation.Margin = New System.Windows.Forms.Padding(4)
         Me.btnCreateReservation.Name = "btnCreateReservation"
         Me.btnCreateReservation.Size = New System.Drawing.Size(93, 68)
@@ -1532,9 +2539,6 @@ Partial Class Home
         Me.panelAdminClass.Controls.Add(Me.pnlCreateClass)
         Me.panelAdminClass.Controls.Add(Me.pnlModifyClass)
         Me.panelAdminClass.Controls.Add(Me.pnlDeleteCLass)
-        Me.panelAdminClass.Controls.Add(Me.lblAdminAulasBuscarAula)
-        Me.panelAdminClass.Controls.Add(Me.Button5)
-        Me.panelAdminClass.Controls.Add(Me.tbxAdminAulasBuscarAula)
         Me.panelAdminClass.Controls.Add(Me.dgvClasses)
         Me.panelAdminClass.Controls.Add(Me.lblDeleteClass)
         Me.panelAdminClass.Controls.Add(Me.btnModifyClass)
@@ -1543,10 +2547,10 @@ Partial Class Home
         Me.panelAdminClass.Controls.Add(Me.btnEditClass)
         Me.panelAdminClass.Controls.Add(Me.btnAddClass)
         Me.panelAdminClass.Controls.Add(Me.lblAdminClass)
-        Me.panelAdminClass.Location = New System.Drawing.Point(213, 278)
+        Me.panelAdminClass.Location = New System.Drawing.Point(212, 104)
         Me.panelAdminClass.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.panelAdminClass.Name = "panelAdminClass"
-        Me.panelAdminClass.Size = New System.Drawing.Size(293, 55)
+        Me.panelAdminClass.Size = New System.Drawing.Size(432, 36)
         Me.panelAdminClass.TabIndex = 28
         Me.panelAdminClass.Visible = False
         '
@@ -1559,7 +2563,7 @@ Partial Class Home
         Me.Panel2.Controls.Add(Me.Button6)
         Me.Panel2.Controls.Add(Me.Button7)
         Me.Panel2.Controls.Add(Me.Label49)
-        Me.Panel2.Location = New System.Drawing.Point(369, 387)
+        Me.Panel2.Location = New System.Drawing.Point(379, 391)
         Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(152, 55)
@@ -1948,8 +2952,6 @@ Partial Class Home
         '
         Me.pnlCreateClass.Controls.Add(Me.lblEstandarizacion)
         Me.pnlCreateClass.Controls.Add(Me.Label42)
-        Me.pnlCreateClass.Controls.Add(Me.lblTiempoLibre)
-        Me.pnlCreateClass.Controls.Add(Me.Label41)
         Me.pnlCreateClass.Controls.Add(Me.tbxHoraFinal)
         Me.pnlCreateClass.Controls.Add(Me.Label40)
         Me.pnlCreateClass.Controls.Add(Me.tbxHoraInicial)
@@ -1971,10 +2973,10 @@ Partial Class Home
         Me.pnlCreateClass.Controls.Add(Me.lblAgregarAulaHorario)
         Me.pnlCreateClass.Controls.Add(Me.Label24)
         Me.pnlCreateClass.Controls.Add(Me.Label26)
-        Me.pnlCreateClass.Location = New System.Drawing.Point(27, 372)
+        Me.pnlCreateClass.Location = New System.Drawing.Point(39, 371)
         Me.pnlCreateClass.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlCreateClass.Name = "pnlCreateClass"
-        Me.pnlCreateClass.Size = New System.Drawing.Size(281, 78)
+        Me.pnlCreateClass.Size = New System.Drawing.Size(285, 67)
         Me.pnlCreateClass.TabIndex = 22
         Me.pnlCreateClass.Visible = False
         '
@@ -2002,31 +3004,6 @@ Partial Class Home
         Me.Label42.TabIndex = 35
         Me.Label42.Text = "Opcional Agregar Horario"
         Me.Label42.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'lblTiempoLibre
-        '
-        Me.lblTiempoLibre.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.lblTiempoLibre.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTiempoLibre.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.lblTiempoLibre.Location = New System.Drawing.Point(673, 383)
-        Me.lblTiempoLibre.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblTiempoLibre.Name = "lblTiempoLibre"
-        Me.lblTiempoLibre.Size = New System.Drawing.Size(128, 30)
-        Me.lblTiempoLibre.TabIndex = 33
-        Me.lblTiempoLibre.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label41
-        '
-        Me.Label41.AutoSize = True
-        Me.Label41.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label41.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label41.Location = New System.Drawing.Point(645, 354)
-        Me.Label41.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label41.Name = "Label41"
-        Me.Label41.Size = New System.Drawing.Size(128, 25)
-        Me.Label41.TabIndex = 32
-        Me.Label41.Text = "Horas Libres:"
-        Me.Label41.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'tbxHoraFinal
         '
@@ -2476,89 +3453,17 @@ Partial Class Home
         '
         'pnlDeleteCLass
         '
-        Me.pnlDeleteCLass.Controls.Add(Me.Label18)
-        Me.pnlDeleteCLass.Controls.Add(Me.tbxCaracteristicasDelete)
-        Me.pnlDeleteCLass.Controls.Add(Me.cbxEdificioDelete)
-        Me.pnlDeleteCLass.Controls.Add(Me.Label19)
-        Me.pnlDeleteCLass.Controls.Add(Me.Label20)
         Me.pnlDeleteCLass.Controls.Add(Me.Label32)
-        Me.pnlDeleteCLass.Controls.Add(Me.cbxTypeDelete)
-        Me.pnlDeleteCLass.Controls.Add(Me.tbxAulaNombreDelete)
         Me.pnlDeleteCLass.Controls.Add(Me.btnDeleteClass)
         Me.pnlDeleteCLass.Controls.Add(Me.Label46)
         Me.pnlDeleteCLass.Controls.Add(Me.Label48)
         Me.pnlDeleteCLass.Controls.Add(Me.lblDeleteClassTitle)
-        Me.pnlDeleteCLass.Location = New System.Drawing.Point(328, 569)
+        Me.pnlDeleteCLass.Location = New System.Drawing.Point(395, 482)
         Me.pnlDeleteCLass.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlDeleteCLass.Name = "pnlDeleteCLass"
-        Me.pnlDeleteCLass.Size = New System.Drawing.Size(281, 64)
+        Me.pnlDeleteCLass.Size = New System.Drawing.Size(316, 77)
         Me.pnlDeleteCLass.TabIndex = 30
         Me.pnlDeleteCLass.Visible = False
-        '
-        'Label18
-        '
-        Me.Label18.AutoSize = True
-        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label18.Location = New System.Drawing.Point(336, 76)
-        Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(165, 25)
-        Me.Label18.TabIndex = 30
-        Me.Label18.Text = "Aula Descripción:"
-        Me.Label18.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'tbxCaracteristicasDelete
-        '
-        Me.tbxCaracteristicasDelete.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.tbxCaracteristicasDelete.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.tbxCaracteristicasDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxCaracteristicasDelete.ForeColor = System.Drawing.Color.White
-        Me.tbxCaracteristicasDelete.Location = New System.Drawing.Point(355, 105)
-        Me.tbxCaracteristicasDelete.Margin = New System.Windows.Forms.Padding(4)
-        Me.tbxCaracteristicasDelete.Multiline = True
-        Me.tbxCaracteristicasDelete.Name = "tbxCaracteristicasDelete"
-        Me.tbxCaracteristicasDelete.Size = New System.Drawing.Size(492, 185)
-        Me.tbxCaracteristicasDelete.TabIndex = 29
-        Me.tbxCaracteristicasDelete.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'cbxEdificioDelete
-        '
-        Me.cbxEdificioDelete.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.cbxEdificioDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cbxEdificioDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbxEdificioDelete.FormattingEnabled = True
-        Me.cbxEdificioDelete.Location = New System.Drawing.Point(43, 175)
-        Me.cbxEdificioDelete.Margin = New System.Windows.Forms.Padding(4)
-        Me.cbxEdificioDelete.Name = "cbxEdificioDelete"
-        Me.cbxEdificioDelete.Size = New System.Drawing.Size(211, 32)
-        Me.cbxEdificioDelete.TabIndex = 28
-        '
-        'Label19
-        '
-        Me.Label19.AutoSize = True
-        Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label19.Location = New System.Drawing.Point(25, 146)
-        Me.Label19.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(80, 25)
-        Me.Label19.TabIndex = 27
-        Me.Label19.Text = "Edificio:"
-        Me.Label19.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label20
-        '
-        Me.Label20.AutoSize = True
-        Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label20.Location = New System.Drawing.Point(25, 76)
-        Me.Label20.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(132, 25)
-        Me.Label20.TabIndex = 26
-        Me.Label20.Text = "Aula Nombre:"
-        Me.Label20.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label32
         '
@@ -2573,31 +3478,6 @@ Partial Class Home
         Me.Label32.Text = "Tipo Aula:"
         Me.Label32.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'cbxTypeDelete
-        '
-        Me.cbxTypeDelete.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.cbxTypeDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cbxTypeDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbxTypeDelete.FormattingEnabled = True
-        Me.cbxTypeDelete.Location = New System.Drawing.Point(43, 252)
-        Me.cbxTypeDelete.Margin = New System.Windows.Forms.Padding(4)
-        Me.cbxTypeDelete.Name = "cbxTypeDelete"
-        Me.cbxTypeDelete.Size = New System.Drawing.Size(211, 32)
-        Me.cbxTypeDelete.TabIndex = 24
-        '
-        'tbxAulaNombreDelete
-        '
-        Me.tbxAulaNombreDelete.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.tbxAulaNombreDelete.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.tbxAulaNombreDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxAulaNombreDelete.ForeColor = System.Drawing.Color.White
-        Me.tbxAulaNombreDelete.Location = New System.Drawing.Point(43, 105)
-        Me.tbxAulaNombreDelete.Margin = New System.Windows.Forms.Padding(4)
-        Me.tbxAulaNombreDelete.Name = "tbxAulaNombreDelete"
-        Me.tbxAulaNombreDelete.Size = New System.Drawing.Size(212, 30)
-        Me.tbxAulaNombreDelete.TabIndex = 23
-        Me.tbxAulaNombreDelete.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
         'btnDeleteClass
         '
         Me.btnDeleteClass.BackColor = System.Drawing.Color.Transparent
@@ -2606,7 +3486,7 @@ Partial Class Home
         Me.btnDeleteClass.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Thistle
         Me.btnDeleteClass.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnDeleteClass.Image = CType(resources.GetObject("btnDeleteClass.Image"), System.Drawing.Image)
-        Me.btnDeleteClass.Location = New System.Drawing.Point(361, 293)
+        Me.btnDeleteClass.Location = New System.Drawing.Point(258, 89)
         Me.btnDeleteClass.Margin = New System.Windows.Forms.Padding(4)
         Me.btnDeleteClass.Name = "btnDeleteClass"
         Me.btnDeleteClass.Size = New System.Drawing.Size(93, 68)
@@ -2620,7 +3500,7 @@ Partial Class Home
         Me.Label46.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label46.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Label46.Image = CType(resources.GetObject("Label46.Image"), System.Drawing.Image)
-        Me.Label46.Location = New System.Drawing.Point(447, 298)
+        Me.Label46.Location = New System.Drawing.Point(392, 99)
         Me.Label46.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label46.Name = "Label46"
         Me.Label46.Size = New System.Drawing.Size(69, 58)
@@ -2652,47 +3532,6 @@ Partial Class Home
         Me.lblDeleteClassTitle.Text = "Eliminar Aula"
         Me.lblDeleteClassTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'lblAdminAulasBuscarAula
-        '
-        Me.lblAdminAulasBuscarAula.AutoSize = True
-        Me.lblAdminAulasBuscarAula.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAdminAulasBuscarAula.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.lblAdminAulasBuscarAula.Location = New System.Drawing.Point(245, 170)
-        Me.lblAdminAulasBuscarAula.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblAdminAulasBuscarAula.Name = "lblAdminAulasBuscarAula"
-        Me.lblAdminAulasBuscarAula.Size = New System.Drawing.Size(124, 25)
-        Me.lblAdminAulasBuscarAula.TabIndex = 34
-        Me.lblAdminAulasBuscarAula.Text = "Buscar Aula:"
-        Me.lblAdminAulasBuscarAula.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Button5
-        '
-        Me.Button5.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.Button5.FlatAppearance.BorderSize = 0
-        Me.Button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
-        Me.Button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSeaGreen
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Image = CType(resources.GetObject("Button5.Image"), System.Drawing.Image)
-        Me.Button5.Location = New System.Drawing.Point(379, 166)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(37, 30)
-        Me.Button5.TabIndex = 30
-        Me.Button5.UseVisualStyleBackColor = False
-        '
-        'tbxAdminAulasBuscarAula
-        '
-        Me.tbxAdminAulasBuscarAula.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.tbxAdminAulasBuscarAula.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.tbxAdminAulasBuscarAula.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxAdminAulasBuscarAula.ForeColor = System.Drawing.Color.White
-        Me.tbxAdminAulasBuscarAula.Location = New System.Drawing.Point(416, 166)
-        Me.tbxAdminAulasBuscarAula.Margin = New System.Windows.Forms.Padding(4)
-        Me.tbxAdminAulasBuscarAula.Name = "tbxAdminAulasBuscarAula"
-        Me.tbxAdminAulasBuscarAula.Size = New System.Drawing.Size(212, 30)
-        Me.tbxAdminAulasBuscarAula.TabIndex = 33
-        Me.tbxAdminAulasBuscarAula.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
         'dgvClasses
         '
         Me.dgvClasses.AllowUserToAddRows = False
@@ -2702,23 +3541,23 @@ Partial Class Home
         Me.dgvClasses.BackgroundColor = System.Drawing.Color.MediumSeaGreen
         Me.dgvClasses.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dgvClasses.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.MediumSeaGreen
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvClasses.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle31.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle31.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle31.ForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle31.SelectionBackColor = System.Drawing.Color.MediumSeaGreen
+        DataGridViewCellStyle31.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvClasses.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle31
         Me.dgvClasses.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.ButtonHighlight
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvClasses.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle32.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle32.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle32.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        DataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.ButtonHighlight
+        DataGridViewCellStyle32.SelectionForeColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvClasses.DefaultCellStyle = DataGridViewCellStyle32
         Me.dgvClasses.GridColor = System.Drawing.Color.White
         Me.dgvClasses.Location = New System.Drawing.Point(16, 203)
         Me.dgvClasses.Margin = New System.Windows.Forms.Padding(4)
@@ -2736,7 +3575,7 @@ Partial Class Home
         Me.lblDeleteClass.AutoSize = True
         Me.lblDeleteClass.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDeleteClass.ForeColor = System.Drawing.Color.White
-        Me.lblDeleteClass.Location = New System.Drawing.Point(447, 135)
+        Me.lblDeleteClass.Location = New System.Drawing.Point(466, 139)
         Me.lblDeleteClass.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblDeleteClass.Name = "lblDeleteClass"
         Me.lblDeleteClass.Size = New System.Drawing.Size(126, 25)
@@ -2748,7 +3587,7 @@ Partial Class Home
         Me.btnModifyClass.AutoSize = True
         Me.btnModifyClass.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnModifyClass.ForeColor = System.Drawing.Color.White
-        Me.btnModifyClass.Location = New System.Drawing.Point(267, 134)
+        Me.btnModifyClass.Location = New System.Drawing.Point(306, 138)
         Me.btnModifyClass.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.btnModifyClass.Name = "btnModifyClass"
         Me.btnModifyClass.Size = New System.Drawing.Size(136, 25)
@@ -2760,7 +3599,7 @@ Partial Class Home
         Me.lblCreateClass.AutoSize = True
         Me.lblCreateClass.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCreateClass.ForeColor = System.Drawing.Color.White
-        Me.lblCreateClass.Location = New System.Drawing.Point(129, 134)
+        Me.lblCreateClass.Location = New System.Drawing.Point(168, 138)
         Me.lblCreateClass.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblCreateClass.Name = "lblCreateClass"
         Me.lblCreateClass.Size = New System.Drawing.Size(106, 25)
@@ -2775,7 +3614,7 @@ Partial Class Home
         Me.btnDeletePanelClass.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Thistle
         Me.btnDeletePanelClass.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnDeletePanelClass.Image = CType(resources.GetObject("btnDeletePanelClass.Image"), System.Drawing.Image)
-        Me.btnDeletePanelClass.Location = New System.Drawing.Point(468, 63)
+        Me.btnDeletePanelClass.Location = New System.Drawing.Point(478, 67)
         Me.btnDeletePanelClass.Margin = New System.Windows.Forms.Padding(4)
         Me.btnDeletePanelClass.Name = "btnDeletePanelClass"
         Me.btnDeletePanelClass.Size = New System.Drawing.Size(93, 68)
@@ -2792,7 +3631,7 @@ Partial Class Home
         Me.btnEditClass.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Thistle
         Me.btnEditClass.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEditClass.Image = CType(resources.GetObject("btnEditClass.Image"), System.Drawing.Image)
-        Me.btnEditClass.Location = New System.Drawing.Point(288, 63)
+        Me.btnEditClass.Location = New System.Drawing.Point(327, 67)
         Me.btnEditClass.Margin = New System.Windows.Forms.Padding(4)
         Me.btnEditClass.Name = "btnEditClass"
         Me.btnEditClass.Size = New System.Drawing.Size(93, 68)
@@ -2809,7 +3648,7 @@ Partial Class Home
         Me.btnAddClass.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Thistle
         Me.btnAddClass.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAddClass.Image = CType(resources.GetObject("btnAddClass.Image"), System.Drawing.Image)
-        Me.btnAddClass.Location = New System.Drawing.Point(140, 63)
+        Me.btnAddClass.Location = New System.Drawing.Point(179, 67)
         Me.btnAddClass.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAddClass.Name = "btnAddClass"
         Me.btnAddClass.Size = New System.Drawing.Size(93, 68)
@@ -2830,1133 +3669,6 @@ Partial Class Home
         Me.lblAdminClass.TabIndex = 9
         Me.lblAdminClass.Text = "Administrar Aulas"
         Me.lblAdminClass.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'pnlAdminstrateUsers
-        '
-        Me.pnlAdminstrateUsers.Controls.Add(Me.dgvUserAdmin)
-        Me.pnlAdminstrateUsers.Controls.Add(Me.btnSearchUser)
-        Me.pnlAdminstrateUsers.Controls.Add(Me.pnlCreateUser)
-        Me.pnlAdminstrateUsers.Controls.Add(Me.pnlDeleteUser)
-        Me.pnlAdminstrateUsers.Controls.Add(Me.pnlModifyUser)
-        Me.pnlAdminstrateUsers.Controls.Add(Me.pnlSearchUser)
-        Me.pnlAdminstrateUsers.Controls.Add(Me.lblAdministrateUsers)
-        Me.pnlAdminstrateUsers.Controls.Add(Me.lblSearchUser)
-        Me.pnlAdminstrateUsers.Controls.Add(Me.lblDeleteUser)
-        Me.pnlAdminstrateUsers.Controls.Add(Me.lblModifyUser)
-        Me.pnlAdminstrateUsers.Controls.Add(Me.lblCreateUser)
-        Me.pnlAdminstrateUsers.Controls.Add(Me.btnViewUsers)
-        Me.pnlAdminstrateUsers.Controls.Add(Me.btnDeleteUser)
-        Me.pnlAdminstrateUsers.Controls.Add(Me.btnModifyUser)
-        Me.pnlAdminstrateUsers.Controls.Add(Me.btnCreateUser)
-        Me.pnlAdminstrateUsers.Location = New System.Drawing.Point(213, 214)
-        Me.pnlAdminstrateUsers.Margin = New System.Windows.Forms.Padding(4)
-        Me.pnlAdminstrateUsers.Name = "pnlAdminstrateUsers"
-        Me.pnlAdminstrateUsers.Size = New System.Drawing.Size(357, 53)
-        Me.pnlAdminstrateUsers.TabIndex = 16
-        Me.pnlAdminstrateUsers.Visible = False
-        '
-        'dgvUserAdmin
-        '
-        Me.dgvUserAdmin.AllowUserToAddRows = False
-        Me.dgvUserAdmin.AllowUserToDeleteRows = False
-        Me.dgvUserAdmin.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.dgvUserAdmin.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        Me.dgvUserAdmin.BackgroundColor = System.Drawing.Color.MediumSeaGreen
-        Me.dgvUserAdmin.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.dgvUserAdmin.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle7.BackColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.MediumSeaGreen
-        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvUserAdmin.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle7
-        Me.dgvUserAdmin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle8.BackColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.ButtonHighlight
-        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvUserAdmin.DefaultCellStyle = DataGridViewCellStyle8
-        Me.dgvUserAdmin.GridColor = System.Drawing.Color.White
-        Me.dgvUserAdmin.Location = New System.Drawing.Point(13, 190)
-        Me.dgvUserAdmin.Margin = New System.Windows.Forms.Padding(4)
-        Me.dgvUserAdmin.Name = "dgvUserAdmin"
-        Me.dgvUserAdmin.ReadOnly = True
-        Me.dgvUserAdmin.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.dgvUserAdmin.RowHeadersVisible = False
-        Me.dgvUserAdmin.RowTemplate.ReadOnly = True
-        Me.dgvUserAdmin.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvUserAdmin.Size = New System.Drawing.Size(849, 151)
-        Me.dgvUserAdmin.TabIndex = 33
-        '
-        'btnSearchUser
-        '
-        Me.btnSearchUser.BackColor = System.Drawing.Color.Transparent
-        Me.btnSearchUser.FlatAppearance.BorderSize = 0
-        Me.btnSearchUser.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Thistle
-        Me.btnSearchUser.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Thistle
-        Me.btnSearchUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSearchUser.Image = CType(resources.GetObject("btnSearchUser.Image"), System.Drawing.Image)
-        Me.btnSearchUser.Location = New System.Drawing.Point(660, 37)
-        Me.btnSearchUser.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnSearchUser.Name = "btnSearchUser"
-        Me.btnSearchUser.Size = New System.Drawing.Size(107, 98)
-        Me.btnSearchUser.TabIndex = 14
-        Me.btnSearchUser.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btnSearchUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.btnSearchUser.UseVisualStyleBackColor = False
-        '
-        'pnlCreateUser
-        '
-        Me.pnlCreateUser.Controls.Add(Me.Label2)
-        Me.pnlCreateUser.Controls.Add(Me.tbxUserPasswordCreateUser)
-        Me.pnlCreateUser.Controls.Add(Me.Label1)
-        Me.pnlCreateUser.Controls.Add(Me.tbxUserSystemNameCreateUser)
-        Me.pnlCreateUser.Controls.Add(Me.lblUserEmail)
-        Me.pnlCreateUser.Controls.Add(Me.lblUserName)
-        Me.pnlCreateUser.Controls.Add(Me.lblUserRole)
-        Me.pnlCreateUser.Controls.Add(Me.cbxUserRoleCreateUser)
-        Me.pnlCreateUser.Controls.Add(Me.tbxUserEmailCreateUser)
-        Me.pnlCreateUser.Controls.Add(Me.tbxUserNameCreateUser)
-        Me.pnlCreateUser.Controls.Add(Me.lblCancelCreateUser)
-        Me.pnlCreateUser.Controls.Add(Me.lblAddCreateUser)
-        Me.pnlCreateUser.Controls.Add(Me.lblAddUserImage)
-        Me.pnlCreateUser.Controls.Add(Me.lblAddUser)
-        Me.pnlCreateUser.Location = New System.Drawing.Point(79, 568)
-        Me.pnlCreateUser.Margin = New System.Windows.Forms.Padding(4)
-        Me.pnlCreateUser.Name = "pnlCreateUser"
-        Me.pnlCreateUser.Size = New System.Drawing.Size(325, 77)
-        Me.pnlCreateUser.TabIndex = 21
-        Me.pnlCreateUser.Visible = False
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label2.Location = New System.Drawing.Point(279, 165)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(176, 25)
-        Me.Label2.TabIndex = 24
-        Me.Label2.Text = "Usuario Password:"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'tbxUserPasswordCreateUser
-        '
-        Me.tbxUserPasswordCreateUser.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.tbxUserPasswordCreateUser.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.tbxUserPasswordCreateUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxUserPasswordCreateUser.ForeColor = System.Drawing.Color.White
-        Me.tbxUserPasswordCreateUser.Location = New System.Drawing.Point(301, 199)
-        Me.tbxUserPasswordCreateUser.Margin = New System.Windows.Forms.Padding(4)
-        Me.tbxUserPasswordCreateUser.Name = "tbxUserPasswordCreateUser"
-        Me.tbxUserPasswordCreateUser.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.tbxUserPasswordCreateUser.Size = New System.Drawing.Size(212, 30)
-        Me.tbxUserPasswordCreateUser.TabIndex = 23
-        Me.tbxUserPasswordCreateUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.tbxUserPasswordCreateUser.UseSystemPasswordChar = True
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label1.Location = New System.Drawing.Point(12, 164)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(177, 25)
-        Me.Label1.TabIndex = 22
-        Me.Label1.Text = "Usuario Nickname:"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'tbxUserSystemNameCreateUser
-        '
-        Me.tbxUserSystemNameCreateUser.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.tbxUserSystemNameCreateUser.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.tbxUserSystemNameCreateUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxUserSystemNameCreateUser.ForeColor = System.Drawing.Color.White
-        Me.tbxUserSystemNameCreateUser.Location = New System.Drawing.Point(31, 199)
-        Me.tbxUserSystemNameCreateUser.Margin = New System.Windows.Forms.Padding(4)
-        Me.tbxUserSystemNameCreateUser.Name = "tbxUserSystemNameCreateUser"
-        Me.tbxUserSystemNameCreateUser.Size = New System.Drawing.Size(212, 30)
-        Me.tbxUserSystemNameCreateUser.TabIndex = 21
-        Me.tbxUserSystemNameCreateUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'lblUserEmail
-        '
-        Me.lblUserEmail.AutoSize = True
-        Me.lblUserEmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblUserEmail.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.lblUserEmail.Location = New System.Drawing.Point(468, 81)
-        Me.lblUserEmail.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblUserEmail.Name = "lblUserEmail"
-        Me.lblUserEmail.Size = New System.Drawing.Size(138, 25)
-        Me.lblUserEmail.TabIndex = 20
-        Me.lblUserEmail.Text = "Usuario Email:"
-        Me.lblUserEmail.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'lblUserName
-        '
-        Me.lblUserName.AutoSize = True
-        Me.lblUserName.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblUserName.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.lblUserName.Location = New System.Drawing.Point(12, 79)
-        Me.lblUserName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblUserName.Name = "lblUserName"
-        Me.lblUserName.Size = New System.Drawing.Size(159, 25)
-        Me.lblUserName.TabIndex = 18
-        Me.lblUserName.Text = "Usuario Nombre:"
-        Me.lblUserName.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'lblUserRole
-        '
-        Me.lblUserRole.AutoSize = True
-        Me.lblUserRole.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblUserRole.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.lblUserRole.Location = New System.Drawing.Point(548, 162)
-        Me.lblUserRole.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblUserRole.Name = "lblUserRole"
-        Me.lblUserRole.Size = New System.Drawing.Size(118, 25)
-        Me.lblUserRole.TabIndex = 17
-        Me.lblUserRole.Text = "Usuario Rol:"
-        Me.lblUserRole.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'cbxUserRoleCreateUser
-        '
-        Me.cbxUserRoleCreateUser.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.cbxUserRoleCreateUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cbxUserRoleCreateUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbxUserRoleCreateUser.FormattingEnabled = True
-        Me.cbxUserRoleCreateUser.Location = New System.Drawing.Point(576, 199)
-        Me.cbxUserRoleCreateUser.Margin = New System.Windows.Forms.Padding(4)
-        Me.cbxUserRoleCreateUser.Name = "cbxUserRoleCreateUser"
-        Me.cbxUserRoleCreateUser.Size = New System.Drawing.Size(211, 32)
-        Me.cbxUserRoleCreateUser.TabIndex = 16
-        '
-        'tbxUserEmailCreateUser
-        '
-        Me.tbxUserEmailCreateUser.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.tbxUserEmailCreateUser.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.tbxUserEmailCreateUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxUserEmailCreateUser.ForeColor = System.Drawing.Color.White
-        Me.tbxUserEmailCreateUser.Location = New System.Drawing.Point(485, 117)
-        Me.tbxUserEmailCreateUser.Margin = New System.Windows.Forms.Padding(4)
-        Me.tbxUserEmailCreateUser.Name = "tbxUserEmailCreateUser"
-        Me.tbxUserEmailCreateUser.Size = New System.Drawing.Size(307, 30)
-        Me.tbxUserEmailCreateUser.TabIndex = 15
-        Me.tbxUserEmailCreateUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'tbxUserNameCreateUser
-        '
-        Me.tbxUserNameCreateUser.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.tbxUserNameCreateUser.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.tbxUserNameCreateUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxUserNameCreateUser.ForeColor = System.Drawing.Color.White
-        Me.tbxUserNameCreateUser.Location = New System.Drawing.Point(31, 117)
-        Me.tbxUserNameCreateUser.Margin = New System.Windows.Forms.Padding(4)
-        Me.tbxUserNameCreateUser.Name = "tbxUserNameCreateUser"
-        Me.tbxUserNameCreateUser.Size = New System.Drawing.Size(371, 30)
-        Me.tbxUserNameCreateUser.TabIndex = 13
-        Me.tbxUserNameCreateUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'lblCancelCreateUser
-        '
-        Me.lblCancelCreateUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCancelCreateUser.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.lblCancelCreateUser.Image = CType(resources.GetObject("lblCancelCreateUser.Image"), System.Drawing.Image)
-        Me.lblCancelCreateUser.Location = New System.Drawing.Point(433, 294)
-        Me.lblCancelCreateUser.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblCancelCreateUser.Name = "lblCancelCreateUser"
-        Me.lblCancelCreateUser.Size = New System.Drawing.Size(69, 58)
-        Me.lblCancelCreateUser.TabIndex = 12
-        Me.lblCancelCreateUser.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'lblAddCreateUser
-        '
-        Me.lblAddCreateUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAddCreateUser.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.lblAddCreateUser.Image = CType(resources.GetObject("lblAddCreateUser.Image"), System.Drawing.Image)
-        Me.lblAddCreateUser.Location = New System.Drawing.Point(356, 294)
-        Me.lblAddCreateUser.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblAddCreateUser.Name = "lblAddCreateUser"
-        Me.lblAddCreateUser.Size = New System.Drawing.Size(69, 58)
-        Me.lblAddCreateUser.TabIndex = 11
-        Me.lblAddCreateUser.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'lblAddUserImage
-        '
-        Me.lblAddUserImage.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAddUserImage.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.lblAddUserImage.Image = CType(resources.GetObject("lblAddUserImage.Image"), System.Drawing.Image)
-        Me.lblAddUserImage.Location = New System.Drawing.Point(12, 0)
-        Me.lblAddUserImage.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblAddUserImage.Name = "lblAddUserImage"
-        Me.lblAddUserImage.Size = New System.Drawing.Size(69, 75)
-        Me.lblAddUserImage.TabIndex = 10
-        Me.lblAddUserImage.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'lblAddUser
-        '
-        Me.lblAddUser.AutoSize = True
-        Me.lblAddUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAddUser.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.lblAddUser.Location = New System.Drawing.Point(77, 25)
-        Me.lblAddUser.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblAddUser.Name = "lblAddUser"
-        Me.lblAddUser.Size = New System.Drawing.Size(229, 39)
-        Me.lblAddUser.TabIndex = 9
-        Me.lblAddUser.Text = "Crear Usuario"
-        Me.lblAddUser.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'pnlDeleteUser
-        '
-        Me.pnlDeleteUser.Controls.Add(Me.lblGoBackDeleteUser)
-        Me.pnlDeleteUser.Controls.Add(Me.Label11)
-        Me.pnlDeleteUser.Controls.Add(Me.tbxUserNickNameDeleteUser)
-        Me.pnlDeleteUser.Controls.Add(Me.tbxUserRoleDeleteUser)
-        Me.pnlDeleteUser.Controls.Add(Me.btnSearchUserDeleteUser)
-        Me.pnlDeleteUser.Controls.Add(Me.tbxUserIDDeleteUser)
-        Me.pnlDeleteUser.Controls.Add(Me.Label8)
-        Me.pnlDeleteUser.Controls.Add(Me.Label10)
-        Me.pnlDeleteUser.Controls.Add(Me.Label12)
-        Me.pnlDeleteUser.Controls.Add(Me.Label13)
-        Me.pnlDeleteUser.Controls.Add(Me.tbxUserEmailDeleteUser)
-        Me.pnlDeleteUser.Controls.Add(Me.tbxUserNameDeleteUser)
-        Me.pnlDeleteUser.Controls.Add(Me.lblCancelDeleteUser)
-        Me.pnlDeleteUser.Controls.Add(Me.lblDeleteDeleteUser)
-        Me.pnlDeleteUser.Controls.Add(Me.Label16)
-        Me.pnlDeleteUser.Controls.Add(Me.lblDeleteUserDelete)
-        Me.pnlDeleteUser.Location = New System.Drawing.Point(9, 478)
-        Me.pnlDeleteUser.Margin = New System.Windows.Forms.Padding(4)
-        Me.pnlDeleteUser.Name = "pnlDeleteUser"
-        Me.pnlDeleteUser.Size = New System.Drawing.Size(395, 71)
-        Me.pnlDeleteUser.TabIndex = 23
-        Me.pnlDeleteUser.Visible = False
-        '
-        'lblGoBackDeleteUser
-        '
-        Me.lblGoBackDeleteUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblGoBackDeleteUser.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.lblGoBackDeleteUser.Image = CType(resources.GetObject("lblGoBackDeleteUser.Image"), System.Drawing.Image)
-        Me.lblGoBackDeleteUser.Location = New System.Drawing.Point(452, 238)
-        Me.lblGoBackDeleteUser.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblGoBackDeleteUser.Name = "lblGoBackDeleteUser"
-        Me.lblGoBackDeleteUser.Size = New System.Drawing.Size(69, 58)
-        Me.lblGoBackDeleteUser.TabIndex = 34
-        Me.lblGoBackDeleteUser.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label11.Location = New System.Drawing.Point(424, 65)
-        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(177, 25)
-        Me.Label11.TabIndex = 33
-        Me.Label11.Text = "Usuario Nickname:"
-        Me.Label11.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'tbxUserNickNameDeleteUser
-        '
-        Me.tbxUserNickNameDeleteUser.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.tbxUserNickNameDeleteUser.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.tbxUserNickNameDeleteUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxUserNickNameDeleteUser.ForeColor = System.Drawing.Color.White
-        Me.tbxUserNickNameDeleteUser.Location = New System.Drawing.Point(464, 92)
-        Me.tbxUserNickNameDeleteUser.Margin = New System.Windows.Forms.Padding(4)
-        Me.tbxUserNickNameDeleteUser.Name = "tbxUserNickNameDeleteUser"
-        Me.tbxUserNickNameDeleteUser.Size = New System.Drawing.Size(319, 30)
-        Me.tbxUserNickNameDeleteUser.TabIndex = 32
-        Me.tbxUserNickNameDeleteUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'tbxUserRoleDeleteUser
-        '
-        Me.tbxUserRoleDeleteUser.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.tbxUserRoleDeleteUser.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.tbxUserRoleDeleteUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxUserRoleDeleteUser.ForeColor = System.Drawing.Color.White
-        Me.tbxUserRoleDeleteUser.Location = New System.Drawing.Point(511, 169)
-        Me.tbxUserRoleDeleteUser.Margin = New System.Windows.Forms.Padding(4)
-        Me.tbxUserRoleDeleteUser.Name = "tbxUserRoleDeleteUser"
-        Me.tbxUserRoleDeleteUser.Size = New System.Drawing.Size(212, 30)
-        Me.tbxUserRoleDeleteUser.TabIndex = 31
-        Me.tbxUserRoleDeleteUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'btnSearchUserDeleteUser
-        '
-        Me.btnSearchUserDeleteUser.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.btnSearchUserDeleteUser.FlatAppearance.BorderSize = 0
-        Me.btnSearchUserDeleteUser.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
-        Me.btnSearchUserDeleteUser.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSeaGreen
-        Me.btnSearchUserDeleteUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSearchUserDeleteUser.Image = CType(resources.GetObject("btnSearchUserDeleteUser.Image"), System.Drawing.Image)
-        Me.btnSearchUserDeleteUser.Location = New System.Drawing.Point(795, 21)
-        Me.btnSearchUserDeleteUser.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnSearchUserDeleteUser.Name = "btnSearchUserDeleteUser"
-        Me.btnSearchUserDeleteUser.Size = New System.Drawing.Size(37, 30)
-        Me.btnSearchUserDeleteUser.TabIndex = 30
-        Me.btnSearchUserDeleteUser.UseVisualStyleBackColor = False
-        '
-        'tbxUserIDDeleteUser
-        '
-        Me.tbxUserIDDeleteUser.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.tbxUserIDDeleteUser.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.tbxUserIDDeleteUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxUserIDDeleteUser.ForeColor = System.Drawing.Color.White
-        Me.tbxUserIDDeleteUser.Location = New System.Drawing.Point(581, 21)
-        Me.tbxUserIDDeleteUser.Margin = New System.Windows.Forms.Padding(4)
-        Me.tbxUserIDDeleteUser.Name = "tbxUserIDDeleteUser"
-        Me.tbxUserIDDeleteUser.Size = New System.Drawing.Size(212, 30)
-        Me.tbxUserIDDeleteUser.TabIndex = 24
-        Me.tbxUserIDDeleteUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label8.Location = New System.Drawing.Point(465, 26)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(114, 25)
-        Me.Label8.TabIndex = 23
-        Me.Label8.Text = "Usuario ID :"
-        Me.Label8.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label10.Location = New System.Drawing.Point(37, 140)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(138, 25)
-        Me.Label10.TabIndex = 20
-        Me.Label10.Text = "Usuario Email:"
-        Me.Label10.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label12.Location = New System.Drawing.Point(37, 65)
-        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(159, 25)
-        Me.Label12.TabIndex = 18
-        Me.Label12.Text = "Usuario Nombre:"
-        Me.Label12.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label13.Location = New System.Drawing.Point(456, 140)
-        Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(118, 25)
-        Me.Label13.TabIndex = 17
-        Me.Label13.Text = "Usuario Rol:"
-        Me.Label13.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'tbxUserEmailDeleteUser
-        '
-        Me.tbxUserEmailDeleteUser.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.tbxUserEmailDeleteUser.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.tbxUserEmailDeleteUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxUserEmailDeleteUser.ForeColor = System.Drawing.Color.White
-        Me.tbxUserEmailDeleteUser.Location = New System.Drawing.Point(80, 169)
-        Me.tbxUserEmailDeleteUser.Margin = New System.Windows.Forms.Padding(4)
-        Me.tbxUserEmailDeleteUser.Name = "tbxUserEmailDeleteUser"
-        Me.tbxUserEmailDeleteUser.Size = New System.Drawing.Size(335, 30)
-        Me.tbxUserEmailDeleteUser.TabIndex = 15
-        Me.tbxUserEmailDeleteUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'tbxUserNameDeleteUser
-        '
-        Me.tbxUserNameDeleteUser.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.tbxUserNameDeleteUser.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.tbxUserNameDeleteUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxUserNameDeleteUser.ForeColor = System.Drawing.Color.White
-        Me.tbxUserNameDeleteUser.Location = New System.Drawing.Point(80, 94)
-        Me.tbxUserNameDeleteUser.Margin = New System.Windows.Forms.Padding(4)
-        Me.tbxUserNameDeleteUser.Name = "tbxUserNameDeleteUser"
-        Me.tbxUserNameDeleteUser.Size = New System.Drawing.Size(324, 30)
-        Me.tbxUserNameDeleteUser.TabIndex = 13
-        Me.tbxUserNameDeleteUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'lblCancelDeleteUser
-        '
-        Me.lblCancelDeleteUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCancelDeleteUser.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.lblCancelDeleteUser.Image = CType(resources.GetObject("lblCancelDeleteUser.Image"), System.Drawing.Image)
-        Me.lblCancelDeleteUser.Location = New System.Drawing.Point(365, 238)
-        Me.lblCancelDeleteUser.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblCancelDeleteUser.Name = "lblCancelDeleteUser"
-        Me.lblCancelDeleteUser.Size = New System.Drawing.Size(69, 58)
-        Me.lblCancelDeleteUser.TabIndex = 12
-        Me.lblCancelDeleteUser.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'lblDeleteDeleteUser
-        '
-        Me.lblDeleteDeleteUser.Enabled = False
-        Me.lblDeleteDeleteUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDeleteDeleteUser.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.lblDeleteDeleteUser.Image = CType(resources.GetObject("lblDeleteDeleteUser.Image"), System.Drawing.Image)
-        Me.lblDeleteDeleteUser.Location = New System.Drawing.Point(279, 238)
-        Me.lblDeleteDeleteUser.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblDeleteDeleteUser.Name = "lblDeleteDeleteUser"
-        Me.lblDeleteDeleteUser.Size = New System.Drawing.Size(69, 58)
-        Me.lblDeleteDeleteUser.TabIndex = 11
-        Me.lblDeleteDeleteUser.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label16
-        '
-        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label16.Image = CType(resources.GetObject("Label16.Image"), System.Drawing.Image)
-        Me.Label16.Location = New System.Drawing.Point(35, -2)
-        Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(69, 75)
-        Me.Label16.TabIndex = 10
-        Me.Label16.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'lblDeleteUserDelete
-        '
-        Me.lblDeleteUserDelete.AutoSize = True
-        Me.lblDeleteUserDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDeleteUserDelete.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.lblDeleteUserDelete.Location = New System.Drawing.Point(107, 20)
-        Me.lblDeleteUserDelete.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblDeleteUserDelete.Name = "lblDeleteUserDelete"
-        Me.lblDeleteUserDelete.Size = New System.Drawing.Size(268, 39)
-        Me.lblDeleteUserDelete.TabIndex = 9
-        Me.lblDeleteUserDelete.Text = "Eliminar Usuario"
-        Me.lblDeleteUserDelete.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'pnlModifyUser
-        '
-        Me.pnlModifyUser.Controls.Add(Me.Button1)
-        Me.pnlModifyUser.Controls.Add(Me.btnSaveModifyUser)
-        Me.pnlModifyUser.Controls.Add(Me.Label17)
-        Me.pnlModifyUser.Controls.Add(Me.tbxUserPasswordModifyUser)
-        Me.pnlModifyUser.Controls.Add(Me.btnSearchUserModifyUser)
-        Me.pnlModifyUser.Controls.Add(Me.tbxUserIDModifyUser)
-        Me.pnlModifyUser.Controls.Add(Me.lblUserID)
-        Me.pnlModifyUser.Controls.Add(Me.tbxUserEmailModifyUser)
-        Me.pnlModifyUser.Controls.Add(Me.Label3)
-        Me.pnlModifyUser.Controls.Add(Me.Label4)
-        Me.pnlModifyUser.Controls.Add(Me.Label5)
-        Me.pnlModifyUser.Controls.Add(Me.Label6)
-        Me.pnlModifyUser.Controls.Add(Me.cmbxUserRoleModifyUser)
-        Me.pnlModifyUser.Controls.Add(Me.tbxUserNickNameModifyUser)
-        Me.pnlModifyUser.Controls.Add(Me.tbxUserNameModifyUser)
-        Me.pnlModifyUser.Controls.Add(Me.lblCancelModifyUser)
-        Me.pnlModifyUser.Controls.Add(Me.lblModifyUserModify)
-        Me.pnlModifyUser.Location = New System.Drawing.Point(11, 370)
-        Me.pnlModifyUser.Margin = New System.Windows.Forms.Padding(4)
-        Me.pnlModifyUser.Name = "pnlModifyUser"
-        Me.pnlModifyUser.Size = New System.Drawing.Size(393, 85)
-        Me.pnlModifyUser.TabIndex = 28
-        Me.pnlModifyUser.Visible = False
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.Transparent
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Thistle
-        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Thistle
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
-        Me.Button1.Location = New System.Drawing.Point(19, -5)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(93, 111)
-        Me.Button1.TabIndex = 31
-        Me.Button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'btnSaveModifyUser
-        '
-        Me.btnSaveModifyUser.BackColor = System.Drawing.Color.SeaGreen
-        Me.btnSaveModifyUser.FlatAppearance.BorderSize = 0
-        Me.btnSaveModifyUser.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
-        Me.btnSaveModifyUser.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSeaGreen
-        Me.btnSaveModifyUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSaveModifyUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSaveModifyUser.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.btnSaveModifyUser.Image = CType(resources.GetObject("btnSaveModifyUser.Image"), System.Drawing.Image)
-        Me.btnSaveModifyUser.Location = New System.Drawing.Point(357, 276)
-        Me.btnSaveModifyUser.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnSaveModifyUser.Name = "btnSaveModifyUser"
-        Me.btnSaveModifyUser.Size = New System.Drawing.Size(85, 83)
-        Me.btnSaveModifyUser.TabIndex = 36
-        Me.btnSaveModifyUser.UseVisualStyleBackColor = False
-        '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label17.Location = New System.Drawing.Point(47, 169)
-        Me.Label17.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(176, 25)
-        Me.Label17.TabIndex = 35
-        Me.Label17.Text = "Usuario Password:"
-        Me.Label17.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'tbxUserPasswordModifyUser
-        '
-        Me.tbxUserPasswordModifyUser.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.tbxUserPasswordModifyUser.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.tbxUserPasswordModifyUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxUserPasswordModifyUser.ForeColor = System.Drawing.Color.White
-        Me.tbxUserPasswordModifyUser.Location = New System.Drawing.Point(69, 208)
-        Me.tbxUserPasswordModifyUser.Margin = New System.Windows.Forms.Padding(4)
-        Me.tbxUserPasswordModifyUser.Name = "tbxUserPasswordModifyUser"
-        Me.tbxUserPasswordModifyUser.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.tbxUserPasswordModifyUser.Size = New System.Drawing.Size(212, 30)
-        Me.tbxUserPasswordModifyUser.TabIndex = 34
-        Me.tbxUserPasswordModifyUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.tbxUserPasswordModifyUser.UseSystemPasswordChar = True
-        '
-        'btnSearchUserModifyUser
-        '
-        Me.btnSearchUserModifyUser.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.btnSearchUserModifyUser.FlatAppearance.BorderSize = 0
-        Me.btnSearchUserModifyUser.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
-        Me.btnSearchUserModifyUser.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSeaGreen
-        Me.btnSearchUserModifyUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSearchUserModifyUser.Image = CType(resources.GetObject("btnSearchUserModifyUser.Image"), System.Drawing.Image)
-        Me.btnSearchUserModifyUser.Location = New System.Drawing.Point(725, 39)
-        Me.btnSearchUserModifyUser.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnSearchUserModifyUser.Name = "btnSearchUserModifyUser"
-        Me.btnSearchUserModifyUser.Size = New System.Drawing.Size(37, 30)
-        Me.btnSearchUserModifyUser.TabIndex = 31
-        Me.btnSearchUserModifyUser.UseVisualStyleBackColor = False
-        '
-        'tbxUserIDModifyUser
-        '
-        Me.tbxUserIDModifyUser.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.tbxUserIDModifyUser.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.tbxUserIDModifyUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxUserIDModifyUser.ForeColor = System.Drawing.Color.White
-        Me.tbxUserIDModifyUser.Location = New System.Drawing.Point(553, 39)
-        Me.tbxUserIDModifyUser.Margin = New System.Windows.Forms.Padding(4)
-        Me.tbxUserIDModifyUser.Name = "tbxUserIDModifyUser"
-        Me.tbxUserIDModifyUser.Size = New System.Drawing.Size(173, 30)
-        Me.tbxUserIDModifyUser.TabIndex = 24
-        Me.tbxUserIDModifyUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'lblUserID
-        '
-        Me.lblUserID.AutoSize = True
-        Me.lblUserID.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblUserID.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.lblUserID.Location = New System.Drawing.Point(427, 46)
-        Me.lblUserID.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblUserID.Name = "lblUserID"
-        Me.lblUserID.Size = New System.Drawing.Size(114, 25)
-        Me.lblUserID.TabIndex = 23
-        Me.lblUserID.Text = "Usuario ID :"
-        Me.lblUserID.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'tbxUserEmailModifyUser
-        '
-        Me.tbxUserEmailModifyUser.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.tbxUserEmailModifyUser.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.tbxUserEmailModifyUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxUserEmailModifyUser.ForeColor = System.Drawing.Color.White
-        Me.tbxUserEmailModifyUser.Location = New System.Drawing.Point(451, 126)
-        Me.tbxUserEmailModifyUser.Margin = New System.Windows.Forms.Padding(4)
-        Me.tbxUserEmailModifyUser.Name = "tbxUserEmailModifyUser"
-        Me.tbxUserEmailModifyUser.Size = New System.Drawing.Size(355, 30)
-        Me.tbxUserEmailModifyUser.TabIndex = 22
-        Me.tbxUserEmailModifyUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label3.Location = New System.Drawing.Point(425, 94)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(138, 25)
-        Me.Label3.TabIndex = 20
-        Me.Label3.Text = "Usuario Email:"
-        Me.Label3.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label4.Location = New System.Drawing.Point(279, 174)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(177, 25)
-        Me.Label4.TabIndex = 19
-        Me.Label4.Text = "Usuario Nickname:"
-        Me.Label4.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label5.Location = New System.Drawing.Point(47, 94)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(159, 25)
-        Me.Label5.TabIndex = 18
-        Me.Label5.Text = "Usuario Nombre:"
-        Me.Label5.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label6.Location = New System.Drawing.Point(579, 174)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(118, 25)
-        Me.Label6.TabIndex = 17
-        Me.Label6.Text = "Usuario Rol:"
-        Me.Label6.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'cmbxUserRoleModifyUser
-        '
-        Me.cmbxUserRoleModifyUser.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.cmbxUserRoleModifyUser.DataSource = Me.RolesBindingSource1
-        Me.cmbxUserRoleModifyUser.DisplayMember = "Name"
-        Me.cmbxUserRoleModifyUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cmbxUserRoleModifyUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmbxUserRoleModifyUser.FormattingEnabled = True
-        Me.cmbxUserRoleModifyUser.Location = New System.Drawing.Point(595, 206)
-        Me.cmbxUserRoleModifyUser.Margin = New System.Windows.Forms.Padding(4)
-        Me.cmbxUserRoleModifyUser.Name = "cmbxUserRoleModifyUser"
-        Me.cmbxUserRoleModifyUser.Size = New System.Drawing.Size(211, 32)
-        Me.cmbxUserRoleModifyUser.TabIndex = 16
-        '
-        'RolesBindingSource1
-        '
-        Me.RolesBindingSource1.DataMember = "Roles"
-        Me.RolesBindingSource1.DataSource = Me.LaboratoriosDataSet
-        '
-        'LaboratoriosDataSet
-        '
-        Me.LaboratoriosDataSet.DataSetName = "laboratoriosDataSet"
-        Me.LaboratoriosDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'tbxUserNickNameModifyUser
-        '
-        Me.tbxUserNickNameModifyUser.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.tbxUserNickNameModifyUser.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.tbxUserNickNameModifyUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxUserNickNameModifyUser.ForeColor = System.Drawing.Color.White
-        Me.tbxUserNickNameModifyUser.Location = New System.Drawing.Point(301, 208)
-        Me.tbxUserNickNameModifyUser.Margin = New System.Windows.Forms.Padding(4)
-        Me.tbxUserNickNameModifyUser.Name = "tbxUserNickNameModifyUser"
-        Me.tbxUserNickNameModifyUser.Size = New System.Drawing.Size(261, 30)
-        Me.tbxUserNickNameModifyUser.TabIndex = 14
-        Me.tbxUserNickNameModifyUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'tbxUserNameModifyUser
-        '
-        Me.tbxUserNameModifyUser.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.tbxUserNameModifyUser.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.tbxUserNameModifyUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxUserNameModifyUser.ForeColor = System.Drawing.Color.White
-        Me.tbxUserNameModifyUser.Location = New System.Drawing.Point(71, 126)
-        Me.tbxUserNameModifyUser.Margin = New System.Windows.Forms.Padding(4)
-        Me.tbxUserNameModifyUser.Name = "tbxUserNameModifyUser"
-        Me.tbxUserNameModifyUser.Size = New System.Drawing.Size(356, 30)
-        Me.tbxUserNameModifyUser.TabIndex = 13
-        Me.tbxUserNameModifyUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'lblCancelModifyUser
-        '
-        Me.lblCancelModifyUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCancelModifyUser.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.lblCancelModifyUser.Location = New System.Drawing.Point(453, 352)
-        Me.lblCancelModifyUser.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblCancelModifyUser.Name = "lblCancelModifyUser"
-        Me.lblCancelModifyUser.Size = New System.Drawing.Size(69, 58)
-        Me.lblCancelModifyUser.TabIndex = 12
-        Me.lblCancelModifyUser.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'lblModifyUserModify
-        '
-        Me.lblModifyUserModify.AutoSize = True
-        Me.lblModifyUserModify.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblModifyUserModify.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.lblModifyUserModify.Location = New System.Drawing.Point(105, 36)
-        Me.lblModifyUserModify.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblModifyUserModify.Name = "lblModifyUserModify"
-        Me.lblModifyUserModify.Size = New System.Drawing.Size(282, 39)
-        Me.lblModifyUserModify.TabIndex = 9
-        Me.lblModifyUserModify.Text = "Modificar Usuario"
-        Me.lblModifyUserModify.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'pnlSearchUser
-        '
-        Me.pnlSearchUser.Controls.Add(Me.tbxUserRoleSearchUser)
-        Me.pnlSearchUser.Controls.Add(Me.btnSearchUserSearchUser)
-        Me.pnlSearchUser.Controls.Add(Me.Label25)
-        Me.pnlSearchUser.Controls.Add(Me.tbxUserIDSearchUser)
-        Me.pnlSearchUser.Controls.Add(Me.Label27)
-        Me.pnlSearchUser.Controls.Add(Me.Label29)
-        Me.pnlSearchUser.Controls.Add(Me.Label31)
-        Me.pnlSearchUser.Controls.Add(Me.Label33)
-        Me.pnlSearchUser.Controls.Add(Me.Label34)
-        Me.pnlSearchUser.Controls.Add(Me.tbxUserEmailSearchUser)
-        Me.pnlSearchUser.Controls.Add(Me.tbxUserNickNameSearchUser)
-        Me.pnlSearchUser.Controls.Add(Me.tbxUserNameSearchUser)
-        Me.pnlSearchUser.Controls.Add(Me.btnCancelUserSearchUser)
-        Me.pnlSearchUser.Controls.Add(Me.lblViewUserProfileSearchUser)
-        Me.pnlSearchUser.Controls.Add(Me.Label37)
-        Me.pnlSearchUser.Location = New System.Drawing.Point(477, 370)
-        Me.pnlSearchUser.Margin = New System.Windows.Forms.Padding(4)
-        Me.pnlSearchUser.Name = "pnlSearchUser"
-        Me.pnlSearchUser.Size = New System.Drawing.Size(393, 85)
-        Me.pnlSearchUser.TabIndex = 29
-        Me.pnlSearchUser.Visible = False
-        '
-        'tbxUserRoleSearchUser
-        '
-        Me.tbxUserRoleSearchUser.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.tbxUserRoleSearchUser.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.tbxUserRoleSearchUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxUserRoleSearchUser.ForeColor = System.Drawing.Color.White
-        Me.tbxUserRoleSearchUser.Location = New System.Drawing.Point(467, 224)
-        Me.tbxUserRoleSearchUser.Margin = New System.Windows.Forms.Padding(4)
-        Me.tbxUserRoleSearchUser.Name = "tbxUserRoleSearchUser"
-        Me.tbxUserRoleSearchUser.Size = New System.Drawing.Size(212, 30)
-        Me.tbxUserRoleSearchUser.TabIndex = 29
-        Me.tbxUserRoleSearchUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'btnSearchUserSearchUser
-        '
-        Me.btnSearchUserSearchUser.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.btnSearchUserSearchUser.FlatAppearance.BorderSize = 0
-        Me.btnSearchUserSearchUser.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
-        Me.btnSearchUserSearchUser.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSeaGreen
-        Me.btnSearchUserSearchUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSearchUserSearchUser.Location = New System.Drawing.Point(739, 43)
-        Me.btnSearchUserSearchUser.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnSearchUserSearchUser.Name = "btnSearchUserSearchUser"
-        Me.btnSearchUserSearchUser.Size = New System.Drawing.Size(37, 30)
-        Me.btnSearchUserSearchUser.TabIndex = 28
-        Me.btnSearchUserSearchUser.UseVisualStyleBackColor = False
-        '
-        'Label25
-        '
-        Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label25.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label25.Image = CType(resources.GetObject("Label25.Image"), System.Drawing.Image)
-        Me.Label25.Location = New System.Drawing.Point(33, 14)
-        Me.Label25.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(69, 75)
-        Me.Label25.TabIndex = 10
-        Me.Label25.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'tbxUserIDSearchUser
-        '
-        Me.tbxUserIDSearchUser.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.tbxUserIDSearchUser.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.tbxUserIDSearchUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxUserIDSearchUser.ForeColor = System.Drawing.Color.White
-        Me.tbxUserIDSearchUser.Location = New System.Drawing.Point(523, 43)
-        Me.tbxUserIDSearchUser.Margin = New System.Windows.Forms.Padding(4)
-        Me.tbxUserIDSearchUser.Name = "tbxUserIDSearchUser"
-        Me.tbxUserIDSearchUser.Size = New System.Drawing.Size(215, 30)
-        Me.tbxUserIDSearchUser.TabIndex = 24
-        Me.tbxUserIDSearchUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Label27
-        '
-        Me.Label27.AutoSize = True
-        Me.Label27.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label27.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label27.Location = New System.Drawing.Point(391, 43)
-        Me.Label27.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(114, 25)
-        Me.Label27.TabIndex = 23
-        Me.Label27.Text = "Usuario ID :"
-        Me.Label27.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label29
-        '
-        Me.Label29.AutoSize = True
-        Me.Label29.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label29.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label29.Location = New System.Drawing.Point(429, 103)
-        Me.Label29.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(138, 25)
-        Me.Label29.TabIndex = 20
-        Me.Label29.Text = "Usuario Email:"
-        Me.Label29.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label31
-        '
-        Me.Label31.AutoSize = True
-        Me.Label31.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label31.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label31.Location = New System.Drawing.Point(56, 188)
-        Me.Label31.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label31.Name = "Label31"
-        Me.Label31.Size = New System.Drawing.Size(177, 25)
-        Me.Label31.TabIndex = 19
-        Me.Label31.Text = "Usuario Nickname:"
-        Me.Label31.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label33
-        '
-        Me.Label33.AutoSize = True
-        Me.Label33.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label33.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label33.Location = New System.Drawing.Point(56, 101)
-        Me.Label33.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label33.Name = "Label33"
-        Me.Label33.Size = New System.Drawing.Size(159, 25)
-        Me.Label33.TabIndex = 18
-        Me.Label33.Text = "Usuario Nombre:"
-        Me.Label33.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label34
-        '
-        Me.Label34.AutoSize = True
-        Me.Label34.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label34.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label34.Location = New System.Drawing.Point(445, 196)
-        Me.Label34.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label34.Name = "Label34"
-        Me.Label34.Size = New System.Drawing.Size(118, 25)
-        Me.Label34.TabIndex = 17
-        Me.Label34.Text = "Usuario Rol:"
-        Me.Label34.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'tbxUserEmailSearchUser
-        '
-        Me.tbxUserEmailSearchUser.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.tbxUserEmailSearchUser.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.tbxUserEmailSearchUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxUserEmailSearchUser.ForeColor = System.Drawing.Color.White
-        Me.tbxUserEmailSearchUser.Location = New System.Drawing.Point(451, 137)
-        Me.tbxUserEmailSearchUser.Margin = New System.Windows.Forms.Padding(4)
-        Me.tbxUserEmailSearchUser.Name = "tbxUserEmailSearchUser"
-        Me.tbxUserEmailSearchUser.Size = New System.Drawing.Size(345, 30)
-        Me.tbxUserEmailSearchUser.TabIndex = 15
-        Me.tbxUserEmailSearchUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'tbxUserNickNameSearchUser
-        '
-        Me.tbxUserNickNameSearchUser.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.tbxUserNickNameSearchUser.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.tbxUserNickNameSearchUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxUserNickNameSearchUser.ForeColor = System.Drawing.Color.White
-        Me.tbxUserNickNameSearchUser.Location = New System.Drawing.Point(77, 222)
-        Me.tbxUserNickNameSearchUser.Margin = New System.Windows.Forms.Padding(4)
-        Me.tbxUserNickNameSearchUser.Name = "tbxUserNickNameSearchUser"
-        Me.tbxUserNickNameSearchUser.Size = New System.Drawing.Size(212, 30)
-        Me.tbxUserNickNameSearchUser.TabIndex = 14
-        Me.tbxUserNickNameSearchUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'tbxUserNameSearchUser
-        '
-        Me.tbxUserNameSearchUser.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.tbxUserNameSearchUser.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.tbxUserNameSearchUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxUserNameSearchUser.ForeColor = System.Drawing.Color.White
-        Me.tbxUserNameSearchUser.Location = New System.Drawing.Point(80, 135)
-        Me.tbxUserNameSearchUser.Margin = New System.Windows.Forms.Padding(4)
-        Me.tbxUserNameSearchUser.Name = "tbxUserNameSearchUser"
-        Me.tbxUserNameSearchUser.Size = New System.Drawing.Size(349, 30)
-        Me.tbxUserNameSearchUser.TabIndex = 13
-        Me.tbxUserNameSearchUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'btnCancelUserSearchUser
-        '
-        Me.btnCancelUserSearchUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCancelUserSearchUser.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnCancelUserSearchUser.Image = CType(resources.GetObject("btnCancelUserSearchUser.Image"), System.Drawing.Image)
-        Me.btnCancelUserSearchUser.Location = New System.Drawing.Point(409, 281)
-        Me.btnCancelUserSearchUser.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.btnCancelUserSearchUser.Name = "btnCancelUserSearchUser"
-        Me.btnCancelUserSearchUser.Size = New System.Drawing.Size(69, 58)
-        Me.btnCancelUserSearchUser.TabIndex = 12
-        Me.btnCancelUserSearchUser.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'lblViewUserProfileSearchUser
-        '
-        Me.lblViewUserProfileSearchUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblViewUserProfileSearchUser.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.lblViewUserProfileSearchUser.Image = CType(resources.GetObject("lblViewUserProfileSearchUser.Image"), System.Drawing.Image)
-        Me.lblViewUserProfileSearchUser.Location = New System.Drawing.Point(332, 281)
-        Me.lblViewUserProfileSearchUser.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblViewUserProfileSearchUser.Name = "lblViewUserProfileSearchUser"
-        Me.lblViewUserProfileSearchUser.Size = New System.Drawing.Size(69, 58)
-        Me.lblViewUserProfileSearchUser.TabIndex = 11
-        Me.lblViewUserProfileSearchUser.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label37
-        '
-        Me.Label37.AutoSize = True
-        Me.Label37.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label37.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label37.Location = New System.Drawing.Point(105, 36)
-        Me.Label37.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label37.Name = "Label37"
-        Me.Label37.Size = New System.Drawing.Size(250, 39)
-        Me.Label37.TabIndex = 9
-        Me.Label37.Text = "Buscar Usuario"
-        Me.Label37.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'lblAdministrateUsers
-        '
-        Me.lblAdministrateUsers.AutoSize = True
-        Me.lblAdministrateUsers.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAdministrateUsers.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.lblAdministrateUsers.Location = New System.Drawing.Point(4, 9)
-        Me.lblAdministrateUsers.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblAdministrateUsers.Name = "lblAdministrateUsers"
-        Me.lblAdministrateUsers.Size = New System.Drawing.Size(333, 39)
-        Me.lblAdministrateUsers.TabIndex = 8
-        Me.lblAdministrateUsers.Text = "Administrar Usuarios"
-        Me.lblAdministrateUsers.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'lblSearchUser
-        '
-        Me.lblSearchUser.AutoSize = True
-        Me.lblSearchUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSearchUser.ForeColor = System.Drawing.Color.White
-        Me.lblSearchUser.Location = New System.Drawing.Point(637, 138)
-        Me.lblSearchUser.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblSearchUser.Name = "lblSearchUser"
-        Me.lblSearchUser.Size = New System.Drawing.Size(145, 25)
-        Me.lblSearchUser.TabIndex = 19
-        Me.lblSearchUser.Text = "Buscar Usuario"
-        '
-        'lblDeleteUser
-        '
-        Me.lblDeleteUser.AutoSize = True
-        Me.lblDeleteUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDeleteUser.ForeColor = System.Drawing.Color.White
-        Me.lblDeleteUser.Location = New System.Drawing.Point(463, 138)
-        Me.lblDeleteUser.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblDeleteUser.Name = "lblDeleteUser"
-        Me.lblDeleteUser.Size = New System.Drawing.Size(153, 25)
-        Me.lblDeleteUser.TabIndex = 18
-        Me.lblDeleteUser.Text = "Eliminar Usuario"
-        '
-        'lblModifyUser
-        '
-        Me.lblModifyUser.AutoSize = True
-        Me.lblModifyUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblModifyUser.ForeColor = System.Drawing.Color.White
-        Me.lblModifyUser.Location = New System.Drawing.Point(273, 138)
-        Me.lblModifyUser.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblModifyUser.Name = "lblModifyUser"
-        Me.lblModifyUser.Size = New System.Drawing.Size(163, 25)
-        Me.lblModifyUser.TabIndex = 17
-        Me.lblModifyUser.Text = "Modificar Usuario"
-        '
-        'lblCreateUser
-        '
-        Me.lblCreateUser.AutoSize = True
-        Me.lblCreateUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCreateUser.ForeColor = System.Drawing.Color.White
-        Me.lblCreateUser.Location = New System.Drawing.Point(113, 137)
-        Me.lblCreateUser.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblCreateUser.Name = "lblCreateUser"
-        Me.lblCreateUser.Size = New System.Drawing.Size(133, 25)
-        Me.lblCreateUser.TabIndex = 16
-        Me.lblCreateUser.Text = "Crear Usuario"
-        '
-        'btnViewUsers
-        '
-        Me.btnViewUsers.BackColor = System.Drawing.Color.Transparent
-        Me.btnViewUsers.FlatAppearance.BorderSize = 0
-        Me.btnViewUsers.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Thistle
-        Me.btnViewUsers.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Thistle
-        Me.btnViewUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnViewUsers.Location = New System.Drawing.Point(711, 447)
-        Me.btnViewUsers.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnViewUsers.Name = "btnViewUsers"
-        Me.btnViewUsers.Size = New System.Drawing.Size(120, 111)
-        Me.btnViewUsers.TabIndex = 15
-        Me.btnViewUsers.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btnViewUsers.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.btnViewUsers.UseVisualStyleBackColor = False
-        '
-        'btnDeleteUser
-        '
-        Me.btnDeleteUser.BackColor = System.Drawing.Color.Transparent
-        Me.btnDeleteUser.FlatAppearance.BorderSize = 0
-        Me.btnDeleteUser.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Thistle
-        Me.btnDeleteUser.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Thistle
-        Me.btnDeleteUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDeleteUser.Image = CType(resources.GetObject("btnDeleteUser.Image"), System.Drawing.Image)
-        Me.btnDeleteUser.Location = New System.Drawing.Point(487, 37)
-        Me.btnDeleteUser.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnDeleteUser.Name = "btnDeleteUser"
-        Me.btnDeleteUser.Size = New System.Drawing.Size(107, 98)
-        Me.btnDeleteUser.TabIndex = 13
-        Me.btnDeleteUser.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btnDeleteUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.btnDeleteUser.UseVisualStyleBackColor = False
-        '
-        'btnModifyUser
-        '
-        Me.btnModifyUser.BackColor = System.Drawing.Color.Transparent
-        Me.btnModifyUser.FlatAppearance.BorderSize = 0
-        Me.btnModifyUser.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Thistle
-        Me.btnModifyUser.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Thistle
-        Me.btnModifyUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnModifyUser.Image = CType(resources.GetObject("btnModifyUser.Image"), System.Drawing.Image)
-        Me.btnModifyUser.Location = New System.Drawing.Point(311, 37)
-        Me.btnModifyUser.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnModifyUser.Name = "btnModifyUser"
-        Me.btnModifyUser.Size = New System.Drawing.Size(107, 98)
-        Me.btnModifyUser.TabIndex = 12
-        Me.btnModifyUser.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btnModifyUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.btnModifyUser.UseVisualStyleBackColor = False
-        '
-        'btnCreateUser
-        '
-        Me.btnCreateUser.BackColor = System.Drawing.Color.Transparent
-        Me.btnCreateUser.FlatAppearance.BorderSize = 0
-        Me.btnCreateUser.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Thistle
-        Me.btnCreateUser.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Thistle
-        Me.btnCreateUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCreateUser.Image = CType(resources.GetObject("btnCreateUser.Image"), System.Drawing.Image)
-        Me.btnCreateUser.Location = New System.Drawing.Point(139, 37)
-        Me.btnCreateUser.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnCreateUser.Name = "btnCreateUser"
-        Me.btnCreateUser.Size = New System.Drawing.Size(107, 98)
-        Me.btnCreateUser.TabIndex = 11
-        Me.btnCreateUser.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btnCreateUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.btnCreateUser.UseVisualStyleBackColor = False
         '
         'pnlUser
         '
@@ -4284,23 +3996,6 @@ Partial Class Home
         '
         Me.RolesTableAdapter.ClearBeforeFill = True
         '
-        'btnDelReservation
-        '
-        Me.btnDelReservation.BackColor = System.Drawing.Color.Transparent
-        Me.btnDelReservation.FlatAppearance.BorderSize = 0
-        Me.btnDelReservation.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Thistle
-        Me.btnDelReservation.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Thistle
-        Me.btnDelReservation.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDelReservation.Image = CType(resources.GetObject("btnDelReservation.Image"), System.Drawing.Image)
-        Me.btnDelReservation.Location = New System.Drawing.Point(315, 167)
-        Me.btnDelReservation.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnDelReservation.Name = "btnDelReservation"
-        Me.btnDelReservation.Size = New System.Drawing.Size(93, 68)
-        Me.btnDelReservation.TabIndex = 56
-        Me.btnDelReservation.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btnDelReservation.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.btnDelReservation.UseVisualStyleBackColor = False
-        '
         'Home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -4314,6 +4009,19 @@ Partial Class Home
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Home"
         Me.Panel1.ResumeLayout(False)
+        Me.pnlAdminstrateUsers.ResumeLayout(False)
+        Me.pnlAdminstrateUsers.PerformLayout()
+        Me.pnlDeleteUser.ResumeLayout(False)
+        Me.pnlDeleteUser.PerformLayout()
+        Me.pnlModifyUser.ResumeLayout(False)
+        Me.pnlModifyUser.PerformLayout()
+        CType(Me.RolesBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LaboratoriosDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvUserAdmin, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnlCreateUser.ResumeLayout(False)
+        Me.pnlCreateUser.PerformLayout()
+        Me.pnlSearchUser.ResumeLayout(False)
+        Me.pnlSearchUser.PerformLayout()
         Me.panelReservations.ResumeLayout(False)
         Me.panelReservations.PerformLayout()
         Me.pnlDeleteReservation.ResumeLayout(False)
@@ -4363,19 +4071,6 @@ Partial Class Home
         Me.pnlDeleteCLass.ResumeLayout(False)
         Me.pnlDeleteCLass.PerformLayout()
         CType(Me.dgvClasses, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.pnlAdminstrateUsers.ResumeLayout(False)
-        Me.pnlAdminstrateUsers.PerformLayout()
-        CType(Me.dgvUserAdmin, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.pnlCreateUser.ResumeLayout(False)
-        Me.pnlCreateUser.PerformLayout()
-        Me.pnlDeleteUser.ResumeLayout(False)
-        Me.pnlDeleteUser.PerformLayout()
-        Me.pnlModifyUser.ResumeLayout(False)
-        Me.pnlModifyUser.PerformLayout()
-        CType(Me.RolesBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LaboratoriosDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.pnlSearchUser.ResumeLayout(False)
-        Me.pnlSearchUser.PerformLayout()
         Me.pnlUser.ResumeLayout(False)
         Me.pnlUser.PerformLayout()
         CType(Me.صورة_دائرة1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -4418,7 +4113,6 @@ Partial Class Home
     Friend WithEvents Label8 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents Label12 As Label
-    Friend WithEvents Label13 As Label
     Friend WithEvents tbxUserEmailDeleteUser As TextBox
     Friend WithEvents tbxUserNameDeleteUser As TextBox
     Friend WithEvents lblCancelDeleteUser As Label
@@ -4473,7 +4167,6 @@ Partial Class Home
     Friend WithEvents RolesTableAdapter As laboratoriosDataSetTableAdapters.RolesTableAdapter
     Friend WithEvents tbxUserRoleSearchUser As TextBox
     Friend WithEvents btnSearchUserDeleteUser As Button
-    Friend WithEvents tbxUserRoleDeleteUser As TextBox
     Friend WithEvents lblDeleteDeleteUser As Label
     Friend WithEvents btnSearchUserModifyUser As Button
     Friend WithEvents RolesBindingSource1 As BindingSource
@@ -4485,7 +4178,6 @@ Partial Class Home
     Friend WithEvents Label11 As Label
     Friend WithEvents tbxUserNickNameDeleteUser As TextBox
     Friend WithEvents btnSaveModifyUser As Button
-    Friend WithEvents lblGoBackDeleteUser As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents panelAdminClass As Panel
     Friend WithEvents lblAdminClass As Label
@@ -4505,7 +4197,6 @@ Partial Class Home
     Friend WithEvents Label24 As Label
     Friend WithEvents Label26 As Label
     Friend WithEvents pnlDeleteCLass As Panel
-    Friend WithEvents Button5 As Button
     Friend WithEvents Label46 As Label
     Friend WithEvents Label48 As Label
     Friend WithEvents lblDeleteClassTitle As Label
@@ -4517,7 +4208,6 @@ Partial Class Home
     Friend WithEvents cmbCreateClassEdificio As ComboBox
     Friend WithEvents lblCreateClassEdificio As Label
     Friend WithEvents dgvClasses As DataGridView
-    Friend WithEvents tbxAdminAulasBuscarAula As TextBox
     Friend WithEvents bntSaveModifyClass As Button
     Friend WithEvents Label28 As Label
     Friend WithEvents Label30 As Label
@@ -4528,22 +4218,12 @@ Partial Class Home
     Friend WithEvents Label21 As Label
     Friend WithEvents cbxModifyClassroom As ComboBox
     Friend WithEvents btnDeleteClass As Button
-    Friend WithEvents Label18 As Label
-    Friend WithEvents tbxCaracteristicasDelete As TextBox
-    Friend WithEvents cbxEdificioDelete As ComboBox
-    Friend WithEvents Label19 As Label
-    Friend WithEvents Label20 As Label
     Friend WithEvents Label32 As Label
-    Friend WithEvents cbxTypeDelete As ComboBox
-    Friend WithEvents tbxAulaNombreDelete As TextBox
-    Friend WithEvents lblAdminAulasBuscarAula As Label
     Friend WithEvents Label35 As Label
     Friend WithEvents Label36 As Label
     Friend WithEvents tbxMotivo As TextBox
     Friend WithEvents Label38 As Label
     Friend WithEvents cbxDia As ComboBox
-    Friend WithEvents lblTiempoLibre As Label
-    Friend WithEvents Label41 As Label
     Friend WithEvents tbxHoraFinal As TextBox
     Friend WithEvents Label40 As Label
     Friend WithEvents tbxHoraInicial As TextBox
@@ -4633,15 +4313,10 @@ Partial Class Home
     Friend WithEvents txbClassDelete As TextBox
     Friend WithEvents Label99 As Label
     Friend WithEvents Label100 As Label
-    Friend WithEvents lblSearchReservation As Label
-    Friend WithEvents Button16 As Button
-    Friend WithEvents TextBox16 As TextBox
     Friend WithEvents dgvClassReservations As DataGridView
     Friend WithEvents lblDeleteReservation As Label
-    Friend WithEvents lblModifyReservation As Label
     Friend WithEvents lblCreateReservation As Label
     Friend WithEvents btnDeleteReservation As Button
-    Friend WithEvents btnModifyReservation As Button
     Friend WithEvents btnCreateReservation As Button
     Friend WithEvents lblAdminReservations As Label
     Friend WithEvents pnlClassReservation As Panel
